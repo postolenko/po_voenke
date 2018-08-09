@@ -1,1 +1,1 @@
-# http://postolenko.github.io/povoenke/building-detail.html
+# http://postolenko.github.io/po_voenke/building-detail.html
