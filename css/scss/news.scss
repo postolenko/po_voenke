@@ -1,0 +1,184 @@
+@import "mixins";
+@import "functions";
+
+//-- News styles
+//------------------------------------------------------
+
+.main-news {
+  margin-bottom: 50px;
+  padding: $top-corner-height 5px 0;
+  position: relative;
+
+  h3, .h3 {
+    margin-left: 10px;
+  }
+
+  &:before {
+    background: url("#{$image-path}/corner-top.png") 0 0 no-repeat;
+    content: '';
+    @include h-w(29px, 19px);
+    @include position-absolute(left, 0, top, 0);
+  }
+
+  > *:last-child {
+    margin-top: 30px;
+  }
+}
+
+//---------------------------New block styles
+
+.new {
+  @extend %last-child;
+
+  &:not(:last-child) {
+    margin-bottom: $space-between-elements;
+  }
+
+  > * {
+    margin-bottom: 7px !important;
+
+    &:not(.date) {
+      color: $heading-color;
+    }
+  }
+
+  a {
+    color: $heading-color;
+  }
+
+  &-short-text {
+    font-size: $size-small;
+  }
+
+  //Inline new styles
+
+  &-inline {
+    margin-bottom: $space-between-elements;
+
+    @include respond-to(desktopMd) {  // > 992px
+      @include flex(stretch);
+      margin: {
+        left: -$new-inline-space-between-elements;
+        right: -$new-inline-space-between-elements;
+      }
+
+      > div {
+        padding: 0 $new-inline-space-between-elements;
+        position: relative;
+        width: 50%;
+
+        &.new-text {
+          padding-bottom: 70px;
+        }
+      }
+
+      .rating-stars {
+        @include position-absolute(left, $new-inline-space-between-elements, bottom, 0);
+      }
+    }
+
+    @include respond-to(desktopMdMin) {  // < 992px
+      .new-image {
+        margin-bottom: $space-between-elements;
+      }
+    }
+  }
+
+  &-image {
+    @extend %bg-image-center;
+    height: $new-inline-image-height;
+  }
+
+  &-text {
+    @extend %last-child;
+
+    > * {
+      margin-bottom: 10px;
+    }
+  }
+
+  &-actions {
+    @include flex(center);
+
+    > * + * {
+      margin-left: 10px;
+    }
+  }
+}
+
+//---------------------------Filter news
+
+.filter-news {
+  background-color: $bg-common;
+  margin-bottom: $desktop-common-space;
+  padding: 30px;
+  position: relative;
+
+  .link-subscribe {
+    @include position-absolute(right, 0, top, -27px);
+  }
+
+  //Responsive styles
+
+  @include respond-to(desktoplgMin) {
+    .dropdown-heading {
+      width: 200px;
+    }
+  }
+
+  @include respond-to(desktopMd) {
+    align-items: center;
+    @include flex(justify);
+  }
+
+  @include respond-to(desktopMdMin) {
+    > * + * {
+      display: block;
+      margin-top: $space-between-elements;
+      text-align: center;
+    }
+  }
+
+  @include respond-to(desktop) {
+    &-dropdowns {
+      @include flex(center);
+
+      > * + * {
+        margin-left: 60px;
+      }
+
+      &-part {
+        @include flex(center);
+
+        > * + * {
+          margin-left: 12px;
+        }
+      }
+    }
+  }
+
+  @include respond-to(mobile) {
+    margin-bottom: $mobile-common-pad-vertical;
+    padding: 15px;
+
+    &-dropdowns {
+      > * + * {
+        margin-top: 10px;
+      }
+
+      &-part {
+        > * + * {
+          margin-top: 10px;
+        }
+      }
+    }
+
+    .dropdown {
+      width: 100%;
+    }
+
+    .link-subscribe {
+      display: none;
+    }
+  }
+}

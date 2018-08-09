@@ -1,0 +1,101 @@
+@import "mixins";
+
+//-- Footer
+//------------------------------------------------------
+
+footer {
+  background-color: $footer-bg;
+  position: relative;
+
+  * {
+    color: $footer-color;
+  }
+
+  .list {
+    > li {
+      a {
+        color: $footer-color;
+      }
+    }
+
+    &:not(.list-inline) {
+      > li {
+        + li {
+          margin-top: 2px;
+        }
+      }
+    }
+  }
+
+  //Responsive styles
+
+  @include respond-to(desktop) {
+    margin-top: -$footer-height;
+    padding: $footer-pad-desktop;
+  }
+
+  @include respond-to(mobile) {
+    padding: $footer-pad-mobile;
+    text-align: center;
+  }
+}
+
+//-----------------------Footer components
+
+.logo-footer {
+  display: block;
+  margin-bottom: $space-between-elements;
+}
+
+.footer-phone {
+  margin-bottom: 10px;
+
+  > * {
+    margin-bottom: 0;
+
+    &:not(.phone) {
+      font: {
+        family: $semibold-light;
+        size: $size-large;
+      }
+    }
+  }
+}
+
+.footer-email {
+  margin-bottom: $space-between-elements;
+  > * {
+    margin-bottom: 0;
+    + * {
+      margin-top: 10px;
+    }
+  }
+}
+
+.footer-menu {
+  border-left: 3px solid $white;
+  padding-left: 10px;
+
+  .list {
+    + .list {
+      > li {
+        a {
+          font-size: $size-small;
+        }
+      }
+    }
+  }
+
+  @include respond-to(mobile) {
+    display: none;
+  }
+}
+
+
+//-----------------------Copyright and tag design
+
+.copyright {
+  color: $footer-color;
+  margin: 0;
+}
+

@@ -1,0 +1,17 @@
+//-- Mixin for Animation
+//------------------------------------------------------
+
+@mixin transition($transition-style, $transition-time, $transition-function) {
+  -webkit-transition: $transition-style $transition-time $transition-function;
+  transition: $transition-style $transition-time $transition-function;
+}
+
+@mixin transform-center($l-r, $t-b) {
+  transform: translate($l-r, $t-b);
+  -webkit-transform: translate($l-r, $t-b);
+}
+
+@mixin transform-rotate($degrees) {
+  transform: rotate($degrees);
+  -webkit-transform: rotate($degrees);
+}

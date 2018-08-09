@@ -1,0 +1,24 @@
+@import "mixins";
+@import "functions";
+
+//-- Breadcrumb Styles
+//------------------------------------------------------
+
+.breadcrumb {
+  align-items: center;
+  background-color: transparent;
+  @include radius(0);
+  margin: 0 0 5px;
+  padding: 0;
+
+  &-item {
+
+    > *, &.active {
+      color: $breadcrumb-item-color;
+    }
+
+    +.breadcrumb-item::before {
+      color: $breadcrumb-item-color;
+    }
+  }
+}

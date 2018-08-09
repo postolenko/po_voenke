@@ -1,0 +1,122 @@
+@import "mixins";
+
+//-- Fonts
+//------------------------------------------------------
+
+@font-face {
+  font-family:'Fira Sans Compressed Light';
+  src: url('#{$font-path}/Fira Sans Compressed Light/Fira Sans Compressed Light.eot');
+  src: url('#{$font-path}/Fira Sans Compressed Light/Fira Sans Compressed Light.eot?#iefix') format('embedded-opentype'),
+  url('#{$font-path}/Fira Sans Compressed Light/Fira Sans Compressed Light.woff2') format('woff2'),
+  url('#{$font-path}/Fira Sans Compressed Light/Fira Sans Compressed Light.woff') format('woff'),
+  url('#{$font-path}/Fira Sans Compressed Light/Fira Sans Compressed Light.ttf') format('truetype'),
+  url('#{$font-path}/Fira Sans Compressed Light/Fira Sans Compressed Light.otf') format('opentype'),
+  url('#{$font-path}/Fira Sans Compressed Light/Fira Sans Compressed Light.svg#Fira Sans Compressed Light') format('svg');
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: ultra-condensed;
+  unicode-range: U+0020-052E;
+}
+
+
+@font-face {
+  font-family:'Fira Sans Condensed';
+  src: url('#{$font-path}/Fira Sans Condensed Bold/Fira Sans Condensed Bold.eot');
+  src: url('#{$font-path}/Fira Sans Condensed Bold/Fira Sans Condensed Bold.eot?#iefix') format('embedded-opentype'),
+  url('#{$font-path}/Fira Sans Condensed Bold/Fira Sans Condensed Bold.woff2') format('woff2'),
+  url('#{$font-path}/Fira Sans Condensed Bold/Fira Sans Condensed Bold.woff') format('woff'),
+  url('#{$font-path}/Fira Sans Condensed Bold/Fira Sans Condensed Bold.ttf') format('truetype'),
+  url('#{$font-path}/Fira Sans Condensed Bold/Fira Sans Condensed Bold.otf') format('opentype'),
+  url('#{$font-path}/Fira Sans Condensed Bold/Fira Sans Condensed Bold.svg#Fira Sans Condensed Bold') format('svg');
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: condensed;
+  unicode-range: U+0020-052E;
+}
+
+
+@font-face {
+  font-family:'Fira Sans Condensed Light';
+  src: url('#{$font-path}/Fira Sans Condensed Light/Fira Sans Condensed Light.eot');
+  src: url('#{$font-path}/Fira Sans Condensed Light/Fira Sans Condensed Light.eot?#iefix') format('embedded-opentype'),
+  url('#{$font-path}/Fira Sans Condensed Light/Fira Sans Condensed Light.woff2') format('woff2'),
+  url('#{$font-path}/Fira Sans Condensed Light/Fira Sans Condensed Light.woff') format('woff'),
+  url('#{$font-path}/Fira Sans Condensed Light/Fira Sans Condensed Light.ttf') format('truetype'),
+  url('#{$font-path}/Fira Sans Condensed Light/Fira Sans Condensed Light.otf') format('opentype'),
+  url('#{$font-path}/Fira Sans Condensed Light/Fira Sans Condensed Light.svg#Fira Sans Condensed Light') format('svg');
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: condensed;
+  unicode-range: U+0020-052E;
+}
+
+
+@font-face {
+  font-family:'Fira Sans Condensed SemiBold';
+  src: url('#{$font-path}/Fira Sans Condensed SemiBold/Fira Sans Condensed SemiBold.eot');
+  src: url('#{$font-path}/Fira Sans Condensed SemiBold/Fira Sans Condensed SemiBold.eot?#iefix') format('embedded-opentype'),
+  url('#{$font-path}/Fira Sans Condensed SemiBold/Fira Sans Condensed SemiBold.woff2') format('woff2'),
+  url('#{$font-path}/Fira Sans Condensed SemiBold/Fira Sans Condensed SemiBold.woff') format('woff'),
+  url('#{$font-path}/Fira Sans Condensed SemiBold/Fira Sans Condensed SemiBold.ttf') format('truetype'),
+  url('#{$font-path}/Fira Sans Condensed SemiBold/Fira Sans Condensed SemiBold.otf') format('opentype'),
+  url('#{$font-path}/Fira Sans Condensed SemiBold/Fira Sans Condensed SemiBold.svg#Fira Sans Condensed SemiBold') format('svg');
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: condensed;
+  unicode-range: U+0020-052E;
+}
+
+@font-face {
+  font-family: "ChevinProRubl";
+  src: url("#{$font-path}/ChevinProRubl/ChevinProRuble.eot");
+  src: url("#{$font-path}/ChevinProRubl/ChevinProRuble.eot?#iefix")format("embedded-opentype"),
+  url("#{$font-path}/ChevinProRubl/ChevinProRuble.woff") format("woff"),
+  url("#{$font-path}/ChevinProRubl/ChevinProRuble.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family:'Fira Sans Condensed LightItalic';
+  src: url('#{$font-path}/Fira Sans Condensed ListItalic/Fira Sans Condensed Light Italic.eot');
+  src: url('#{$font-path}/Fira Sans Condensed ListItalic/Fira Sans Condensed Light Italic.eot?#iefix') format('embedded-opentype'),
+  url('#{$font-path}/Fira Sans Condensed ListItalic/Fira Sans Condensed Light Italic.woff2') format('woff2'),
+  url('#{$font-path}/Fira Sans Condensed ListItalic/Fira Sans Condensed Light Italic.woff') format('woff'),
+  url('#{$font-path}/Fira Sans Condensed ListItalic/Fira Sans Condensed Light Italic.ttf') format('truetype'),
+  url('#{$font-path}/Fira Sans Condensed ListItalic/Fira Sans Condensed Light Italic.otf') format('opentype'),
+  url('#{$font-path}/Fira Sans Condensed ListItalic/Fira Sans Condensed Light Italic.svg#Fira Sans Condensed Light Italic') format('svg');
+  font-weight: 300;
+  font-style: italic;
+  font-stretch: condensed;
+  unicode-range: U+0020-A7B6;
+}
+
+@font-face {
+  font-family:'Fira Sans Condensed SemiBoldItalic';
+  src: url('#{$font-path}/Fira Sans Condensed SemiBoldItalic/Fira Sans Condensed SemiBold Italic.eot');
+  src: url('#{$font-path}/Fira Sans Condensed SemiBoldItalic/Fira Sans Condensed SemiBold Italic.eot?#iefix') format('embedded-opentype'),
+  url('#{$font-path}/Fira Sans Condensed SemiBoldItalic/Fira Sans Condensed SemiBold Italic.woff2') format('woff2'),
+  url('#{$font-path}/Fira Sans Condensed SemiBoldItalic/Fira Sans Condensed SemiBold Italic.woff') format('woff'),
+  url('#{$font-path}/Fira Sans Condensed SemiBoldItalic/Fira Sans Condensed SemiBold Italic.ttf') format('truetype'),
+  url('#{$font-path}/Fira Sans Condensed SemiBoldItalic/Fira Sans Condensed SemiBold Italic.otf') format('opentype'),
+  url('#{$font-path}/Fira Sans Condensed SemiBoldItalic/Fira Sans Condensed SemiBold Italic.svg#Fira Sans Condensed SemiBold Italic') format('svg');
+  font-weight: 600;
+  font-style: italic;
+  font-stretch: condensed;
+  unicode-range: U+0020-A7B6;
+}
+
+@font-face {
+  font-family:'Fira Sans Condensed Book';
+  src: url('#{$font-path}/Fira Sans Condensed Book/Fira Sans Condensed Book.eot');
+  src: url('#{$font-path}/Fira Sans Condensed Book/Fira Sans Condensed Book.eot?#iefix') format('embedded-opentype'),
+  url('#{$font-path}/Fira Sans Condensed Book/Fira Sans Condensed Book.woff2') format('woff2'),
+  url('#{$font-path}/Fira Sans Condensed Book/Fira Sans Condensed Book.woff') format('woff'),
+  url('#{$font-path}/Fira Sans Condensed Book/Fira Sans Condensed Book.ttf') format('truetype'),
+  url('#{$font-path}/Fira Sans Condensed Book/Fira Sans Condensed Book.otf') format('opentype'),
+  url('#{$font-path}/Fira Sans Condensed Book/Fira Sans Condensed Book.svg#Fira Sans Condensed Book') format('svg');
+  font-weight: 350;
+  font-style: normal;
+  font-stretch: condensed;
+  unicode-range: U+0020-052E;
+}

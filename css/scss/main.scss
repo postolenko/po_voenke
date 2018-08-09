@@ -1,0 +1,387 @@
+@import "mixins";
+@import "functions";
+
+//-- Styles for different components
+//------------------------------------------------------
+
+.content-area {
+  border: {
+    top: $border-width solid $border-color;
+    bottom: $border-width solid $border-color;
+  }
+  padding: 20px 0 $mobile-common-pad-vertical;
+
+  + * {
+    margin-top: $mobile-common-pad-vertical;
+  }
+
+  &-nobord {
+    border-bottom: 0 none;
+  }
+
+  @include respond-to(desktop) {
+    padding-bottom: $desktop-common-space;
+
+    + * {
+      margin-top: $desktop-common-space;
+    }
+  }
+}
+
+.content-block {
+  padding-top: $top-corner-height;
+  position: relative;
+
+  @extend %top-corner;
+
+  > h2, > h3, > .h2, > .h3 {
+    margin-left: $top-corner-width;
+  }
+
+  //Responsive styles
+
+  @include respond-to(desktop) {
+    &:not(:last-child) {
+      margin-bottom: $desktop-common-space;
+    }
+  }
+
+  @include respond-to(mobile) {
+    &:not(:last-child) {
+      margin-bottom: $mobile-common-pad-vertical;
+    }
+  }
+}
+
+.content-info {
+  @extend %last-child;
+
+  + .content-info {
+    margin-top: 30px;
+  }
+}
+
+.content-block-space {
+  @include respond-to(desktop) {
+    &:not(:last-child) {
+      margin-bottom: $desktop-common-space;
+    }
+  }
+
+  @include respond-to(mobile) {
+    &:not(:last-child) {
+      margin-bottom: $mobile-common-pad-vertical;
+    }
+  }
+}
+
+//-----------------------Page title
+
+.page-title {
+  @extend %last-child;
+  margin-bottom: 20px;
+
+  > * {
+    margin-bottom: 0;
+  }
+
+  > span {
+    font-size: 26px;
+    display: inline-block;
+    line-height: 1;
+  }
+
+  @include respond-to(desktop) {
+    margin-bottom: 40px;
+
+    &-end {
+      align-items: flex-end;
+      @include flex(justify);
+
+      .link-subscribe {
+        margin-top: -10px;
+      }
+    }
+  }
+
+  @include respond-to(mobile) {
+    &-end {
+      .link-subscribe {
+        display: none;
+      }
+    }
+  }
+}
+
+//-----------------------Text blocks (descriptions)
+
+.text-block {
+  @extend %last-child;
+
+  &-center {
+    @include respond-to(desktopMd) {
+      margin: {
+        left: 20%;
+        right: 20%;
+      }
+    }
+  }
+}
+
+.text-border-block {
+  @extend .text-block;
+  border: $text-border-block-border;
+  margin-top: 10px;
+  padding: $text-border-block-pad;
+
+  > * {
+    margin-bottom: 5px;
+  }
+
+  &-nomarg {
+    margin: 0;
+  }
+
+  @include respond-to(desktop) {
+    margin-top: 40px;
+    padding: $text-border-block-pad-desktop;
+
+    &-sm {
+      margin: 0;
+      padding: 40px;
+    }
+  }
+}
+
+//-----------------------Banner
+
+.banner {
+  margin-bottom: $space-between-elements;
+
+  @include respond-to(mobile) {
+    display: none;
+  }
+}
+
+//-----------------------Mortgage block
+
+.mortgage {
+  @extend %last-child;
+
+  > * {
+    margin-bottom: 0;
+  }
+
+  &-title {
+    font-size: $mortgage-title-size;
+  }
+
+  &-text {
+    font-size: $mortgage-text-size;
+
+    > span {
+      color: $mortgage-text-span-color;
+      font: {
+        family: $mortgage-text-span-family;
+        size: $mortgage-text-span-size;
+      }
+    }
+  }
+
+  + .mortgage {
+    margin-top: 30px;
+  }
+}
+
+//Mortgage calculator
+
+.mortgage-calc {
+  @extend %last-child;
+
+  .panel-header {
+    padding-top: 30px;
+    padding-bottom: 14px;
+  }
+
+  .panel-body {
+    padding-top: 0;
+  }
+
+  .form-group {
+    margin-bottom: 15px;
+  }
+
+  .form-control {
+    @include placeholder-right();
+  }
+
+  .btn {
+    margin: 40px 0;
+  }
+
+  @include respond-to(mobile) {
+    display: none;
+  }
+}
+
+//-----------------------Map block
+
+.map {
+  height: $map-height;
+  position: relative;
+
+  &-image {
+    @extend %bg-image-center;
+    height: 100%;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: $space-between-block;
+  }
+
+  @include respond-to(desktop) {
+    &-large {
+      height: 800px;
+    }
+
+    &-md {
+      height: 600px;
+    }
+  }
+
+  @include respond-to(mobile) {
+    height: $map-height-mobile;
+  }
+}
+
+//-----------------------Video block
+
+.video {
+  height: $video-height;
+  margin-bottom: $space-between-block;
+
+  iframe {
+    @include h-w(100%, 100% !important);
+  }
+
+  @include respond-to(mobile) {
+    height: $video-height-mobile;
+  }
+}
+
+//-----------------------Building view block
+
+.building-view {
+  @extend %bg-image-center;
+  height: $height-blocks-mobile;
+  margin-bottom: 100px;
+  position: relative;
+
+  .label {
+    @include position-absolute(right, 0, top, 100%);
+
+    &:hover, &:focus {
+      color: $white;
+    }
+  }
+}
+
+//-----------------------Share border
+
+.share-border {
+  border: $border-width solid $border-color;
+  padding: 5px 10px 0;
+  width: 170px;
+}
+
+.share-friends {
+  > * {
+    @include display-inline(middle);
+  }
+}
+
+//-----------------------Likes block styles
+
+.user-likes {
+  @include flex(center);
+
+  > div + div {
+    margin-left: 10px;
+  }
+}
+
+.like {
+
+  > * {
+    @include display-inline(middle);
+
+    + * {
+      margin-left: 5px;
+    }
+  }
+}
+
+//-----------------------Row justify styles
+
+.row-justify {
+  margin-bottom: 30px;
+
+  @include respond-to(mobileSmallScreenLg) {
+    align-items: center;
+    @include flex(justify);
+
+    > p {
+      max-width: 70%;
+      margin: 0;
+    }
+  }
+}
+
+//-----------------------text gray block styles
+
+.text-block-gray {
+  background-color: $bg-common;
+  font-family: $light-italic;
+  padding: 25px 40px;
+  position: relative;
+
+  @extend %top-corner;
+  @extend %bottom-corner;
+
+  @include respond-to(desktop) {
+    margin: $desktop-common-space 18%;
+  }
+
+  @include respond-to(mobile) {
+    margin: $mobile-common-pad-vertical 0;
+  }
+}
+
+//-----------------------Banners
+
+.list-banner {
+  margin: 0 -15px;
+  text-align: center;
+
+  > li {
+    display: inline-block;
+    padding: 0 15px;
+  }
+}
+
+.banner-item {
+  background-color: $brand1;
+  @include h-w(150px, 150px);
+  margin: 20px auto;
+  padding: 20px;
+  position: relative;
+  text-align: left;
+
+  &-logo {
+    color: $white;
+  }
+
+  img {
+    max-width: calc(100% - 40px);
+  }
+}

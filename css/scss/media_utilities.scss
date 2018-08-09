@@ -1,0 +1,86 @@
+@import "mixins";
+
+//-- media Helper Classes
+//------------------------------------------------------
+
+.text-align {
+
+  @include respond-to(desktop) {
+    text-align: right;
+  }
+  @include respond-to(mobile) {
+    text-align: center;
+  }
+
+  &-lg {
+    @include respond-to(desktoplg) {
+      text-align: right;
+    }
+  }
+
+  &-md {
+    @include respond-to(desktopMd) {
+      text-align: right;
+    }
+  }
+}
+
+//Media helper classes
+
+@media (max-width: ($screen-lg - 1px)) {
+  .hidden-lg {
+    display: none !important;
+  }
+}
+
+@media (max-width: ($screen-md - 1px)) {
+  .hidden-md {
+    display: none !important;
+  }
+}
+
+@media (max-width: ($screen-sm - 1px)) {
+  .desktop {
+    display: none !important;
+  }
+}
+
+@media (max-width: ($screen-xs - 1px)) {
+  .hidden-xs {
+    display: none !important;
+  }
+}
+
+@media (max-width: ($screen-xxs - 1px)) {
+  .hidden-xxs {
+    display: none !important;
+  }
+}
+
+
+// MIN
+// --------------------------------------------------
+
+@media (min-width: $screen-lg) {
+  .screen-lg {
+    display: none;
+  }
+}
+
+@media (min-width: $screen-md) {
+  .screen-md {
+    display: none;
+  }
+}
+
+@media (min-width: $screen-sm) {
+  .mobile {
+    display: none !important;
+  }
+}
+
+@media (min-width: $screen-xs) {
+  .screen-xs {
+    display: none;
+  }
+}

@@ -1,0 +1,157 @@
+@import "mixins";
+
+//-- Header
+//------------------------------------------------------
+
+header {
+  position: relative;
+}
+
+.header-mobile-content {
+  @include flex(justify);
+}
+
+//-----------------------Logo
+
+.logo {
+  max-width: 300px;
+  position: relative;
+  z-index: 200;
+
+  > img {
+    max-width: 100%;
+  }
+
+  //Responsive Styles
+
+  @include respond-to(desktopMdMin) {
+    max-width: 200px;
+  }
+}
+
+//-----------------------Top navigation row
+
+.top-navigation-row {
+  @extend %clearfix;
+
+  padding: $top-navigation-row-pad-desktop;
+  position: relative;
+
+  &-content {
+    @include flex(center);
+    justify-content: space-between;
+    position: relative;
+  }
+}
+
+//-----------------------Contacts
+
+.contacts {
+  @extend %last-child;
+  text-align: right;
+
+  > * {
+    margin-bottom: 0;
+  }
+
+  //Responsive styles
+
+  @include respond-to(desktoplg) {
+    @include flex-component-width(260px);
+  }
+
+  @include respond-to(tabletsLg) {
+    @include flex-component-width(220px);
+  }
+
+  @include respond-to(tablets) {
+    @include flex-component-width(195px);
+  }
+
+  @include respond-to(mobile) {
+    > *{
+      &:nth-child(2),
+      &:first-child {
+        display: none;
+      }
+    }
+  }
+}
+
+.phone {
+  > span {
+    color: $brand1;
+    font-family: $semibold-light;
+    text-align: right;
+  }
+
+  a {
+    font-family: $bold-family;
+    color: $body-text-color;
+    display: inline-block;
+  }
+
+  //Responsive styles
+
+  @include respond-to(desktoplg) {
+    font-size: $size-large;
+
+    > span {
+      width: $phone-large-span-width;
+    }
+
+    a {
+      width: calc(100% - #{$phone-large-span-width});
+    }
+  }
+
+  @include respond-to(tabletsLg) {
+    > span {
+      width: $phone-medium-span-width;
+    }
+
+    a {
+      width: calc(100% - #{$phone-medium-span-width});
+    }
+  }
+
+  @include respond-to(tablets) {
+    font-size: $size-small;
+
+    > span {
+      width: $phone-small-span-width;
+    }
+
+    a {
+      width: calc(100% - #{$phone-small-span-width});
+    }
+  }
+
+  @include respond-to(desktop) {
+    @include display-flex();
+  }
+
+  @include respond-to(mobile) {
+    font-size: 16px;
+
+    > span {
+      display: none;
+    }
+
+    a {
+      margin: 0;
+    }
+  }
+}
+
+.time {
+  font-size: $size-xs;
+  text-align: right;
+
+  @include respond-to(mobile) {
+    > span {
+      display: block;
+      line-height: 1.2;
+    }
+  }
+}

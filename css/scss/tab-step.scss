@@ -1,0 +1,281 @@
+@import "mixins";
+
+//-- Steps
+//------------------------------------------------------
+
+.list-step {
+  @extend %clearfix;
+  border: 0 none;
+  margin: 10px (-$list-step-space) 0;
+
+  > li {
+    float: left;
+    min-height: $list-step-item-height;
+    padding: 0 $list-step-space;
+
+    a {
+      font-size: $list-step-item-size;
+      padding: $list-step-item-pad;
+
+      &:hover, &:focus, &:active, &.active {
+        background-color: $list-step-item-hover-bg;
+        color: $list-step-item-hover-color;
+      }
+    }
+  }
+
+  @include respond-to(mobile) {
+    flex-direction: column;
+  }
+}
+
+.item-step {
+  a {
+    display: inline-block;
+
+    &:before {
+      background: {
+        position: 0 0;
+        repeat: no-repeat;
+      }
+      content: '';
+      @include display-inline(middle);
+      margin-right: 15px;
+    }
+  }
+
+  &-title {
+    a {
+      &:before {
+        background-image: url('#{$image-path}/icon-title.png');
+        @include h-w(34px, 39px);
+      }
+      &:hover, &:focus, &:active, &.active {
+        &:before {
+          background-image: url('#{$image-path}/icon-title-active.png');
+        }
+      }
+    }
+  }
+
+  &-location {
+    a {
+      &:before {
+        background-image: url('#{$image-path}/icon-location2.png');
+        @include h-w(36px, 39px);
+      }
+      &:hover, &:focus, &:active, &.active {
+        &:before {
+          background-image: url('#{$image-path}/icon-location2-active.png');
+        }
+      }
+    }
+  }
+
+  &-flat {
+    a {
+      &:before {
+        background-image: url('#{$image-path}/icon-flat-plan.png');
+        @include h-w(34px, 34px);
+      }
+      &:hover, &:focus, &:active, &.active {
+        &:before {
+          background-image: url('#{$image-path}/icon-flat-plan-active.png');
+        }
+      }
+    }
+  }
+
+  &-discount {
+    a {
+      &:before {
+        background-image: url('#{$image-path}/icon-discount.png');
+        @include h-w(29px, 25px);
+      }
+      &:hover, &:focus, &:active, &.active {
+        &:before {
+          background-image: url('#{$image-path}/icon-discount-active.png');
+        }
+      }
+    }
+  }
+
+  &-mortgage {
+    a {
+      &:before {
+        background-image: url('#{$image-path}/icon-morgage.png');
+        @include h-w(28px, 42px);
+      }
+      &:hover, &:focus, &:active, &.active {
+        &:before {
+          background-image: url('#{$image-path}/icon-morgage-active.png');
+        }
+      }
+    }
+  }
+
+  &-diary {
+    a {
+      &:before {
+        background-image: url('#{$image-path}/icon-diary.png');
+        @include h-w(32px, 33px);
+      }
+      &:hover, &:focus, &:active, &.active {
+        &:before {
+          background-image: url('#{$image-path}/icon-diary-active.png');
+        }
+      }
+    }
+  }
+
+  &-news {
+    a {
+      &:before {
+        background-image: url('#{$image-path}/icon-news.png');
+        @include h-w(34px, 32px);
+      }
+      &:hover, &:focus, &:active, &.active {
+        &:before {
+          background-image: url('#{$image-path}/icon-news-active.png');
+        }
+      }
+    }
+  }
+
+  &-car {
+    a {
+      &:before {
+        background-image: url('#{$image-path}/icon-car.png');
+        @include h-w(30px, 38px);
+      }
+      &:hover, &:focus, &:active, &.active {
+        &:before {
+          background-image: url('#{$image-path}/icon-car-active.png');
+        }
+      }
+    }
+  }
+
+  &-gallery {
+    a {
+      &:before {
+        background-image: url('#{$image-path}/icon-photo.png');
+        @include h-w(34px, 38px);
+      }
+      &:hover, &:focus, &:active, &.active {
+        &:before {
+          background-image: url('#{$image-path}/icon-photo-active.png');
+        }
+      }
+    }
+  }
+
+  &-documents {
+    a {
+      &:before {
+        background-image: url('#{$image-path}/icon-document.png');
+        @include h-w(34px, 30px);
+      }
+      &:hover, &:focus, &:active, &.active {
+        &:before {
+          background-image: url('#{$image-path}/icon-document-active.png');
+        }
+      }
+    }
+  }
+
+  &-aero {
+    a {
+      &:before {
+        background-image: url('#{$image-path}/icon-aero.png');
+        @include h-w(39px, 39px);
+      }
+      &:hover, &:focus, &:active, &.active {
+        &:before {
+          background-image: url('#{$image-path}/icon-aero-active.png');
+        }
+      }
+    }
+  }
+
+  &-web-camera {
+    a {
+      &:before {
+        background-image: url('#{$image-path}/icon-web-camera.png');
+        @include h-w(30px, 31px);
+      }
+      &:hover, &:focus, &:active, &.active {
+        &:before {
+          background-image: url('#{$image-path}/icon-web-camera-active.png');
+        }
+      }
+    }
+  }
+
+  &-view {
+    a {
+      &:before {
+        background-image: url('#{$image-path}/icon-view.png');
+        @include h-w(23px, 38px);
+      }
+      &:hover, &:focus, &:active, &.active {
+        &:before {
+          background-image: url('#{$image-path}/icon-view-active.png');
+        }
+      }
+    }
+  }
+
+  &-genplan {
+    a {
+      &:before {
+        background-image: url('#{$image-path}/icon-genplan.png');
+        @include h-w(31px, 33px);
+      }
+      &:hover, &:focus, &:active, &.active {
+        &:before {
+          background-image: url('#{$image-path}/icon-genplan-active.png');
+        }
+      }
+    }
+  }
+
+  &-review {
+    a {
+      &:before {
+        background-image: url('#{$image-path}/icon-review.png');
+        @include h-w(32px, 39px);
+      }
+      &:hover, &:focus, &:active, &.active {
+        &:before {
+          background-image: url('#{$image-path}/icon-review-active.png');
+        }
+      }
+    }
+  }
+
+  &-repair {
+    a {
+      &:before {
+        background-image: url('#{$image-path}/icon-repair.png');
+        @include h-w(34px, 30px);
+      }
+      &:hover, &:focus, &:active, &.active {
+        &:before {
+          background-image: url('#{$image-path}/icon-repair-active.png');
+        }
+      }
+    }
+  }
+}
+
+//Tab content
+
+.tab-content {
+  @include respond-to(desktop) {
+    padding-top: $desktop-common-space - 20px;
+  }
+  @include respond-to(mobile) {
+    padding-top: $mobile-common-pad-vertical;
+  }
+}

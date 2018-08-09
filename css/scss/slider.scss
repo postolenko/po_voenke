@@ -1,0 +1,356 @@
+@import "mixins";
+@import "functions";
+
+//-- Slider
+//------------------------------------------------------
+
+.section-slider {
+
+  .carousel {
+
+    &-item {
+      @extend %bg-image-center;
+      height: $slider-height;
+    }
+  }
+
+  //Styles for discount slider
+
+  .carousel-slider-discount {
+
+    .carousel-item {
+      @include box-shadow(1px 0px 11px 0px rgba(0,0,0,0.75));
+      margin: 12px 0;
+    }
+
+    .owl-dots {
+      bottom: 0;
+      margin-top: 15px;
+      position: relative;
+      text-align: center;
+    }
+
+    .owl-prev, .owl-next {
+      background: {
+        color: $white;
+      }
+      @include h-w(100%, 70px);
+    }
+
+    .owl-prev {
+      @include box-shadow(4px -1px 7px -6px rgba(0,0,0,0.75));
+      border-top-right-radius: 50%;
+      border-bottom-right-radius: 50%;
+      left: 0;
+
+      &:before {
+        background: url('#{$image-path}/arrow-gray.png') 0 0 no-repeat;
+        content: '';
+        @include h-w(78px, 30px);
+        @include position-absolute(left, 50%, top, 50%);
+        @include transform-center(-50%, -50%);
+      }
+    }
+
+    .owl-next {
+      @include box-shadow(-4px 1px 7px -6px rgba(0,0,0,0.75));
+      border-top-left-radius: 50%;
+      border-bottom-left-radius: 50%;
+      right: 0;
+
+      &:before {
+        background: url('#{$image-path}/arrow-gray-r.png') 0 0 no-repeat;
+        content: '';
+        @include h-w(78px, 30px);
+        @include position-absolute(left, 50%, top, 50%);
+        @include transform-center(-50%, -50%);
+      }
+    }
+
+    //Responsive styles for Carousel discount
+
+    @include respond-to(desktoplg) {
+      .carousel-caption {
+        top: 50%;
+        height: 100%;
+        @include transform-center(0, -50%);
+        left: 150px;
+      }
+    }
+
+    @include respond-to(desktop) {
+      .owl-dots {
+        display: none;
+      }
+    }
+
+    @include respond-to(mobile) {
+      .carousel-item {
+        background: none !important;
+        box-shadow: none;
+        height: auto;
+      }
+    }
+  }
+
+  //Styles for inside sliders
+
+  .carousel-slider-inside {
+
+    .owl-prev {
+      background-image: url("#{$image-path}/arrow-gray.png");
+    }
+
+    .owl-next {
+      background-image: url("#{$image-path}/arrow-gray-r.png");
+    }
+
+    .owl-dots {
+      bottom: -20px;
+      position: relative;
+      text-align: center;
+
+      .owl-dot {
+
+        span {
+          background-color: $dot-item-gray;
+          border-color: $dot-item-gray;
+        }
+
+        &.active {
+          span {
+            background-color: $dot-item-size-active-bg;
+            border-color: $dot-item-gray;
+          }
+        }
+      }
+    }
+
+    @include respond-to(desktop) {
+      padding: 0 60px;
+    }
+  }
+
+  //Sliders captions
+
+  .carousel-caption {
+    left: 50%;
+    padding: 0 $mobile-common-pad-horizontal;
+    text-align: left;
+    @include transform-center(-50%, 0);
+    width: site-width($site-width);
+
+
+    &-content {
+      background-color: rgba(221, 58, 56, 0.9);
+      @include flex(center);
+      padding: 25px;
+      @include position-absolute(left, 15px, bottom, 50px);
+
+      > * {
+        + * {
+          margin-left: 15px;
+        }
+      }
+
+      &-discount {
+        background-color: rgba(0, 0, 0, 0.8);
+        padding: 20px 40px;
+        @extend %last-child;
+        min-width: 400px;
+
+        > * {
+          margin-bottom: 10px;
+
+          &:not(:first-child) {
+            color: $brand2;
+          }
+
+          &:first-child {
+            color: $white;
+          }
+        }
+
+        @include respond-to(desktoplg) {
+          @include position-absolute(left, calc(100% - 20px), top, -25px);
+        }
+
+        @include respond-to(desktoplgMin) {
+          @include position-absolute(left, 30px, bottom, 25px);
+        }
+
+        @include respond-to(mobile) {
+          bottom: inherit;
+          @include position-absolute(left, 10px, top, 50%);
+          @include transform-center(0, -50%);
+          min-width: calc(100% - 20px);
+        }
+      }
+    }
+
+    &-discount {
+      .carousel-caption-content {
+        background: transparent;
+
+        @include respond-to(desktoplg) {
+          border: 14px solid $brand2;
+          height: calc(100% - 40px);
+          top: 50%;
+          bottom: inherit;
+          @include transform-center(0, -50%);
+          width: 420px;
+        }
+
+        @include respond-to(mobile) {
+          left: 0;
+          padding: 0;
+          position: relative;
+          top: 0;
+          transform: none;
+          width: auto;
+
+          .carousel-caption-content-discount {
+            background: none;
+            left: 0;
+            padding: 0;
+            position: relative;
+            top: 0;
+            transform: none;
+
+            > * {
+              color: $body-text-color;
+            }
+          }
+        }
+      }
+      @include respond-to(mobile) {
+        left: 0;
+        margin-top: 15px;
+        position: relative;
+        transform: none;
+        top: 0;
+      }
+    }
+
+    //Responsive styles
+
+    @include respond-to(desktopXlgMin) {
+      width: 100%;
+
+      &-content {
+        left: 60px;
+      }
+    }
+
+    @include respond-to(mobile) {
+
+      &-content {
+        left: 50%;
+        @include transform-center(-50%, 0);
+        padding: 15px;
+        flex-direction: column;
+        width: calc(100% - (#{$mobile-common-pad-horizontal} * 4));
+
+        > * {
+          + * {
+            margin-left: 0;
+            margin-top: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+
+//-----------------------Slider caption description parts
+
+.caption-title {
+  @extend %last-child;
+
+  > * {
+    color: $caption-title-color;
+    font-size: $caption-title-size;
+    line-height: 1;
+    margin-bottom: 10px;
+  }
+
+  h3, .h3 {
+    font: {
+      family: $caption-title-family-large;
+      size: $caption-title-size-large;
+    }
+  }
+
+  //Responsive styles
+
+  @include respond-to(mobile) {
+
+    > * {
+      font-size: $caption-title-size-mobile;
+    }
+
+    h3, .h3 {
+      font-size: $caption-title-size-large-mobile;
+    }
+  }
+}
+
+//-----------------------Slider Arrows
+
+.owl-nav {
+
+  .owl-prev, .owl-next {
+    background: {
+      position: 0 0;
+      repeat: no-repeat;
+    }
+    font-size: 0;
+    @include h-w(78px, 30px);
+    position: absolute;
+    top: 50%;
+    @include transform-center(0, -50%);
+  }
+
+  .owl-prev {
+    background-image: url("#{$image-path}/arrow-slider-left.png");
+    left: 15px;
+  }
+
+  .owl-next {
+    background-image: url("#{$image-path}/arrow-slider-right.png");
+    right: 15px;
+  }
+
+  @include respond-to(mobile) {
+    display: none;
+  }
+}
+
+
+.owl-dots {
+  @include position-absolute(left, 50%, bottom, 30px);
+  @include transform-center(-50%, 0);
+  z-index: 500;
+
+  .owl-dot {
+    display: inline-block;
+
+    span {
+      background-color: $dot-item-bg;
+      border: $dot-item-border;
+      cursor: pointer;
+      @include h-w($dot-item-size, $dot-item-size);
+      @include display-inline(middle);
+    }
+
+    + .owl-dot {
+      margin-left: 15px;
+    }
+
+    &.active {
+      span {
+        background-color: $dot-item-size-active-bg;
+      }
+    }
+  }
+}

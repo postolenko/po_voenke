@@ -1,0 +1,152 @@
+@import "mixins";
+@import "functions";
+
+//-- Filters
+//------------------------------------------------------
+
+.filters {
+  background-color: $filters-bg;
+  border: $border-width solid $brand1;
+  margin-bottom: $space-between-elements;
+  padding: $filters-pad;
+
+  .panel {
+    margin: 0;
+
+    + * {
+      margin-top: $space-between-elements;
+    }
+  }
+
+  //Responsive styles
+
+  @include respond-to(desktoplg) {
+    form > .row {
+      height: 355px;
+
+      > * {
+        align-items: stretch;
+
+        .panel {
+          height: 100%;
+        }
+
+        &:last-child {
+          .panel {
+            height: calc(100% - 70px);
+          }
+        }
+      }
+    }
+
+    &-secondary {
+      form > .row {
+        height: 335px;
+      }
+    }
+  }
+
+  @include respond-to(desktoplgMin) {
+    .btn.btn-block {
+      margin-top: 30px;
+    }
+  }
+
+  //For mobile filters
+
+  .navbar-toggler {
+    color: $white;
+    margin: 0 auto;
+    padding: 0;
+    text: {
+      align: center;
+      transform: uppercase;
+    }
+
+    @include respond-to(desktopMd) {
+      display: none;
+    }
+
+    @include respond-to(desktopMdMin) {
+      display: block;
+    }
+  }
+
+  .collapse {
+    @include respond-to(desktopMd) {
+      display: block;
+    }
+
+    @include respond-to(desktopMdMin) {
+      margin-top: 15px;
+    }
+  }
+}
+
+.form-filters {
+
+  @include respond-to(desktoplg) {
+
+    > .row {
+      margin: 0 (-$filter-pad-value);
+
+      > * {
+        padding: 0 $filter-pad-value;
+
+        + * {
+          border-left: 1px solid $brand1;
+        }
+
+        .btn-info {
+          @include position-absolute(left, $filter-pad-value, bottom , 0);
+          width: calc(100% - (#{$filter-pad-value} * 2));
+        }
+
+        &:first-child, &:nth-child(2n) {
+
+          .content-info:last-child {
+            @include position-absolute(left, $filter-pad-value, bottom , 0);
+            width: calc(100% - (#{$filter-pad-value} * 2));
+          }
+        }
+
+        &:nth-child(2n) {
+          .content-info {
+            &:last-child {
+              bottom: -3px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//Filter price plugin styles
+
+.filter-price-slider {
+  background-color: $input-border-color;
+  border: 0 none;
+  height: $border-width;
+  margin: 20px 0;
+
+  .ui-widget-header {
+    background: none;
+  }
+
+  &.ui-slider-horizontal .ui-slider-handle {
+    background: $brand2;
+    border: 0 none;
+    border-radius: 0;
+    cursor: pointer;
+    margin-left: 0;
+    top: 50%;
+    @include transform-center(0, -50%);
+    z-index: 600;
+
+    &:last-child {
+      display: none;
+      left: 100% !important;
+    }
+  }
+}

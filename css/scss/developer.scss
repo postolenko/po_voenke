@@ -1,0 +1,108 @@
+@import "mixins";
+@import "functions";
+
+//-- Developer
+//------------------------------------------------------
+
+.developer {
+
+  &-title {
+    @include display-flex();
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+
+    > * + * {
+      margin-left: 12px;
+    }
+  }
+
+  .icon {
+    width: 50px;
+  }
+
+  .h6 {
+    font-size: 18px;
+    margin-bottom: 0;
+    width: calc(100% - 62px);
+  }
+
+  &-text {
+    color: #777;
+    font: {
+      family: $light-italic;
+      size: $size-small;
+    }
+  }
+
+  @include respond-to(mobileSmallScreen) {
+    .link-btn {
+      width: 100%;
+    }
+  }
+}
+
+//Detail developer block
+
+.developer-detail {
+  border-top: $border-width solid $border-color;
+  padding: 60px 0 30px;
+
+  &-content {
+    @include display-flex();
+    flex-wrap: wrap;
+
+    .icon {
+      width: 80px;
+    }
+  }
+
+  &-text {
+    margin-left: 30px;
+    width: calc(100% - 80px - 40px);
+
+    @extend %last-child;
+  }
+
+  &-user-status {
+    font-size: $size-small;
+    font-family: $font-family-secondary;
+  }
+
+  &-form {
+    @extend %last-child;
+
+    > *:not(.phone-simple) {
+      margin-bottom: 5px;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+  }
+
+  //Responsive styles
+
+  @include respond-to(desktopMd) {
+    &-content {
+      padding-right: 30px;
+    }
+    &-form {
+      padding-left: 30px;
+    }
+  }
+
+  @include respond-to(mobile) {
+    padding-top: 30px;
+
+    &-content {
+      .icon {
+        display: none;
+      }
+    }
+
+    &-text {
+      margin-left: 0;
+      width: 100%;
+    }
+  }
+}

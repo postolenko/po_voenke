@@ -1,0 +1,38 @@
+@import "mixins";
+@import "functions";
+
+//-- Partner styles
+//------------------------------------------------------
+
+.partner {
+
+  &-logo {
+    margin-bottom: 30px;
+  }
+
+  &-text {
+    color: #777;
+    font-family: $light-italic;
+    font-size: $size-small;
+    @extend %last-child;
+
+    > p > span {
+      font-family: $semibold-italic;
+    }
+  }
+
+  //Responsive
+
+  @include respond-to(desktopMd) {
+    padding: 0 10px;
+  }
+}
+
+.row-col-bord {
+  margin: 0 -15px;
+
+  > * {
+    margin-bottom: 35px;
+    padding: 0 15px;
+  }
+}

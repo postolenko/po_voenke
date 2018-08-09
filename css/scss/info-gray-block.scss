@@ -1,0 +1,112 @@
+@import "mixins";
+@import "functions";
+
+//-- Info gray block styles
+//------------------------------------------------------
+
+.gray-info-block {
+  background-color: $bg-common;
+  @include flex(center);
+  margin-bottom: $space-between-elements;
+
+  &-text {
+    @extend %last-child;
+
+    > p {
+      margin: 0;
+      line-height: 1.1;
+
+      > * {
+
+        + * {
+          margin-left: 10px;
+        }
+
+        &:not(.gray-info-block-title) {
+          font-style: italic;
+        }
+      }
+
+      &:not(.gray-info-block-title) {
+        font-style: italic;
+      }
+    }
+  }
+
+  &-title {
+    color: $gray-info-block-title-color;
+    font: {
+      family: $gray-info-block-title-family;
+      size: $gray-info-block-title-size;
+    }
+    text-transform: uppercase;
+
+    > span {
+      font-style: normal !important;
+      text-transform: none;
+    }
+  }
+
+  &-transparent {
+    background-color: transparent;
+    margin-bottom: 0;
+  }
+
+  //Responsive styles
+
+  @include respond-to(mobile) {
+    &-transparent {
+      .gray-info-block-text {
+        > p {
+
+          > span {
+            display: block;
+            margin-left: 0;
+          }
+
+          + p {
+            margin-top: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  @include respond-to(mobileSmallScreenLg) {
+    min-height: $gray-info-block-height;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    > *:not(:last-child) {
+      margin-right: 20px;
+    }
+
+    &-transparent {
+      min-height: 160px;
+    }
+  }
+
+  @include respond-to(mobileSmallScreen) {
+    padding: $gray-info-block-pad-mobile;
+
+    &-icon {
+
+      .icon {
+        background-size: 80% 100%;
+        @include h-w(67px, 80px);
+      }
+    }
+
+    &-title {
+      font-size: $gray-info-block-title-size-mobile;
+    }
+
+    &-text {
+      > p {
+        &:not(.gray-info-block-title) {
+          font-size: $size-default;
+        }
+      }
+    }
+  }
+}

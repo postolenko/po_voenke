@@ -1,0 +1,22 @@
+@import "mixins";
+@import "functions";
+
+//-- Download styles
+//------------------------------------------------------
+
+.download {
+  background-color: $download-bg;
+  padding: $download-desktop-pad;
+  text-align: center;
+
+  //Responsive styles
+
+  @include respond-to(desktopMd) {
+    margin: 0 auto;
+    width: $download-width-large-screen;
+  }
+
+  @include respond-to(mobile) {
+    padding: $download-mobile-pad;
+  }
+}

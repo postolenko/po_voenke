@@ -1,0 +1,139 @@
+@import "mixins";
+
+//-- Form Elements
+//------------------------------------------------------
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+label {
+  color: $label-color;
+  font: {
+    size: $label-size;
+  }
+  margin-bottom: 2px;
+
+  &.label-white {
+    color: $white;
+  }
+}
+
+.form-control {
+  background-color: $input-bg;
+  border: {
+    color: $input-border-color;
+    style: solid;
+    width: 1px;
+  }
+  @include radius($input-border-radius);
+  box-shadow: none;
+  color: $input-color;
+  height: $input-height;
+  @include placeholder($placeholder-color);
+  outline: none;
+
+  &:focus, &.focus {
+    border-color: $input-border-color;
+    box-shadow: none;
+    outline: none;
+  }
+
+  &-white {
+    border-color: $white;
+    border-width: $border-width;
+    color: $white;
+    @include placeholder($white);
+
+    &:focus, &.focus {
+      border-color: $white;
+    }
+  }
+
+  &-white-bg {
+    background-color: $white;
+    border-color: $white;
+    color: $brand1;
+    font-family: $bold-family;
+    @include placeholder($brand1);
+
+    &:focus, &.focus {
+      border-color: $white;
+    }
+  }
+
+  &-orange {
+    border-color: $brand2;
+  }
+}
+
+textarea.form-control {
+  height: auto;
+  resize: none;
+}
+
+//-----------------------------------Custom radio
+
+.custom-radio {
+  margin: 3px 0;
+  position: relative;
+
+  input {
+    @include opacity(0);
+    @include position-absolute(left, 0, top, 0);
+    @include h-w(100%, 100%);
+    z-index: 200;
+
+    + span {
+      border: $custom-radio-border;
+      cursor: pointer;
+      display: block;
+      padding: $custom-radio-pad;
+      text-align: center;
+    }
+
+    &:checked {
+      + span {
+        background-color: $custom-radio-active-bg;
+        border-color: $custom-radio-active-bg;
+        color: $custom-radio-active-color;
+      }
+    }
+  }
+}
+
+//-----------------------------------Checkbox
+
+.form-check {
+
+  &-label {
+    cursor: pointer;
+    font-family: $body-text-family;
+    padding: 0;
+
+    input {
+      display: none;
+
+      + span {
+        display: inline-block;
+        font-size: $checkbox-font-size;
+        line-height: 1.2;
+        padding-left: $checkbox-size + 10px;
+        position: relative;
+
+        &:before {
+          border: $checkbox-border;
+          content: "";
+          @include h-w($checkbox-size, $checkbox-size);
+          @include position-absolute(left, 0, top, 2px);
+        }
+      }
+
+      &:checked {
+        + span:before {
+          background-color: $checkbox-active-bg;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,135 @@
+@import "mixins";
+
+//-- Lists
+//------------------------------------------------------
+
+.list {
+
+  > li {
+
+    a {
+      display: inline-block;
+    }
+
+    + li {
+      margin-top: $space-between-list-item;
+    }
+  }
+
+  &-inline {
+
+    > li {
+      display: inline-block;
+
+      a {
+        padding: $list-inline-link-pad;
+      }
+
+      + li {
+        margin-top: 0;
+      }
+    }
+  }
+
+  &-bullet {
+    > li {
+      padding-left: 22px;
+      position: relative;
+
+      &:before {
+        background-color: $body-text-color;
+        @include radius(50%);
+        content: '';
+        @include h-w(10px, 10px);
+        @include position-absolute(left, 0, top, 6px);
+      }
+    }
+
+    &-square {
+      > li {
+        &:before {
+          background-color: $brand2;
+          border-radius: 0;
+          @include h-w(6px, 6px);
+        }
+      }
+    }
+  }
+
+  //Top navigation list
+
+  &-top {
+    margin-top: 17px;
+    padding: 0 10px;
+    text-align: center;
+
+    > li {
+
+      a {
+        border-bottom: $list-top-link-border;
+        color: $list-top-link-color;
+        font: {
+          size: $list-top-link-size;
+          family: $list-top-link-family;
+        }
+        padding: $list-top-link-pad;
+
+        &:hover, &:focus, &.active {
+          border-color: $list-top-link-hover-border-color;
+        }
+      }
+
+      + li {
+        margin-left: 30px;
+      }
+    }
+
+    @include respond-to(desktoplgMin) {
+      > li a {
+        font-size: $list-top-link-size-small-screen;
+      }
+    }
+
+    @include respond-to(mobile) {
+      display: none;
+    }
+  }
+}
+
+//-----------------------List Share
+
+.list-share {
+  margin-bottom: $space-between-elements;
+
+  > li {
+    @include display-inline(middle);
+
+    + li {
+      margin-left: 15px;
+    }
+  }
+
+  &-color {
+    margin: 0;
+
+    .icon-share {
+      background: url('#{$image-path}/social-color.png') no-repeat;
+
+      &-vk {
+        background-position: 0 -10px;
+      }
+
+      &-fb {
+        background-position: -40px 0;
+      }
+
+      &-tw {
+        background-position: -70px -6px;
+      }
+
+      &-od {
+        background-position: -107px -3px;
+      }
+    }
+  }
+}

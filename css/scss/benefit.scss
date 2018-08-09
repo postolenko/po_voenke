@@ -1,0 +1,29 @@
+@import "mixins";
+@import "functions";
+
+//-- Benefit styles
+//------------------------------------------------------
+
+.benefit {
+  padding: $benefit-vertical-pad-value 0;
+
+  &-icon {
+    height: $benefit-icon-height;
+    line-height: $benefit-icon-height;
+    margin-bottom: 12px;
+    text-align: center;
+  }
+
+  &-text {
+    * {
+      color: $black;
+    }
+  }
+
+  @include respond-to(desktop) {
+    padding: {
+      left: $benefit-horizontal-pad-value;
+      right: $benefit-horizontal-pad-value;
+    }
+  }
+}

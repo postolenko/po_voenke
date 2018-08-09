@@ -1,0 +1,149 @@
+@import "mixins";
+@import "variables";
+
+//-- Functions
+//------------------------------------------------------
+
+%clearfix {
+  @include clearfix();
+}
+
+%bg-image-center {
+  background: {
+    size: cover;
+    position: center center;
+    repeat: no-repeat;
+  }
+}
+
+%bg-image-100 {
+  background: {
+    size: 100% 100%;
+    position: 0 0;
+    repeat: no-repeat;
+  }
+}
+
+%last-child {
+  > * {
+    @include last-child();
+  }
+}
+
+%transition {
+  @include transition(all, 0.2s, linear);
+}
+
+%circle {
+  border: $border-width $border-style $border-color;
+  @include radius(50%);
+}
+
+%image-bg {
+  @extend %bg-image-center;
+  @include radius($border-radius);
+}
+
+%price-block {
+  border: {
+    bottom: $price-block-border-width solid $white;
+    left: $price-block-border-width solid $white;
+  }
+  padding: 10px;
+  position: relative;
+
+  > * {
+    color: $white;
+    display: block;
+    line-height: 1;
+
+    &:first-child {
+      margin-bottom: -10px;
+    }
+
+    &:last-child {
+      text-align: right;
+    }
+  }
+
+  &:before, &:after {
+    background-color: $white;
+    content: '';
+  }
+
+  &:before {
+    @include position-absolute(left, -$price-block-border-width, top, 0);
+    @include h-w($price-block-border-width, 80%);
+  }
+
+  &:after {
+    @include position-absolute(right, 0, bottom, 0);
+    @include h-w(80%, $price-block-border-width);
+  }
+}
+
+%top-corner {
+  &:before {
+    background: url("#{$image-path}/corner-top.png") 0 0 no-repeat;
+    content: '';
+    @include h-w($top-corner-height, $top-corner-width);
+    @include position-absolute(left, 0, top, 0);
+  }
+}
+
+%bottom-corner {
+  &:after {
+    background: url("#{$image-path}/corner-top.png") 0 0 no-repeat;
+    content: '';
+    @include h-w($top-corner-height, $top-corner-width);
+    @include position-absolute(right, 0, bottom, 0);
+    transform: rotate(180deg);
+  }
+}
+
+%line-title {
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+
+  &:before, &:after {
+    background-color: $border-color;
+    bottom: 0;
+    content: '';
+    margin: auto;
+    position: absolute;
+    top: 0;
+    @include h-w(3px, 100%);
+  }
+
+  &:before {
+    margin-left: -100%;
+  }
+
+  &:after {
+    margin-right: -100%;
+  }
+
+  > span {
+    color: $brand1;
+    display: inline-block;
+    padding: 0 10px;
+    text-transform: uppercase;
+  }
+}
+
+//Icons different size functions
+
+%icon-size20 {
+  @include h-w(20px, 20px);
+}
+
+//Functions
+
+@function element-position($number) {
+  @return $number / 2;
+}
+
+@function site-width($site-width) {
+  @return $site-width + ($mobile-common-pad-horizontal * 2);
+}

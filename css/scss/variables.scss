@@ -1,0 +1,516 @@
+$font-path:                   "../../fonts";
+$image-path:                  "../../images";
+
+//Colors
+
+$gray-base:                                     #4F4F4F;
+
+$black:                                         #000;
+$gray-dark:                                     #333;
+$gray:                                          $gray-base;
+$gray-light:                                    #f1f1f1;  //bg
+$white:                                         #fff;
+
+$brand1:                                        #2d3a67; //green
+$brand2:                                        #edb544; //yellow
+$brand3:                                        #f14741; //red
+$brand4:                                        #e2f200; //yellow
+$brand5:                                        #009440; //green
+$brand6:                                        #2590ff; //blue
+
+//-----------------------Type
+
+$body-bg:                                       #f3f3f3;
+$body-text-color:                               $black;
+$body-text-family:                              'Fira Sans Condensed Light', sans-serif;
+$body-line-height:                              1.4;
+
+$size-default:                                  16px;
+$size-xlarge:                                   ceil(($size-default * 1.31)); // ~21px
+$size-large:                                    ceil(($size-default * 1.12)); // ~18px
+$size-small:                                    ceil(($size-default * 0.87)); // ~14px
+$size-xs:                                       ceil(($size-default * 0.75)); // ~12px
+$size-xxs:                                      ceil(($size-default * 0.6)); // ~10px
+
+$mobile-body-size:                              18px;
+
+$link-color:                                    $brand3;
+$link-hover-color:                              $brand3;
+
+$font-family-secondary:                        'Fira Sans Compressed Light', sans-serif;
+$bold-family:                                  'Fira Sans Condensed', sans-serif;
+$semibold-light:                               'Fira Sans Condensed SemiBold', sans-serif;
+$semibold-italic:                              'Fira Sans Condensed SemiBoldItalic', sans-serif;
+$light-italic:                                 'Fira Sans Condensed LightItalic', sans-serif;
+$regular-family:                               'Fira Sans Condensed Book', sans-serif;
+
+//Heading
+
+$heading-color:                                 $body-text-color;
+$heading-color-sub-titles:											$brand1;
+$heading-family:                                $bold-family;
+$heading-secondary-family:                      'nerissemibold', sans-serif;
+$heading-line-height:                           1.2;
+
+$h1-font-size:                                  ceil(($size-default * 4)); //65px
+$h2-font-size:                                  ceil(($size-default * 3)); //48px
+$h3-font-size:                                  ceil(($size-default * 2)); //32px
+$h4-font-size:                                  ceil(($size-default * 1.5)); //24px
+$h5-font-size:                                  ceil(($size-default * 1.3));  // 21px
+$h6-font-size:                                  $size-default; //16px
+
+$h1-h2-mobile-size:                             38px;
+$h3-mobile-size:                                26px;
+
+//Spaces
+
+$space-between-elements:                        20px;
+$space-between-text:                            30px;
+$space-between-list-item:                       10px;
+$space-from-image-to-text:                      30px;
+
+$space-between-block:                           30px;
+
+$bg-common:                                     $gray-light;
+$border-width:                                  2px;
+$border-style:                                  solid;
+$border-color:                                  #E8E8E8;
+$border-radius:                                 8px;
+$border-secondary-radius:                       20px;
+$opacity-main:                                  0.5;
+
+//Grid
+
+$grid-col:                                      12;
+$grid-marg:                                     30px;
+$grid-marg-sm:                                  3px;
+
+$main-grid-marg:                                10px;
+$main-grid-side-width:                          262px;
+
+//-----------------------Media
+
+$media-min:                                     min-width;
+$media-max:                                     max-width;
+$screen-xlg:                                    1450px;
+$screen-lg:                                     1200px;
+$screen-md:                                     992px;
+$screen-sm:                                     768px;
+$screen-xs:                                     568px;
+$screen-xxs:                                    380px;
+
+$screen-xlg-min:                                $screen-xlg;
+
+$screen-lg-max:                                 ($screen-xlg - 1px);
+$screen-lg-min:                                 $screen-lg;
+
+$screen-md-max:                                 ($screen-lg - 1px);
+$screen-md-min:                                 $screen-md;
+
+$screen-sm-max:                                 ($screen-md - 1px);
+$screen-sm-min:                                 $screen-sm;
+
+$screen-xs-max:                                 ($screen-sm - 1px);
+$screen-xs-min:                                 $screen-xs;
+
+$screen-xxs-max:                                ($screen-xs - 1px);
+$screen-xxs-min:                                $screen-xxs;
+
+//-----------------------Buttons
+
+$btn-color:                                     $body-text-color;
+$btn-radius:                                    100px;
+$btn-size:                                      $size-large;
+$btn-family:                                    $bold-family;
+$btn-padding-v:                                 14px;
+$btn-padding-h:                                 18px;
+$btn-pad:                                       $btn-padding-v $btn-padding-h;
+
+$btn-disabled-opacity:                          0.5;
+$btn-rectangle-radius:                          0;
+
+$btn-color-bg:                                  $white;
+$btn-color-border-color:                        transparent;
+
+$btn-small-size:                                $size-xxs;
+$btn-small-padding-v:                           11px;
+$btn-small-padding-h:                           25px;
+
+$btn-large-size:                                18px;
+$btn-large-padding-v:                           34px;
+$btn-large-padding-h:                           40px;
+
+$btn-secondary-bg:                              $brand2;
+$btn-secondary-color:                           $white;
+$btn-secondary-bg-hover:                        $btn-secondary-bg;
+$btn-secondary-color-hover:                     $btn-secondary-color;
+
+$btn-info-bg:                                   $brand1;
+$btn-info-border:                               $border-width solid $brand1;
+$btn-info-color:                                $white;
+$btn-info-bg-hover:                             $btn-info-bg;
+$btn-info-color-hover:                          $btn-info-color;
+
+
+//Mobile Button
+
+$btn-toggle-bg:                                 $brand1;
+$btn-toggle-radius:                             4px;
+$btn-toggle-height:                             30px;
+$btn-toggle-width:                              40px;
+
+//-----------------------Forms
+
+$label-color:                                   #777;
+$label-size:                                    $size-default;
+
+$input-bg:                                      transparent;
+$input-border-color:                            #808080;
+$input-border-radius:                           0;
+$input-color:                                   $body-text-color;
+$input-height:                                  38px;
+$placeholder-color:                             $input-color;
+
+$checkbox-size:                                 15px;
+$checkbox-font-size:                            $size-default;
+$checkbox-border:                               $border-width solid $input-border-color;
+$checkbox-active-bg:                            $brand2;
+
+$custom-radio-border:                           $border-width solid $input-border-color;
+$custom-radio-color:                            $white;
+$custom-radio-pad:                              5px 3px;
+$custom-radio-active-bg:                        $brand2;
+$custom-radio-active-color:                     $black;
+
+//-----------------------Label class
+
+$label-class-family:                            $bold-family;
+$label-class-size:                              26px;
+$label-class-pad:                               12px 15px;
+$label-class-size-mobile:                       20px;
+$label-class-pad-value-mobile:                  8px;
+
+//-----------------------Carousel
+
+$carousel-item-height:                          240px;
+
+$carousel-arrow-border:                         12px;
+$carousel-arrow-border-inside:                  3px;
+$carousel-arrow-color:                          $brand1;
+$carousel-arrow-color-inside:                   $white;
+
+//-----------------------Slider
+
+$slider-height:                                 400px;
+$slider-height-mobile:                          300px;
+
+$dot-item-bg:                                   $white;
+$dot-item-size:                                 15px;
+$dot-item-border:                               3px solid $white;
+$dot-item-size-active-bg:                       $brand2;
+$dot-item-gray:                                 #e6e6e6;
+
+$caption-title-color:                           $white;
+$caption-title-size:                            $size-xlarge;
+$caption-title-size-large:                      44px;
+$caption-title-family-large:                    $bold-family;
+$caption-title-size-mobile:                     17px;
+$caption-title-size-large-mobile:               22px;
+
+//-----------------------Container
+
+$desktop-common-space:                          60px;
+$mobile-common-pad-horizontal:                  15px;
+$mobile-common-pad-vertical:                    30px;
+
+$site-width:                                    1530px;
+$site-pad:                                      0 $mobile-common-pad-horizontal;
+
+//-----------------------Header
+
+$header-bg:                                     $white;
+$header-radius:                                 $border-secondary-radius;
+$header-pad-vertical-value:                     20px;
+$header-pad:                                    $header-pad-vertical-value 15px;
+$header-height:                                 100px;
+$header-height-mobile:                          70px;
+$header-top-space:                              40px;
+
+$logo-height:                                   149px;
+$logo-width:                                    320px;
+$logo-height-mobile:                            $logo-height / 2;
+$logo-width-mobile:                             $logo-width / 2;
+
+$top-navigation-row-pad-desktop:                20px 0;
+$top-navigation-row-pad-mobile:                 10px 0;
+
+$phone-marge-space: 														15px;
+$phone-large-span-width: 												120px;
+$phone-medium-span-width: 											100px;
+$phone-small-span-width: 												80px;
+
+//-----------------------Navbar
+
+$navbar-bg:                                     $brand1;
+$navbar-desktop-height:                         60px;
+$navbar-mobile-height:                          $navbar-desktop-height / 2;
+
+$nav-link-color:                                $white;
+$nav-link-size:                                 $size-default;
+$nav-link-pad:                                  0 10px;
+$nav-link-hover-color:													$brand2;
+$nav-link-medium-size:													15px;
+$nav-link-tablets-size:													13px;
+$nav-link-mobile-size:													20px;
+$nav-link-mobile-pad:														8px 0;
+
+$navbar-toggler-size:                           $size-large;
+
+//-----------------------Dropdown
+
+$dropdown-bg:                                   $white;
+$dropdown-btn-family:                           $body-text-family;
+$dropdown-btn-size:                             $size-default;
+$dropdown-btn-pad-value:                        8px;
+$dropdown-btn-pad:                              0 $dropdown-btn-pad-value;
+
+$dropdown-item-size:                            15px;
+$dropdown-item-pad:                             5px;
+$dropdown-item-hover-bg:                        transparent;
+$dropdown-item-hover-color:                     $brand3;
+
+//-----------------------Pagination
+
+$page-link-border-color:                        $brand1;
+$page-link-border-width:                        3px;
+$page-link-size:                                40px;
+$page-link-font-size:                           $size-large;
+$page-link-color:                               $black;
+$page-link-arrow-size:                          26px;
+
+//-----------------------Table
+
+$table-td-pad:                                  20px 10px;
+$table-th-family:                               $font-family-secondary;
+
+$table-info-size:                               $size-large;
+$table-info-pad:                                8px 0;
+
+//-----------------------Breadcrumbs
+
+$breadcrumb-item-color:                         $brand1;
+$breadcrumb-item-size:                          18px;
+$breadcrumb-item-family:                        'roddombold';
+
+//-----------------------Common Styles
+
+$price-color:                                   $brand3;
+$price-size:                                    $size-large;
+$price-family:                                  $semibold-light;
+
+$price-block-border-width:                      3px;
+$price-block-number-family:                     $bold-family;
+$price-block-number-size:                       80px;
+$price-block-orange-color:                      $brand2;
+$price-block-orange-number-color:               $brand1;
+
+$date-color:                                    $body-text-color;
+$date-size:                                     $size-xxs;
+
+$top-corner-height:                             29px;
+$top-corner-width:                              19px;
+
+//-----------------------Panels
+
+$panel-bg:                                      $bg-common;
+$panel-pad-value:                               20px;
+$panel-header-pad:                              $panel-pad-value;
+$panel-body-pad:                                $panel-pad-value;
+
+$panel-large-space-body-pad:                    35px;
+
+$panel-banner-height:                           240px;
+$panel-banner-text-color:                       $white;
+$panel-banner-text-size:                        23px;
+$panel-banner-text-pad:                         $top-corner-height $top-corner-width;
+$panel-banner-text-span-size:                   42px;
+$panel-banner-text-span-family:                 $bold-family;
+
+//-----------------------Content
+
+$height-blocks-mobile:                          240px;
+
+//Lists
+
+$list-link-color:                               $body-text-color;
+$list-bord-pad:                                 20px 0;
+
+$list-inline-link-pad:                          8px 10px;
+
+$list-top-link-border:                          3px solid transparent;
+$list-top-link-color:														$black;
+$list-top-link-size:                            20px;
+$list-top-link-size-small-screen:               16px;
+$list-top-link-family:                          $semibold-light;
+$list-top-link-pad:                             2px 0;
+$list-top-link-hover-border-color:              $brand1;
+
+//Download block
+
+$download-bg:                                   $bg-common;
+$download-desktop-pad:                          70px 20px;
+$download-mobile-pad:                           20px;
+$download-width-large-screen:                   500px;
+
+//Filters
+
+$filters-bg:                                    #f1f1f1;
+$filter-pad-value:                              15px;
+$filters-pad:                                   20px $filter-pad-value;
+
+//Objects
+
+$object-description-color:                      $brand1;
+$object-description-size:                       $size-small;
+
+$object-title-color:                            $brand3;
+$object-title-size:                             28px;
+
+$object-image-height:                           200px;
+$object-image-height-mobile:                    $height-blocks-mobile;
+
+$object-info-pad-value:                         15px;
+
+$object-link-bg:                                $body-text-color;
+$object-link-color:                             $white;
+$object-link-family:                            $bold-family;
+$object-link-size:                              $size-large;
+$object-link-pad:                               4px 3px;
+
+$object-large-image-height:                     400px;
+$object-large-info-color:                       $white;
+$object-large-info-size:                        $size-xlarge;
+$object-large-info-pad:                         30px 0 0 30px;
+$object-large-title-size:                       40px;
+$object-large-price-desktop-pad:                20px;
+$object-large-price-block-desktop-size:         24px;
+$object-large-price-block-number-desktop-size:  140px;
+
+$object-price-pad:                              10px;
+$object-price-width:                            140px;
+
+$object-text-span-color:                        $brand2;
+$object-text-span-family:                       $bold-family;
+
+$object-secondary-image-desktop-height:         400px;
+
+$object-price-block-mobile-size:                $size-small;
+$object-price-block-number-mobile-size:         50px;
+
+//Mortgage
+
+$mortgage-title-size:                           $size-large;
+$mortgage-text-size:                            $size-large;
+$mortgage-text-span-color:                      $brand3;
+$mortgage-text-span-size:                       32px;
+$mortgage-text-span-family:                     $bold-family;
+
+//Services
+
+$service-space:                                 10px;
+$service-title-color:                           $brand1;
+$service-title-mobile-size:                     28px;
+$service-image-height:                          420px;
+$service-image-height-mobile:                   280px;
+
+//Text border block
+
+$text-border-block-border:                      10px solid $bg-common;
+$text-border-block-pad:                         20px;
+$text-border-block-pad-desktop:                 50px;
+
+//Map
+
+$map-height:                                    400px;
+$map-height-mobile:                             300px;
+
+//Video
+
+$video-height:                                  370px;
+$video-height-mobile:                           $height-blocks-mobile;
+
+//List step
+
+$list-step-space:                               15px;
+$list-step-item-height:                         55px;
+$list-step-item-size:                           $size-large;
+$list-step-item-pad:                            10px 20px;
+$list-step-item-hover-bg:                       $brand1;
+$list-step-item-hover-color:                    $white;
+
+//Content line block
+
+$content-line-block-header-size:                56px;
+$content-line-block-header-size-mobile:         26px;
+$content-line-block-body-pad:                   20px 0 0;
+
+//benefit
+
+$benefit-vertical-pad-value:                    10px;
+$benefit-horizontal-pad-value:                  20px;
+$benefit-icon-height:                           100px;
+
+//
+
+$gray-info-block-title-color:                   $brand1;
+$gray-info-block-title-family:                  $bold-family;
+$gray-info-block-title-size:                    28px;
+$gray-info-block-title-size-mobile:             23px;
+$gray-info-block-height:                        238px;
+$gray-info-block-pad-mobile:                    $mobile-common-pad-vertical $mobile-common-pad-horizontal;
+
+//News
+
+$new-inline-space-between-elements:             10px;
+$new-inline-image-height:                       $height-blocks-mobile;
+
+//Error page
+
+$error-text-color:                              #808080;
+$error-text-size:                               48px;
+$error-text-size-mobile:                        32px;
+$error-text-family:                             $bold-family;
+
+//Reward
+
+$reward-image-border:                           3px solid $brand1;
+$reward-image-size:                             300px;
+$reward-image-space:                            30px;
+$reward-year-color:                             $brand1;
+$reward-year-family:                            $regular-family;
+$reward-year-size:                              100px;
+$reward-year-size-mobile:                       80px;
+
+//Discount
+
+$discount-image-height:                         300px;
+$discount-text-pad:                             10px;
+$discount-image-border-color:                   $brand2;
+$discount-image-border-width:                   14px;
+
+//-----------------------Footer
+
+$footer-bg:                                     $brand5;
+$footer-color:                                  $white;
+$footer-height:                                 520px;
+$footer-pad-desktop:                            75px 0;
+$footer-pad-mobile:                             15px 0;
+
+$footer-small-height:                           120px;
+
+$footer-content-color:                          $bg-common;
+$footer-content-size:                           $size-small;
+$footer-content-mobile-size:                    $size-xxs;
+
+
+

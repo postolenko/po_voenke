@@ -1,0 +1,64 @@
+@import "mixins";
+@import "functions";
+
+//-- Block line
+//------------------------------------------------------
+
+.content-line-block {
+  margin-top: $desktop-common-space;
+
+  &-header {
+    @extend %line-title;
+
+    > span {
+      font-size: $content-line-block-header-size;
+    }
+  }
+
+  &-body {
+    padding: $content-line-block-body-pad;
+  }
+
+  &-small {
+    .content-line-block-header {
+      > span {
+        color: $brand2;
+        font-size: 32px;
+        padding: 0 40px;
+        text-transform: none;
+      }
+    }
+  }
+
+  &-link {
+    .content-line-block-header {
+      > a {
+        border: 2px solid $border-color;
+        color: $brand2;
+        display: inline-block;
+        font-size: $size-default;
+        margin: 0 40px;
+        padding: 2px 25px;
+        text-transform: none;
+      }
+    }
+  }
+
+  //Responsive styles
+
+  @include respond-to(desktop) {
+    &-link {
+      margin-top: 30px;
+    }
+  }
+
+  @include respond-to(mobile) {
+    margin-top: $mobile-common-pad-vertical;
+
+    &-header {
+      > span {
+        font-size: $content-line-block-header-size-mobile;
+      }
+    }
+  }
+}

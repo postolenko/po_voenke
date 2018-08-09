@@ -1,0 +1,53 @@
+@import "variables";
+@import "reset";
+@import "functions";
+@import "fonts";
+@import "mixins";
+
+//Common element`s styles
+
+@import "button";
+@import "icons";
+@import "forms";
+@import "list";
+@import "type";
+
+//Helper Classes
+
+@import "helper";
+@import "media_utilities";
+
+//Another Styles
+
+@import "body";
+@import "footer";
+@import "header";
+@import "menu";
+@import "carousel";
+@import "slider";
+@import "main";
+@import "common";
+@import "breadcrumb";
+@import "label";
+@import "paginatio";
+
+@import "dropdown";
+@import "table";
+@import "services";
+@import "download";
+@import "object";
+@import "news";
+@import "panel";
+@import "layouts";
+@import "contacts";
+@import "filters";
+@import "tab-step";
+@import "benefit";
+@import "block-line";
+@import "info-gray-block";
+@import "error";
+@import "reward";
+@import "discount";
+@import "infrastructure";
+@import "partner";
+@import "developer";

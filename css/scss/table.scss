@@ -1,0 +1,20 @@
+@import "mixins";
+@import "functions";
+
+//-- Table styles
+//------------------------------------------------------
+
+.table {
+
+  &-info {
+    background: transparent;
+
+    td {
+      border: 0 none;
+      font-size: $table-info-size;
+      line-height: 1;
+      padding: $table-info-pad;
+      vertical-align: bottom;
+    }
+  }
+}

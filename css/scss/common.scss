@@ -1,0 +1,221 @@
+@import "mixins";
+@import "functions";
+
+//-- Common styles
+//------------------------------------------------------
+
+//.phone {
+//  font: {
+//    family: $phone-family;
+//    size: $phone-size;
+//  }
+//  line-height: 1;
+//  margin: 0;
+//
+//  > span:not(.phone-time) {
+//    font-size: $phone-size-large;
+//  }
+//
+//  &-time {
+//    display: block;
+//    font: {
+//      family: $phone-time-family;
+//      size: $phone-time-size;
+//    }
+//  }
+//
+//  //Responsive styles
+//
+//  @include respond-to(desktoplgMin) {
+//    white-space: nowrap;
+//
+//    > span:not(.phone-time) {
+//      font-size: $phone-size-large-small-screen;
+//    }
+//
+//    &-time {
+//      font-size: $size-default;
+//    }
+//  }
+//
+//  @include respond-to(mobile) {
+//    font-size: 19px;
+//
+//    > span:not(.phone-time) {
+//      font-size: 19px;
+//    }
+//
+//    &-time {
+//      font-size: 16px;
+//    }
+//  }
+//}
+
+.phone-simple {
+  background: url('#{$image-path}/icon-phone2.png') left center no-repeat;
+  font-size: 24px;
+  font-family: $font-family-secondary;
+  padding-left: 30px;
+}
+
+//-----------------------Price styles
+
+.price {
+  color: $price-color;
+  font: {
+    family: $price-family;
+    size: $price-size;
+  }
+  white-space: nowrap;
+
+  &-lg {
+    font-size: 30px;
+  }
+
+  &-green {
+    color: $brand1;
+    font-family: $font-family-secondary;
+    font-size: 16px;
+  }
+}
+
+//-----------------------Price block styles
+
+.price-block {
+  @extend %price-block;
+
+  &-number {
+    font: {
+      family: $price-block-number-family;
+      size: $price-block-number-size;
+    }
+    line-height: 1;
+    text-align: center;
+  }
+
+  &.price-block-orange {
+    border-color: $price-block-orange-color;
+
+    > * {
+      color: $body-text-color;
+    }
+
+    &:before, &:after {
+      background-color: $price-block-orange-color;
+    }
+
+    .price-block-number {
+      color: $price-block-orange-number-color;
+    }
+  }
+
+  //Responsive styles
+
+  @include respond-to(mobile) {
+    font-size: $object-price-block-mobile-size;
+
+    &-number {
+      font-size: $object-price-block-number-mobile-size;
+    }
+  }
+}
+
+.price {
+  &-white,
+  &-blue {
+    font: {
+      family: $semibold-light;
+      size: 32px;
+    }
+    line-height:1;
+    margin: 0;
+  }
+
+  &-white {
+    color: $white;
+  }
+
+  &-blue {
+    color: $brand1;
+  }
+}
+
+.ruble {
+  font-family: "ChevinProRubl", sans-serif;
+}
+
+//-----------------------Metro styles
+
+.metro {
+  color: $body-text-color;
+  font-family: $bold-family;
+  min-height: 22px;
+
+  > span {
+    background: {
+      repeat: no-repeat;
+      position: left 0;
+    }
+    display: inline-block;
+    padding-left: 25px;
+  }
+
+  &-purple {
+    > span {
+      background-image: url('#{$image-path}/icon-metro.png');
+    }
+  }
+
+  &-green {
+    > span {
+      background-image: url('#{$image-path}/icon-metro3.png');
+    }
+  }
+
+  &-blue {
+    > span {
+      background-image: url('#{$image-path}/icon-metro2.png');
+    }
+  }
+
+  &-orange {
+    > span {
+      background-image: url('#{$image-path}/icon-metro4.png');
+    }
+  }
+}
+
+//-----------------------Date styles
+
+.date {
+  color: $brand3;
+  font-size: 18px;
+}
+
+//-----------------------Rating styles
+
+.rating {
+
+  &-vote,
+  &-stars,
+  > div {
+    @include display-inline(middle);
+  }
+
+  &-stars {
+    line-height: 1;
+    position: relative;
+    overflow: hidden;
+  }
+}
+
+.stars {
+  background: url('#{$image-path}/stars.png') 0 0 no-repeat;
+  @include h-w(15px, 97px);
+  display: inline-block;
+
+  &.active {
+    background-image: url('#{$image-path}/stars-active.png');
+    @include position-absolute(left, 0, top, 0);
+  }
+}

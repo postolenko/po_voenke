@@ -1,0 +1,46 @@
+@import "mixins";
+@import "functions";
+
+//-- Label
+//------------------------------------------------------
+
+.label {
+  display: inline-block;
+  font: {
+    family: $label-class-family;
+    size: $label-class-size;
+  }
+  line-height: 1;
+  padding: $label-class-pad;
+  text-transform: uppercase;
+
+  @include respond-to(mobile) {
+    font-size: $label-class-size-mobile;
+    padding: {
+      bottom: $label-class-pad-value-mobile;
+      top: $label-class-pad-value-mobile;
+    }
+  }
+
+  &-small {
+    font-size: 16px;
+    text-transform: none;
+  }
+
+  &-yellow {
+    background-color: $brand4;
+  }
+
+  &-orange {
+    background-color: $brand2;
+    color: $white;
+  }
+}
+
+//Label in objects
+
+.object-image {
+  .label {
+    @include position-absolute(left, 15px, top, 15px);
+  }
+}

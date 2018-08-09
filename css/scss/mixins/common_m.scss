@@ -1,0 +1,238 @@
+//-- Mixin for Common styles
+//------------------------------------------------------
+
+@mixin clearfix {
+  &:before, &:after { content: " "; display: table; }
+  &:after { clear: both; }
+}
+
+@mixin box-sizing($type:border-box) {
+  -webkit-box-sizing: $type;
+  -moz-box-sizing: $type;
+  box-sizing: $type;
+}
+
+@mixin box-shadow($shadows) {
+  -moz-box-shadow: $shadows;
+  -webkit-box-shadow: $shadows;
+  box-shadow: $shadows;
+}
+
+@mixin text-overflow($text-width) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: $text-width;
+}
+
+@mixin h-w($height, $width) {
+  height: $height;
+  width: $width;
+}
+
+@mixin last-child(){
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@mixin bold($bold-parameter){
+  @if($bold-parameter == standart) {
+    font-weight: bold;
+  }
+  @else if($bold-parameter == custom) {
+    font-family: $bold-family;
+  }
+}
+
+@mixin display-inline($display-inline-align){
+  display: inline-block;
+  vertical-align: $display-inline-align;
+}
+
+@mixin display-flex() {
+  display: flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+}
+
+@mixin flex($flex-parameter) {
+  display: flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+
+  @if($flex-parameter == center) {
+    align-items: center;
+  }
+  @else if($flex-parameter == stretch) {
+    align-items: stretch;
+  }
+  @else if($flex-parameter == justify) {
+    justify-content: space-between;
+  }
+  @else if($flex-parameter == bottom) {
+    align-items: flex-end;
+  }
+}
+
+//Gradient
+
+@mixin linear-gradient-vertical($begin-color, $end-color) {
+  background: -moz-linear-gradient(top, $begin-color 0%, $end-color 100%);
+  background: -webkit-linear-gradient(top, $begin-color 0%, $end-color 100%);
+  background: linear-gradient(to bottom, $begin-color 0%, $end-color 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$begin-color', endColorstr='$end-color', GradientType=0);
+}
+
+//Arrows
+
+@mixin css-triangle($triangle-size, $triangle-color, $triangle-direction) {
+  border: inset $triangle-size;
+  content: "";
+  display: block;
+  @include h-w(0, 0);
+
+  @if ($triangle-direction == top) {
+    border-color: $triangle-color transparent transparent transparent;
+    border-top-style: solid;
+  }
+  @if ($triangle-direction == bottom) {
+    border-color: transparent transparent $triangle-color transparent;
+    border-bottom-style: solid;
+  }
+  @if ($triangle-direction == left) {
+    border-color: transparent transparent transparent $triangle-color;
+    border-left-style: solid;
+  }
+  @if ($triangle-direction == right) {
+    border-color: transparent $triangle-color transparent transparent;
+    border-right-style: solid;
+  }
+}
+
+//Position
+
+@mixin position-absolute($side-l-r, $side-l-r-value, $side-bt-t, $side-bt-t-value){
+  position: absolute;
+  @if($side-l-r == left and $side-bt-t == top) {
+    left: $side-l-r-value;
+    top: $side-bt-t-value;
+  }
+  @if($side-l-r == left and $side-bt-t == bottom) {
+    left: $side-l-r-value;
+    bottom: $side-bt-t-value;
+  }
+  @if($side-l-r == right and $side-bt-t == top) {
+    right: $side-l-r-value;
+    top: $side-bt-t-value;
+  }
+  @if ($side-l-r == right and $side-bt-t == bottom) {
+    right: $side-l-r-value;
+    bottom: $side-bt-t-value;
+  }
+}
+
+@mixin position-absolute-center() {
+  @include position-absolute(left, 50%, top, 50%);
+  @include transform-center(-50%, -50%);
+}
+
+@mixin position-fixed($side-l-r, $side-l-r-value, $side-bt-t, $side-bt-t-value) {
+  position: fixed;
+  @if($side-l-r == left and $side-bt-t == top) {
+    left: $side-l-r-value;
+    top: $side-bt-t-value;
+  }
+  @if($side-l-r == left and $side-bt-t == bottom) {
+    left: $side-l-r-value;
+    bottom: $side-bt-t-value;
+  }
+  @if($side-l-r == right and $side-bt-t == top) {
+    right: $side-l-r-value;
+    top: $side-bt-t-value;
+  }
+  @if ($side-l-r == right and $side-bt-t == bottom) {
+    right: $side-l-r-value;
+    bottom: $side-bt-t-value;
+  }
+}
+
+//Opacity
+
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  -moz-opacity: $opacity;
+  -khtml-opacity: $opacity;
+  zoom: 1;
+}
+
+@mixin opacity-absolute() {
+  @include h-w(100%, 100%);
+  @include position-absolute(left, 0, top, 0);
+}
+
+//Border
+
+@mixin border($border-position) {
+
+  @if ($border-position == all) {
+    border: $border-width $border-style $border-color;
+  }
+
+  @else if ($border-position == top) {
+    border-top: $border-width $border-style $border-color;
+  }
+
+  @else if ($border-position == bottom) {
+    border-bottom: $border-width $border-style $border-color;
+  }
+
+  @else if ($border-position == left) {
+    border-left: $border-width $border-style $border-color;
+  }
+
+  @else if ($border-position == right) {
+    border-right: $border-width $border-style $border-color;
+  }
+}
+
+//Border radius
+
+@mixin radius($radius) {
+  @if $radius {
+    border-radius: $radius;
+  }
+}
+
+@mixin side-radius($side, $radius) {
+  @if ($side == left or $side == right) {
+    -webkit-border-bottom-#{$side}-radius: $radius;
+    -webkit-border-top-#{$side}-radius: $radius;
+    border-bottom-#{$side}-radius: $radius;
+    border-top-#{$side}-radius: $radius;
+  } @else {
+    -webkit-#{$side}-left-radius: $radius;
+    -webkit-#{$side}-right-radius: $radius;
+    border-#{$side}-left-radius: $radius;
+    border-#{$side}-right-radius: $radius;
+  }
+}
+
+@function flex-width($width, $space-between) {
+  @return (calc(100% - #{$width} - #{$space-between}));
+}
+
+@mixin flex-component-width($width, $space-between: null) {
+  @if($space-between != null) {
+    flex: 0 0 flex-width($width, $space-between);
+    max-width: flex-width($width, $space-between);
+  }
+  @else {
+    flex: 0 0 $width;
+    max-width: $width;
+  }
+}

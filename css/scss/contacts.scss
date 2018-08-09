@@ -1,0 +1,91 @@
+@import "mixins";
+@import "functions";
+
+//-- Contacts styles
+//------------------------------------------------------
+
+.contact-block {
+  @extend %last-child;
+  margin-bottom: 30px;
+}
+
+.list-contact {
+
+  > li {
+    padding-left: 50px;
+    position: relative;
+
+    &:before {
+      background: {
+        position: center 0;
+        repeat: no-repeat;
+      }
+      content: '';
+      @include position-absolute(left, 0, top, 0);
+      width: 32px;
+    }
+
+    + li {
+      margin-top: 20px;
+    }
+
+    &.item-location + .item-time {
+      margin-top: 7px;
+    }
+
+    &.item-phone:before {
+      background-image: url('#{$image-path}/icon-phone.png');
+      height: 31px;
+      top: -5px;
+    }
+
+    &.item-mail:before {
+      background-image: url('#{$image-path}/icon-mail.png');
+      height: 20px;
+    }
+
+    &.item-location:before {
+      background-image: url('#{$image-path}/icon-location.png');
+      height: 35px;
+      top: -5px;
+    }
+
+    &.item-time:before {
+      background-image: url('#{$image-path}/icon-clock.png');
+      height: 30px;
+      top: -5px;
+    }
+  }
+}
+
+//Address in the contact list
+
+.address {
+  @extend %last-child;
+
+  > * {
+    margin-bottom: 7px;
+  }
+
+  h5, .h5 {
+    color: $brand2;
+  }
+
+  .btn {
+    margin-top: 10px;
+  }
+}
+
+//Contact form styles
+
+.form-contact {
+  margin-top: 30px;
+
+  .btn {
+    margin-top: 5px;
+  }
+
+  @include respond-to(desktoplg) {
+    width: 70%;
+  }
+}

@@ -1,0 +1,337 @@
+@import "mixins";
+@import "functions";
+
+//-- Objects
+//------------------------------------------------------
+
+.object {
+  display: block;
+  margin-bottom: 20px;
+
+  //---------------Object`s elements
+
+  &-info {
+    @extend %last-child;
+    margin-bottom: 4px;
+    padding: 0 $object-info-pad-value;
+
+    > * {
+      margin-bottom: 4px;
+
+      &.object-title {
+        margin-left: -$object-info-pad-value;
+      }
+
+      &.btn {
+        margin-top: $object-info-pad-value;
+      }
+    }
+  }
+
+  &-description {
+    color: $object-description-color;
+  }
+
+  &-title {
+    color: $object-title-color;
+    font-size: $object-title-size;
+    line-height:1;
+    text-transform: uppercase;
+  }
+
+  &-image {
+    @extend %bg-image-center;
+    height: $object-image-height;
+    margin-bottom: 10px;
+    position: relative;
+  }
+
+  &-link {
+    background-color: $object-link-bg;
+    color: $object-link-color;
+    display: block;
+    font: {
+      family: $object-link-family;
+      size: $object-link-size;
+    }
+    padding: $object-link-pad;
+    text: {
+      align: center;
+      transform: uppercase;
+    }
+
+    &:hover, &:focus {
+      color: $object-link-color;
+    }
+  }
+
+  &-text {
+    > span {
+      color: $object-text-span-color;
+      font-family: $object-text-span-family;
+    }
+
+    > p {
+      margin-bottom: 0;
+    }
+  }
+
+  &-address {
+    color: $body-text-color;
+  }
+
+  &-address-row {
+    @include flex(justify);
+
+    > * {
+      margin: 0;
+    }
+  }
+
+  //---------------Object`s variants
+
+  //Large Object
+
+  &-large {
+
+    .object-image {
+      height: $object-large-image-height;
+    }
+
+    .object-info {
+      padding: $object-large-info-pad;
+
+      > * {
+        font-size: $object-large-info-size;
+        color: $object-large-info-color;
+      }
+    }
+
+    .object-title {
+      font-size: $object-large-title-size;
+    }
+
+    @include respond-to(desktop) {
+      .object-price {
+        padding: $object-large-price-desktop-pad;
+
+        .price-block {
+          font-size: $object-large-price-block-desktop-size;
+        }
+
+        .price-block-number {
+          font-size: $object-large-price-block-number-desktop-size;
+        }
+      }
+    }
+  }
+
+  //Second Homes object
+
+  &-second-homes {
+    .object-title {
+      text-transform: none;
+    }
+  }
+
+  //When object-info os to the bottom then object image
+
+  &-secondary {
+
+    .object-info {
+      > * {
+        color: $body-text-color;
+      }
+    }
+
+    &-real {
+      .object-title {
+        margin-left: 0;
+        margin-top: 5px;
+        min-height: 65px;
+        text-transform: none;
+      }
+      .price-lg {
+        line-height: 1;
+      }
+      .object-info {
+        border-bottom: $border-width solid $border-color;
+        padding-bottom: 10px;
+
+        .object-info-in-row {
+          align-items: flex-end;
+
+          .price + .price {
+            margin-bottom: 0;
+          }
+
+          @include respond-to(desktop) {
+            > *:last-child {
+              text-align: right;
+            }
+          }
+        }
+      }
+    }
+
+    @include respond-to(desktop) {
+      .object-image {
+        height: $object-secondary-image-desktop-height;
+      }
+
+      &.object-secondary-real .object-image {
+        height: 500px;
+      }
+    }
+  }
+
+  &-info-in-row {
+    align-items: flex-start;
+    @include flex(justify);
+    flex-wrap: wrap;
+
+    .object-info {
+      max-width: 65%;
+    }
+  }
+
+  //Responsive common styles for objects
+
+  @include respond-to(mobile) {
+    &-image {
+      height: $object-image-height-mobile;
+    }
+  }
+}
+
+.object-price {
+  background-color: rgba(226, 46, 123, 0.8);
+  padding: $object-price-pad;
+  @include position-absolute(right, 15px, bottom, 15px);
+
+  &-green {
+    background-color: rgba(0, 138, 64, 0.8);
+  }
+
+  &-blue {
+    background-color: rgba(48, 50, 137, 0.8);
+  }
+
+  &-orange {
+    background-color: rgba(242, 145, 0, 0.8);
+  }
+
+  &-red {
+    background-color: rgba(228, 46, 46, 0.8);
+  }
+
+  &-yellow {
+    background-color: rgba(230, 215, 6, 0.8);
+  }
+
+  .price-block {
+    height: 100%;
+  }
+
+  @include respond-to(mobile) {
+    .price-block-number {
+      font-size:  $price-block-number-size;
+    }
+  }
+}
+
+//-----------------------Row with objects on the main page
+
+.row-objects {
+  @include respond-to(desktoplg) {
+    align-items: stretch;
+
+    .object-large {
+      height: calc(100% - 20px);
+
+      .object-image {
+        height: calc(100% - 43px);
+      }
+    }
+  }
+}
+
+//-----------------------Object detail block
+
+.object-detail {
+
+  .object-info-in-row {
+    margin: 10px 0 30px;
+  }
+
+  .object-info {
+    > * {
+      font-size: $size-xlarge;
+      margin-left: 0;
+    }
+  }
+
+  //Responsive styles
+
+  @include respond-to(desktopMd) {
+    align-items: flex-end;
+
+    .object-image {
+      height: 600px;
+      margin: 0;
+    }
+
+    .object-map {
+      height: 370px;
+    }
+  }
+
+  @include respond-to(desktopMdMin) {
+    .object-image {
+      height: $object-image-height-mobile;
+      margin-bottom: $space-between-elements;
+    }
+  }
+}
+
+.object-map {
+  height: $map-height-mobile;
+
+  &-image {
+    @extend %bg-image-center;
+    height: 100%;
+  }
+}
+
+//-----------------------Object share block
+
+.object-share {
+
+  > * + * {
+    margin-top: 10px;
+  }
+
+  span {
+    text-align: right;
+
+    + div {
+      margin-left: 20px;
+      text-align: left;
+    }
+  }
+
+  @include respond-to(desktopMd) {
+    margin-top: 25px;
+    text-align: right;
+
+    span {
+      + div {
+        width: 170px;
+      }
+    }
+  }
+
+  @include respond-to(desktopMdMin) {
+    margin-bottom: $space-between-elements;
+  }
+}

@@ -1,0 +1,42 @@
+//-- Mixin for grid
+//------------------------------------------------------
+
+@mixin row($row-marg) {
+  @include clearfix();
+  margin: {
+    left: -$grid-marg / 2;
+    right: -$grid-marg / 2;
+  }
+}
+
+@mixin grid-column-pad($col-pad) {
+  padding: {
+    left: ($col-pad / 2);
+    right: ($col-pad / 2);
+  }
+}
+
+@mixin float-column($class-float) {
+  .col1-#{$class-float}, .col2-#{$class-float},
+  .col3-#{$class-float}, .col4-#{$class-float},
+  .col5-#{$class-float}, .col6-#{$class-float},
+  .col7-#{$class-float}, .col8-#{$class-float},
+  .col9-#{$class-float}, .col10-#{$class-float},
+  .col11-#{$class-float} {
+    float: left;
+    position: relative;
+  }
+}
+
+@mixin grid-col-width($grid-col-class) {
+  @for $i from 1 through $grid-col {
+    .col#{$i}-#{$grid-col-class} {
+      @if($i != 2) {
+        width: ($i * 100% / $grid-col);
+      }
+      @else {
+        width: 20%;
+      }
+    }
+  }
+}

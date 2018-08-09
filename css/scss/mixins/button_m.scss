@@ -1,0 +1,12 @@
+//-- Mixin for Button
+//------------------------------------------------------
+
+@mixin btn-color($btn-color-bg, $btn-color-border) {
+  background-color: $btn-color-bg;
+  border-color: $btn-color-border;
+}
+
+@mixin btn-size($btn-size, $btn-size-padding-v, $btn-size-padding-h) {
+  font-size: $btn-size;
+  padding: $btn-size-padding-v $btn-size-padding-h;
+}

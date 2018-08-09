@@ -1,0 +1,161 @@
+@import "mixins";
+@import "functions";
+
+//-- Navbar Menu
+//------------------------------------------------------
+
+.navbar {
+  background-color: $navbar-bg;
+  padding: {
+    left: 0;
+    right: 0;
+  }
+
+  .wrapper {
+    position: relative;
+    width: 100%;
+  }
+
+  //Responsive styles
+
+  @include respond-to(desktop) {
+    height: $navbar-desktop-height;
+  }
+
+  @include respond-to(mobile) {
+    min-height: $navbar-mobile-height;
+  }
+}
+
+//-----------------------Nevbar nav menu
+
+.navbar-collapse {
+  @include respond-to(mobile) {
+    margin-top: 15px;
+  }
+}
+
+.navbar-content {
+  @include respond-to(desktop) {
+    @include flex(center);
+    justify-content: space-between;
+  }
+}
+
+.navbar-expand-md .navbar-nav {
+
+  .nav-link {
+    color: $nav-link-color;
+    @include flex(center);
+    padding: $nav-link-pad;
+    text-align: center;
+
+    > span {
+      border-bottom: 1px dotted $nav-link-color;
+      display: inline-block;
+      padding-bottom: 2px;
+
+      > span {
+        padding: 5px;
+      }
+    }
+
+    &:hover, &:focus, &:active {
+      color: $nav-link-hover-color;
+
+      > span {
+        border-color: transparent;
+      }
+    }
+  }
+
+  //Responsive styles
+
+  @include respond-to(desktoplgMin) {
+    .nav-link {
+      > span {
+        border: 0 none;
+        padding: 0;
+      }
+    }
+  }
+
+  @include respond-to(desktop) {
+    justify-content: space-between;
+    width: 100%;
+
+    .nav-item {
+      + .nav-item {
+        margin-left: 5px;
+      }
+    }
+
+    .nav-link {
+      height: $navbar-desktop-height;
+    }
+  }
+
+  @include respond-to(mobile) {
+    .nav-item {
+      + .nav-item {
+        margin-top: 10px;
+      }
+    }
+
+    .nav-link {
+      font-size: $nav-link-mobile-size;
+      padding: $nav-link-mobile-pad;
+    }
+
+    .dropdown-menu {
+      background: transparent;
+      border: 0 none;
+      padding: 0 20px;
+    }
+
+    .dropdown-item {
+      color: $white;
+      border: 0 none;
+      font-size: $nav-link-mobile-size;
+      padding: $nav-link-mobile-pad;
+    }
+  }
+}
+
+.nav-link {
+  font-size: $nav-link-size;
+  text-transform: uppercase;
+
+  &-pickup {
+    background-color: white;
+    @include radius(30px);
+    color: $brand1;
+    @include flex(center);
+    padding: 8px 15px;
+    white-space: nowrap;
+
+    > * {
+      line-height: 1;
+
+      + * {
+        margin-left: 15px;
+      }
+    }
+
+    @include respond-to(tablets) {
+      > span:last-child {
+        display: none;
+      }
+    }
+
+    @include respond-to(desktop) {
+      margin-right: 15px;
+    }
+  }
+
+  //Responsive styles
+
+  @include respond-to(desktopXlgMin) {
+    font-size: $nav-link-tablets-size;
+  }
+}

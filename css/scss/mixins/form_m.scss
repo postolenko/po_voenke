@@ -1,0 +1,29 @@
+//-- Mixin for Forms
+//------------------------------------------------------
+
+@mixin placeholder($placeholder-color) {
+  &:-moz-placeholder            {color: $placeholder-color;}
+  &::-moz-placeholder           {color: $placeholder-color;}
+  &:-ms-input-placeholder       {color: $placeholder-color;}
+  &::-webkit-input-placeholder  {color: $placeholder-color;}
+}
+
+@mixin placeholder-right() {
+  &:-moz-placeholder            {text-align: right;}
+  &::-moz-placeholder           {text-align: right;}
+  &:-ms-input-placeholder       {text-align: right;}
+  &::-webkit-input-placeholder  {text-align: right;}
+}
+
+@mixin opacity-input() {
+  cursor: pointer;
+  @include opacity(0);
+  @include opacity-absolute();
+  z-index: 500;
+}
+
+@mixin input-gr-addon() {
+  vertical-align: middle;
+  width: 1%;
+  white-space: nowrap;
+}

@@ -1,0 +1,39 @@
+@import "mixins";
+
+//-- Body
+//------------------------------------------------------
+
+html {
+  height: 100%;
+}
+
+body {
+  color: $body-text-color;
+  font: $size-default $body-text-family;
+  line-height: $body-line-height;
+  height: 100%;
+  position: relative;
+
+  @include respond-to(mobile) {
+    font-size: $mobile-body-size;
+  }
+}
+
+.main {
+  min-height: 100%;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: site-width($site-width);
+  padding: 0 $mobile-common-pad-horizontal;
+}
+
+.main-content {
+  padding-top: $mobile-common-pad-vertical;
+  padding-bottom: $mobile-common-pad-vertical;
+
+  @include respond-to(desktop) {
+    padding-bottom: $footer-height + 100px;
+  }
+}

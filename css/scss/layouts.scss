@@ -1,0 +1,129 @@
+@import "mixins";
+@import "functions";
+
+//-- Layouts
+//------------------------------------------------------
+
+.main-grid {
+  @include flex(justify);
+  flex-wrap: wrap;
+  margin: 0 (-$main-grid-marg);
+
+  > * {
+    padding: 0 $main-grid-marg;
+  }
+
+  &-side-col {
+    width: $main-grid-side-width;
+  }
+
+  &-center-col {
+    width: calc(100% - (#{$main-grid-side-width} * 2));
+  }
+
+  //Responsive styles
+
+  @include respond-to(desktopMdMin) {
+
+    > * {
+      &:first-child {
+        display: none;
+      }
+    }
+
+    &-center-col {
+      width: calc(100% - #{$main-grid-side-width});
+    }
+  }
+
+  @include respond-to(mobile) {
+
+    > * {
+      width: 100%;
+
+      &:not(:last-child) {
+        margin-bottom: $space-between-elements;
+      }
+    }
+  }
+}
+
+//-----------------------Custom bootsrap grid styles
+
+.row {
+  margin: 0 (-$main-grid-marg);
+
+  > * {
+    padding: 0 $main-grid-marg;
+  }
+
+  &-sm {
+    margin: 0 (-$grid-marg-sm);
+
+    > * {
+      padding: 0 $grid-marg-sm;
+    }
+  }
+}
+
+.col-xl-2, .col-lg-2, .col-md-2, .col-2 {
+  flex: 0 0 20%;
+  max-width: 20%;
+}
+
+.row-space {
+  @include respond-to(mobile) {
+    > * + * {
+      margin-top: $space-between-elements;
+    }
+  }
+}
+
+.row-space-md {
+  @include respond-to(desktopMdMin) {
+    > * + * {
+      margin-top: 30px;
+    }
+  }
+}
+
+.row-space-lg {
+  @include respond-to(desktoplgMin) {
+    > * + * {
+      margin-top: 30px;
+    }
+  }
+}
+
+.row-small-screens {
+  @media($media-min: $screen-sm-min) and ($media-max: $screen-lg-max) {
+    > * {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+  }
+}
+
+.col-bord {
+  @include respond-to(desktop) {
+    border-left: 1px solid $border-color;
+  }
+}
+
+//-----------------------Row with filter and map
+
+.row-filter-map {
+  margin-bottom: $space-between-block;
+
+  @include respond-to(desktoplg) {
+    align-items: stretch;
+
+    .filters {
+      margin: 0;
+    }
+
+    .map {
+      height: 100%;
+    }
+  }
+}

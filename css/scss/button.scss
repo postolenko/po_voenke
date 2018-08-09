@@ -1,0 +1,107 @@
+@import "mixins";
+@import "functions";
+
+//-- Buttons
+//------------------------------------------------------
+
+.btn {
+  background-color: transparent;
+  border: 0 none;
+  @include radius(0);
+  color: $btn-color;
+  font: {
+    size: $btn-size;
+    family: $btn-family;
+  }
+  line-height: 1;
+  padding: $btn-pad;
+  position: relative;
+  outline: none;
+  @extend %transition;
+
+  &:hover, &:focus, &:active, &.focus {
+    @extend %transition;
+    box-shadow: none;
+  }
+
+  &.disabled, &[disabled] {
+    @include opacity($btn-disabled-opacity);
+    cursor: default;
+  }
+
+  //-----------------Different Buttons---------------//
+
+  &-secondary {
+    background-color: $btn-secondary-bg;
+    color: $btn-secondary-color;
+
+    &:hover, &:focus, &:active {
+      background-color: $btn-secondary-bg-hover;
+      color: $btn-secondary-color-hover;
+    }
+  }
+
+  &-info {
+    background-color: $btn-info-bg;
+    border: $btn-info-border;
+    color: $btn-info-color;
+    text-transform: uppercase;
+
+    &:hover, &:focus, &:active {
+      background-color: $btn-info-bg-hover;
+      border-color: $btn-info-bg-hover;
+      color: $btn-info-color-hover;
+    }
+  }
+
+  &-up {
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  //-----------------Buttons Size---------------//
+
+  &-small {
+    @include btn-size($btn-small-size, $btn-small-padding-v, $btn-small-padding-h);
+  }
+
+  &-large {
+    font-size: $size-large;
+    text-transform: uppercase;
+  }
+
+  //-----------------Responsive---------------//
+
+  @include respond-to(mobileMikroScreen) {
+    width: 100%;
+    padding: {
+      left: 10px;
+      right: 10px;
+    }
+  }
+}
+
+
+//-----------------Btn toggle mobile---------------//
+
+.navbar-toggler {
+  background-color: $brand2;
+  border: 0 none;
+  @include radius(0);
+  font-size: $navbar-toggler-size;
+
+  > span {
+    background-color: $white;
+    @include h-w(2px, 23px);
+    display: block;
+
+    + span {
+      margin-top: 5px;
+    }
+  }
+
+  &:focus, &.focus {
+    outline: none;
+  }
+}
+

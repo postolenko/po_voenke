@@ -1,0 +1,99 @@
+@import "mixins";
+@import "functions";
+
+//-- Panels styles
+//------------------------------------------------------
+
+.panel {
+  background-color: $panel-bg;
+  margin-bottom: $space-between-elements;
+  position: relative;
+
+  &-header {
+    padding: $panel-header-pad;
+  }
+
+  &-title {
+    margin: 0;
+  }
+
+  &-body {
+    padding: $panel-body-pad;
+    @extend %last-child;
+  }
+
+  h5, .h5 {
+    margin-bottom: 10px;
+  }
+
+  //---------Panel`s variants
+
+  &-red {
+    background-color: $brand3;
+  }
+
+  &-green {
+    background-color: $brand1;
+  }
+
+  &-red, &-green {
+    .panel-header {
+      * {
+        color: $white;
+      }
+    }
+  }
+
+  &-large-space {
+    .panel-body {
+      padding: $panel-large-space-body-pad;
+    }
+  }
+
+  &-banner {
+    min-height: $panel-banner-height;
+
+    &-text {
+      color: $panel-banner-text-color;
+      font-size: $panel-banner-text-size;
+      padding: $panel-banner-text-pad;
+      text-align: center;
+      @include position-absolute(left, 15px, top, 50%);
+      @include transform-center(0, -50%);
+      width: calc(100% - (15px * 2));
+
+      @extend %top-corner;
+      @extend %bottom-corner;
+
+      > span {
+        display: block;
+        font: {
+          family: $panel-banner-text-span-family;
+          size: $panel-banner-text-span-size;
+        }
+        line-height: 1;
+        text-transform: uppercase;
+      }
+    }
+
+    &.panel-green {
+      .panel-banner-text {
+        &:before, &:after {
+          background-image: url("#{$image-path}/corner-top-white.png");
+        }
+      }
+    }
+  }
+
+  &-mortgage {
+    padding: 2px;
+
+    .panel-body {
+      background-color: $white;
+    }
+  }
+}
+
+a.panel {
+  display: block;
+}

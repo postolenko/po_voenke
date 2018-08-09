@@ -1,0 +1,57 @@
+@import "mixins";
+@import "functions";
+
+//-- Error Styles
+//------------------------------------------------------
+
+.error {
+
+  &-image {
+    text-align: center;
+  }
+
+  &-text {
+    color: $error-text-color;
+    font: {
+      family: $error-text-family;
+      size: $error-text-size;
+    }
+    margin-top: $space-between-elements;
+  }
+
+  &-content {
+    @extend %last-child;
+
+    > * {
+      margin-bottom: 25px;
+    }
+  }
+
+  //Responsive styles
+
+  @include respond-to(desktopMd) {
+    &-block {
+      padding: $desktop-common-space 0 40px;
+
+      .row {
+        align-items: center;
+      }
+    }
+  }
+
+  @include respond-to(desktopMdMin) {
+    &-block {
+      padding: $mobile-common-pad-vertical 0;
+    }
+
+    &-image {
+      margin-bottom: $mobile-common-pad-vertical;
+    }
+  }
+
+  @include respond-to(mobile) {
+    &-text {
+      font-size: $error-text-size-mobile;
+    }
+  }
+}

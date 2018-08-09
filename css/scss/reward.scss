@@ -1,0 +1,60 @@
+@import "mixins";
+@import "functions";
+
+//-- Reward
+//------------------------------------------------------
+
+.reward {
+
+  &-image {
+    @extend %bg-image-center;
+
+    border: $reward-image-border;
+    height: $height-blocks-mobile;
+  }
+
+  &-text {
+    @extend %last-child;
+
+    > * {
+      margin-bottom: 5px;
+    }
+  }
+
+  &-year {
+    color: $reward-year-color;
+    font: {
+      family: $reward-year-family;
+      size: $reward-year-size;
+    }
+    line-height: 1;
+  }
+
+  //Responsive styles
+
+  @include respond-to(mobileSmallScreenLg) {
+    @include flex(center);
+    flex-wrap: wrap;
+
+    &-image {
+      @include h-w($reward-image-size, $reward-image-size);
+      margin-right: $reward-image-space;
+    }
+
+    &-text {
+      width: calc(100% - #{$reward-image-size} - #{$reward-image-space});
+    }
+  }
+
+  @include respond-to(mobile) {
+    &-year {
+      font-size: $reward-year-size-mobile;
+    }
+  }
+
+  @include respond-to(mobileSmallScreen) {
+    &-image {
+      margin-bottom: $space-between-elements;
+    }
+  }
+}

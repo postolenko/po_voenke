@@ -1,0 +1,49 @@
+@import "mixins";
+@import "functions";
+
+//-- Pagination styles
+//------------------------------------------------------
+
+.pagination {
+  margin-top: $space-between-elements;
+  justify-content: center;
+
+  > li  {
+    + li {
+      margin-left: 10px;
+    }
+  }
+}
+
+.page-item {
+  &:last-child,
+  &:first-child {
+    .page-link {
+      @include radius(0);
+    }
+  }
+}
+
+.page-link {
+  border: $page-link-border-width solid $page-link-border-color;
+  color: $page-link-color;
+  font-size: $page-link-font-size;
+  @include h-w($page-link-size, $page-link-size);
+  line-height: $page-link-size - $page-link-border-width;
+  padding: 0;
+  text-align: center;
+
+  > span {
+    display: inline-block;
+    font: {
+      size: $page-link-arrow-size;
+    }
+    margin-top: -2px;
+  }
+
+  &:hover, &:focus, &.active {
+    background-color: $brand1;
+    border-color: $page-link-border-color;
+    color: $white;
+  }
+}

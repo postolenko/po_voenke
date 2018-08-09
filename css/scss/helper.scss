@@ -1,0 +1,134 @@
+@import "mixins";
+@import "functions";
+
+//-- Helper
+//------------------------------------------------------
+
+.clearfix {
+  @include clearfix();
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.overflow{
+  overflow: hidden;
+}
+
+.d-inline {
+  @include display-inline(middle);
+}
+
+.full-img {
+  @include h-w(auto, 100%);
+}
+
+.max-img {
+  max-width: 100%;
+}
+
+.img-border {
+  @include radius($border-radius);
+}
+
+.hidden {
+  display: none !important;
+}
+
+.bold {
+  @include bold(custom);
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.orange {
+  color: $brand2 !important;
+}
+
+//----------------------------Align text
+
+$text-align: (
+  left: left,
+  right: right,
+  center: center
+);
+
+.text {
+
+  @each $status, $align in $text-align {
+
+    &-#{$status} {
+
+      text-align: $align;
+    }
+  }
+}
+
+//----------------------------Different spaces
+
+//Margin bottom
+
+$space-bottom: (
+  b30: 30px !important,
+  b20: 20px !important,
+  b10: 10px,
+  b0:  0 !important
+);
+
+.m {
+
+  @each $status, $marg in $space-bottom {
+
+    &-#{$status} {
+
+      margin-bottom: $marg;
+    }
+  }
+}
+
+//Margin right
+
+$space-right: (
+  r20: 20px,
+  r10: 10px
+);
+
+.m {
+
+  @each $status, $marg in $space-right {
+
+    &-#{$status} {
+
+      margin-right: $marg;
+    }
+  }
+}
+
+//Margin left
+
+$space-left: (
+  l20: 20px,
+  l10: 10px
+);
+
+.m {
+
+  @each $status, $marg in $space-left {
+
+    &-#{$status} {
+
+      margin-left: $marg;
+    }
+  }
+}

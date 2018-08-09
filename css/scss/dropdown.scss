@@ -1,0 +1,103 @@
+@import "mixins";
+@import "functions";
+
+//-- Dropdown
+//------------------------------------------------------
+
+.dropdown {
+  position: relative;
+
+  &-menu {
+    border-bottom: 4px solid $brand2;
+    border-radius: 0;
+    margin: 0;
+    min-width: 100%;
+    padding: 5px;
+  }
+
+  &-custom {
+
+    .dropdown-toggle {
+      background-color: transparent;
+      border: {
+        color: $input-border-color;
+        style: solid;
+        width: $border-width;
+      }
+      @include radius($input-border-radius);
+      @include h-w($input-height, 100%);
+      font: {
+        family: $dropdown-btn-family;
+        size: $dropdown-btn-size;
+      }
+      padding: $dropdown-btn-pad;
+      text-align: left;
+      outline: none;
+
+      &:after {
+        border: {
+          left-width: 0.25em;
+          right-width: 0.25em;
+          top-width: 0.5em;
+        }
+        color: $brand2;
+        @include position-absolute(right, $dropdown-btn-pad-value, top, 50%);
+        @include transform-center(0, -50%);
+      }
+    }
+
+    .dropdown-menu {
+      @include radius($input-border-radius);
+      margin: 0;
+      min-width: 100%;
+      width: 100%;
+    }
+
+    &-white {
+      .btn {
+        background-color: $white;
+        border-color: $white;
+      }
+    }
+  }
+
+  &-white-green {
+
+    .dropdown-toggle {
+      &:after {
+        color: $brand1;
+      }
+    }
+  }
+
+  //Dropdowns for filters news
+
+  &-month {
+    width: 150px;
+  }
+
+  &-year {
+    width: 110px;
+  }
+
+  &-heading {
+    width: 250px;
+  }
+}
+
+.dropdown-item {
+  font-size: $dropdown-item-size;
+  padding: {
+    left: $dropdown-btn-pad-value;
+    right: $dropdown-btn-pad-value;
+  }
+
+  &:not(:last-child) {
+    border-bottom: 1px solid $border-color;
+  }
+
+  &:hover, &:focus {
+    background-color: $dropdown-item-hover-bg;
+    color: $dropdown-item-hover-color;
+  }
+}

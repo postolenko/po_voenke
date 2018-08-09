@@ -1,0 +1,70 @@
+@import "mixins";
+@import "functions";
+
+//-- Discount
+//------------------------------------------------------
+
+.discount {
+  display: block;
+  margin-bottom: $space-between-elements;
+
+  &-image {
+    @extend %bg-image-center;
+    height: $discount-image-height;
+    position: relative;
+  }
+
+  &-text {
+    @extend %last-child;
+    padding: $discount-text-pad;
+
+    > * {
+      margin-bottom: 10px;
+    }
+  }
+
+  &-image-border {
+    @extend .price-block;
+    border: {
+      color: $discount-image-border-color;
+      width: $discount-image-border-width;
+    }
+    @include h-w(calc(100% + #{$discount-image-border-width}), calc(100% + #{$discount-image-border-width}));
+    @include position-absolute(left, -($discount-image-border-width / 2), top, -($discount-image-border-width / 2));
+    @include opacity(0);
+    @include transition(all, 0.1s, linear);
+
+    &:before, &:after {
+      background-color: $discount-image-border-color;
+    }
+
+    &:before {
+      left: -($discount-image-border-width / 2);
+      height: $discount-image-border-width;
+    }
+
+    &:after {
+      width: $discount-image-border-width;
+    }
+  }
+
+  &:hover, &:focus, &.active {
+    .discount-image-border {
+      @include opacity(1);
+    }
+
+    &-text {
+      .h5 {
+        color: $discount-image-border-color;
+      }
+    }
+  }
+
+  //Responsive styles
+
+  @include respond-to(mobile) {
+    &-image {
+      height: $height-blocks-mobile;
+    }
+  }
+}

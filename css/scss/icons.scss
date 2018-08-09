@@ -1,0 +1,270 @@
+@import "mixins";
+@import "functions";
+
+//-- Icons
+//------------------------------------------------------
+
+.icon {
+  @extend %bg-image-100;
+  cursor: pointer;
+  @include display-inline(middle);
+
+  &-vk {
+    background-image: url('#{$image-path}/rd-icon-eye.png');
+    @include h-w(16px, 30px);
+  }
+
+  &-fb {
+    background-image: url('#{$image-path}/rd-icon-close-menu.png');
+    @include h-w(15px, 15px);
+  }
+
+  &-rd-icon-profile {
+    background-image: url('#{$image-path}/rd-icon-profile.png');
+    @include h-w(25px, 25px);
+  }
+
+  &-search {
+    background-image: url('#{$image-path}/rd-icon-search.png');
+    @include h-w(25px, 25px);
+  }
+
+  &-like {
+    background-image: url('#{$image-path}/rd-icon-like.png');
+    @extend %icon-size20;
+  }
+
+  &-dislike {
+    background-image: url('#{$image-path}/rd-icon-dislike.png');
+    @extend %icon-size20;
+  }
+
+  &-benefit-1 {
+    background-image: url('#{$image-path}/benefit-1.png');
+    @include h-w(73px, 102px);
+  }
+
+  &-benefit-2 {
+    background-image: url('#{$image-path}/benefit-2.png');
+    @include h-w(85px, 97px);
+  }
+
+  &-benefit-3 {
+    background-image: url('#{$image-path}/benefit-3.png');
+    @include h-w(86px, 88px);
+  }
+
+  &-benefit-4 {
+    background-image: url('#{$image-path}/benefit-4.png');
+    @include h-w(64px, 115px);
+  }
+
+  &-benefit-5 {
+    background-image: url('#{$image-path}/benefit-6.png');
+    @include h-w(92px, 125px);
+  }
+
+  &-benefit-6 {
+    background-image: url('#{$image-path}/benefit-7.png');
+    @include h-w(89px, 90px);
+  }
+
+  &-benefit-7 {
+    background-image: url('#{$image-path}/benefit-5.png');
+    @include h-w(90px, 90px);
+  }
+
+  &-benefit-8 {
+    background-image: url('#{$image-path}/benefit-8.png');
+    @include h-w(92px, 129px);
+  }
+
+  &-mission-1 {
+    background-image: url('#{$image-path}/icon-mission-1.png');
+    @include h-w(86px, 107px);
+  }
+
+  &-mission-2 {
+    background-image: url('#{$image-path}/icon-mission-2.png');
+    @include h-w(79px, 108px);
+  }
+
+  &-mission-3 {
+    background-image: url('#{$image-path}/icon-mission-3.png');
+    @include h-w(84px, 107px);
+  }
+
+  &-mission-4 {
+    background-image: url('#{$image-path}/icon-mission-4.png');
+    @include h-w(97px, 113px);
+  }
+
+  &-square {
+    background-image: url('#{$image-path}/icon-square.png');
+    @include h-w(85px, 87px);
+  }
+
+  &-square-sport {
+    background-image: url('#{$image-path}/icon-sport-square.png');
+    @include h-w(61px, 87px);
+  }
+
+  &-school {
+    background-image: url('#{$image-path}/icon-school.png');
+    @include h-w(39px, 87px);
+  }
+
+  &-garden {
+    background-image: url('#{$image-path}/icon-garden.png');
+    @include h-w(32px, 87px);
+  }
+
+  &-hospital {
+    background-image: url('#{$image-path}/icon-hospital.png');
+    @include h-w(39px, 86px);
+  }
+
+  &-square-stores {
+    background-image: url('#{$image-path}/icon-stores.png');
+    @include h-w(43px, 79px);
+  }
+
+  &-eye {
+    background-image: url('#{$image-path}/icon-eye.png');
+    @include h-w(11px, 22px);
+  }
+
+  &-comment {
+    background-image: url('#{$image-path}/icon-comment.png');
+    @include h-w(16px, 17px);
+  }
+
+  &-calendar {
+    background-image: url('#{$image-path}/icon-calendar.png');
+    @include h-w(77px, 77px);
+  }
+
+  &-building {
+    background-image: url('#{$image-path}/icon-building.png');
+    @include h-w(77px, 83px);
+  }
+
+  &-favor {
+    background-image: url('#{$image-path}/icon-star.png');
+    @include h-w(30px, 31px);
+  }
+
+  &-concept {
+    background-image: url('#{$image-path}/icon-concept.png');
+    @include h-w(50px, 50px);
+  }
+
+  &-ruble {
+    background-image: url('#{$image-path}/icon-ruble.png');
+    @include h-w(50px, 50px);
+  }
+
+  &-location2 {
+    background-image: url('#{$image-path}/icon-location3.png');
+    @include h-w(50px, 50px);
+  }
+
+  &-document2 {
+    background-image: url('#{$image-path}/icon-document2.png');
+    @include h-w(50px, 50px);
+  }
+
+  &-diagram {
+    background-image: url('#{$image-path}/icon-diagram.png');
+    @include h-w(50px, 50px);
+  }
+
+  &-project {
+    background-image: url('#{$image-path}/icon-project.png');
+    @include h-w(50px, 50px);
+  }
+
+  &-pr {
+    background-image: url('#{$image-path}/icon-voice.png');
+    @include h-w(50px, 50px);
+  }
+
+  &-concept2 {
+    background-image: url('#{$image-path}/icon-concept2.png');
+    @include h-w(80px, 80px);
+  }
+
+  &-ruble2 {
+    background-image: url('#{$image-path}/icon-ruble2.png');
+    @include h-w(80px, 80px);
+  }
+
+  &-location3 {
+    background-image: url('#{$image-path}/icon-location4.png');
+    @include h-w(80px, 80px);
+  }
+
+  &-document3 {
+    background-image: url('#{$image-path}/icon-document3.png');
+    @include h-w(80px, 80px);
+  }
+
+  &-diagram2 {
+    background-image: url('#{$image-path}/icon-diagram2.png');
+    @include h-w(80px, 80px);
+  }
+
+  &-project2 {
+    background-image: url('#{$image-path}/icon-document4.png');
+    @include h-w(80px, 80px);
+  }
+
+  &-pr2 {
+    background-image: url('#{$image-path}/icon-voice2.png');
+    @include h-w(80px, 80px);
+  }
+
+  &-pickup {
+    background-image: url('#{$image-path}/icon-pickup.png');
+    @include h-w(22px, 32px);
+  }
+}
+
+.icon-share {
+  background: url('#{$image-path}/social.png') no-repeat;
+  cursor: pointer;
+  @include display-inline(middle);
+
+  &-vk {
+    background-position: 0 -14px;
+    @include h-w(17px, 30px);
+  }
+
+  &-fb {
+    background-position: -56px 0;
+    @include h-w(31px, 15px);
+  }
+
+  &-tw {
+    background-position: -146px -9px;
+    @include h-w(22px, 26px);
+  }
+
+  &-yb {
+    background-position: -97px -4px;
+    @include h-w(26px, 22px);
+  }
+
+  &-in {
+    background-position: -199px -7px;
+    @include h-w(23px, 23px);
+  }
+
+  &-od {
+    background-position: -248px -4px;
+    @include h-w(26px, 15px);
+  }
+}
+
+
+
