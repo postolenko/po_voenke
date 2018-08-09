@@ -22,10 +22,10 @@
 
 /*-- /Icons --*/
 
-/*-- Section 1 - Tab 1 Object Page --*/
+/*-- Tab 1 Object Page --*/
 
 .two-cols-templ {
-    /*margin: 30px 0;*/
+
 }
 
 .two-cols-templ .left {
@@ -72,6 +72,10 @@
     transform: translate(-50%, -50%);
 }
 
+.slider-1.owl-carousel .owl-item .img-box img {
+    width: auto;
+}
+
 .slider-1_wrapp .owl-prev {
     display: block;
     width: 50px;
@@ -101,10 +105,11 @@
 }
 
 .slider-1_wrapp .owl-prev {
+    margin: -25px 0 0 0;
     position: absolute;
     top: 50%;    
-    left: 0;
-    margin: -25px 0 0 0;
+    left: 0;    
+    z-index: 2;
     -webkit-transition-property: left;
     -webkit-transition-duration: .3s;
     -webkit-transition-timing-function: ease;
@@ -127,10 +132,11 @@
 }
 
 .slider-1_wrapp .owl-next {
+    margin: -25px 0 0 0;
     position: absolute;
     top: 50%;  
     right: 0;
-    margin: -25px 0 0 0;
+    z-index: 2;
     -webkit-transition-property: right;
     -webkit-transition-duration: .3s;
     -webkit-transition-timing-function: ease;
@@ -165,13 +171,11 @@
 }
 
 .tabs-links {
-    display: table;
-    width: 100%;
     margin: 20px -23px;
 }
 
 .tab-link {
-    display: table-cell;
+    display: inline-block;
     vertical-align: top;
     padding: 10px 23px;
 }
@@ -316,12 +320,12 @@
     margin: 5px 0;
 }
 
-.two-cols_2 .left {
+.two-cols_2 > .left {
     width: 50%;
     padding: 10px 2% 10px 0;
 }
 
-.two-cols_2 .right {
+.two-cols_2 > .right {
     width: 50%;
     padding: 10px 0 10px 2%;
 }
@@ -458,7 +462,7 @@ p.big-price span.ruble {
 .dropdown_title {
     cursor: pointer;
     position: relative;
-    padding: 16px 30px 16px 20px;
+    padding: 16px 40px 16px 20px;
 }
 
 .dropdown_title p {
@@ -554,4 +558,4 @@ p.big-price span.ruble {
     transform: rotate(-45deg);
 }
 
-/*-- /Section 1 - Tab 1 Object Page --*/
+/*-- /Tab 1 Object Page --*/

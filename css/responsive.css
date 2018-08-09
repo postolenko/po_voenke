@@ -1,0 +1,134 @@
+@media only screen and (max-width: 1280px) {
+
+	/*-- Tab 1 Object Page --*/
+
+	.two-cols-templ.row {
+		margin: 0;
+	}
+
+	.two-cols-templ > .left {
+	    width: 100%;
+	    float: none;
+	    padding: 10px 0;
+	}
+
+	.two-cols-templ > .right {
+	    width: 100%;
+	    float: none;
+	    padding: 10px 0;
+	}
+
+	.tabs-links {
+	    margin: 20px 0;
+	}
+
+	.tab-link {
+	    padding: 10px 12px;
+	}
+
+	.tab-link span {
+	    font-size: 28px;
+	    line-height: 35px;
+	}
+
+	/*-- /Tab 1 Object Page --*/
+
+}
+
+@media only screen and (max-width: 768px) {
+
+	/*-- Tab 1 Object Page --*/
+
+	.slider-1_wrapp {
+	    margin: 10px 0;
+	    padding: 10px;
+	}
+
+	.slider-1 .img-box {
+	    height: 500px;
+	}
+
+	.tab-link {
+	    padding: 8px;
+	}
+
+	.tab-link span {
+	    font-size: 20px;
+	    line-height: 20px;
+	}
+
+	.table .table-cell:nth-child(1) {
+	    width: 44%;
+	}
+
+	.table .table-cell:nth-child(2) {
+	    width: 56%;
+	}
+
+	/*-- /Tab 1 Object Page --*/
+
+}
+
+@media only screen and (max-width: 480px) {
+
+	/*-- Tab 1 Object Page --*/
+
+	.slider-1 .img-box {
+	    height: 400px;
+	}
+
+	.tabs-content {
+	    margin: 0;
+	}
+
+	.tab-link span {
+	    font-size: 18px;
+	    line-height: 20px;
+	}
+
+	.table-cell h3 {
+	    font-size: 15px;
+	    line-height: 18px;
+	}
+
+	.table-cell p {
+	    font-size: 15px;
+	    line-height: 18px;
+	}
+
+	.table-cell a {
+	    font-size: 15px;
+	    line-height: 18px;
+	}
+
+	.two-cols_2 p {
+	    font-size: 16px;
+	    line-height: 21px;
+	}
+
+	.two-cols_2 > .left {
+	    width: 100%;
+	    float: none;
+	    padding: 10px 0;
+	}
+
+	.two-cols_2 > .right {
+	    width: 100%;
+	    float: none;
+	    padding: 10px 0;
+	}
+
+	.dropdown_title p {
+	    font-size: 18px;
+	    line-height: 23px;
+	}
+
+	/*-- /Tab 1 Object Page --*/
+	
+}
+
+@media only screen and (max-width: 320px) {
+
+	
+
+}
