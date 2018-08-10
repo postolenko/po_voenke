@@ -1,3 +1,7 @@
+.overflow_hidden {
+    overflow: hidden;
+}
+
 /*-- Icons --*/
 
 .green-m {
@@ -23,10 +27,6 @@
 /*-- /Icons --*/
 
 /*-- Tab 1 Object Page --*/
-
-.two-cols-templ {
-
-}
 
 .two-cols-templ .left {
     width: 67%;
@@ -166,54 +166,24 @@
     right: -2px;
 }
 
-.tabs_wrapp {
-
-}
-
-/*.tabs-links {
-    margin: 20px -23px;
-}
-
-.tab-link {
-    display: inline-block;
-    vertical-align: top;
-    padding: 10px 23px;
-}
-
-.tab-link span {
-    display: inline;
-    cursor: pointer;
-    font-size: 31px;
-    line-height: 39px;
-    border-bottom: 1px dotted #f14741;
-    color: #f14741;
-}
-
-.tab-link span:hover {
-    border-bottom: 1px dotted transparent;
-}
-
-.tab-link.active span {
-    border-bottom: 1px dotted transparent;
-    font-family: "Fira Sans Condensed", sans-serif;
-    font-weight: 700;
-    color: #000000;
-}*/
-
-
-
 .tabs-content {
     margin: 15px 0;
 }
 
 .tabs-links {
-    margin: 0 -26px;
+    margin: 0 -10px;
+}
+
+.tab-link_wrapp {
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    padding: 8px 3px;
 }
 
 .tab-link {
     display: inline-block;
     vertical-align: top;
-    margin: 8px 26px;
     cursor: pointer;
     font-size: 31px;
     line-height: 39px;
@@ -284,7 +254,6 @@
     display: block;
 }
 
-
 .table {
     display: table;
     width: 100%;
@@ -325,10 +294,6 @@
     font-size: 16px;
     line-height: 22px;
     color: #000000;
-}
-
-.table ul {
-
 }
 
 .table ul li {

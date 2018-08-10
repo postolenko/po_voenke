@@ -18,18 +18,10 @@
 	    padding: 10px 0;
 	}
 
-	/*.tabs-links {
-	    margin: 20px 0;
-	}
-*/
-	/*.tab-link {
-	    padding: 10px 12px;
-	}
-
-	.tab-link span {
+	.tab-link {
 	    font-size: 28px;
 	    line-height: 35px;
-	}*/
+	}
 
 	/*-- /Tab 1 Object Page --*/
 
@@ -48,14 +40,10 @@
 	    height: 500px;
 	}
 
-	/*.tab-link {
-	    padding: 8px;
+	.tab-link {
+	    font-size: 22px;
+	    line-height: 23px;
 	}
-
-	.tab-link span {
-	    font-size: 20px;
-	    line-height: 20px;
-	}*/
 
 	.table .table-cell:nth-child(1) {
 	    width: 44%;
@@ -80,11 +68,6 @@
 	.tabs-content {
 	    margin: 0;
 	}
-
-	/*.tab-link span {
-	    font-size: 18px;
-	    line-height: 20px;
-	}*/
 
 	.table-cell h3 {
 	    font-size: 15px;
