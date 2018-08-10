@@ -25,10 +25,14 @@ $(document).ready(function () {
         }
     });
 
-    $( "#price-slider" ).slider({
-        range: true,
-        values: [ 17, 67 ]
-    });
+    if( $( "#price-slider" ).length > 0 ) {
+
+        $( "#price-slider" ).slider({
+            range: true,
+            values: [ 17, 67 ]
+        });
+
+    }
 
     $('.owl-carousel.slider-1').owlCarousel({
         loop:false,
