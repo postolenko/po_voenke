@@ -170,7 +170,7 @@
 
 }
 
-.tabs-links {
+/*.tabs-links {
     margin: 20px -23px;
 }
 
@@ -198,11 +198,92 @@
     font-family: "Fira Sans Condensed", sans-serif;
     font-weight: 700;
     color: #000000;
+}*/
+
+
+
+.tabs-content {
+    margin: 15px 0;
+}
+
+.tabs-links {
+    margin: 0 -26px;
+}
+
+.tab-link {
+    display: inline-block;
+    vertical-align: top;
+    margin: 8px 26px;
+    cursor: pointer;
+    font-size: 31px;
+    line-height: 39px;
+    font-weight: normal;
+    border-bottom: 1px dotted #f14741;
+    color: #f14741;
+    -webkit-transition-property: all;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: all;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: all;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: all;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: all;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.tab-link:link,
+.tab-link:visited {    
+    border-bottom: 1px dotted #f14741;
+    font-weight: normal;
+    color: #f14741;
+}
+
+.tab-link:active,
+.tab-link.active {
+    border-bottom: 1px dotted transparent;
+    font-family: "Fira Sans Condensed", sans-serif;
+    font-weight: 700;
+    color: #000000;
+}
+
+.tab-link:hover {
+    border-bottom: 1px dotted transparent;
+    color: #000000;
 }
 
 .tabs-content {
-    margin: 31px 0;
+    position: relative;
 }
+
+.tabs-content .radio-tab {
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.tabs-content .tab {
+    display: none;
+    padding: 15px 0;
+}
+
+.tabs-content .radio-tab:checked + .tab {
+    display: block;
+}
+
 
 .table {
     display: table;

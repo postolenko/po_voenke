@@ -1,8 +1,71 @@
+var indexActiveTab;
+var tabsParent;
+var attrForTabLink;
+var activeTabRadio;
+
 var parentBlock;
 var dropdownBlock;
 var dropdownBtn;
 
 $(document).ready(function () {
+
+	$(".tabs").each(function() {
+
+        $(this).find(".tab-link").each(function() {
+
+            if( $(this).hasClass("active") ) {
+
+                indexActiveTab = $(this).index(".tab-link");
+
+                $(this).click();
+
+                return false;
+
+            } else {
+
+                indexActiveTab = 0;
+
+            }
+
+        });
+
+        $(this).find(".tab-link").eq(indexActiveTab).click();
+        $(this).find(".tab-link").eq(indexActiveTab).addClass("active");
+
+    });
+
+    $(".tab-link").click(function (e) {
+
+        if( $(this).hasClass("active") ) {
+
+            e.preventDefault();
+
+        } else {
+
+            tabsParent = $(this).closest(".tabs");
+            attrForTabLink = $(this).attr("for");
+            activeTabRadio = tabsParent.find(".radio-tab[id = '"+ attrForTabLink +"']");
+            activeTabRadio.prop("checked", true);
+
+            tabsParent.find(".tab-link").each(function () {
+                
+                if( $(this).hasClass("active") ) {
+
+                    $(this).removeClass("active")
+
+                }
+
+            });
+
+            $(this).addClass("active");
+
+        }
+
+    });
+
+    // -------------------------
+
+
 
 	$(".dropdown_wrapp").each(function() {
 
