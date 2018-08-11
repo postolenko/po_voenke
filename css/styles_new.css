@@ -575,6 +575,7 @@ p.big-price span.ruble {
     display: -webkit-flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin: 20px 0;
 }
 
 .two-cols-templ .two-col-1 {
@@ -588,7 +589,7 @@ p.big-price span.ruble {
 }
 
 .thumbnails_2 {
-    margin: 0 -9px;
+    margin: 14px -9px;
 }
 
 .thumb_2 {
@@ -618,10 +619,6 @@ p.big-price span.ruble {
     -webkit-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-}
-
-.thumb_2 .green-pill_2 {
-
 }
 
 .green-pill_2 {
@@ -676,6 +673,18 @@ p.big-price span.ruble {
 .green-pill_2:hover {
     background: #23d400;
     color: #ffffff;
+}
+
+.info_box {
+    margin: 10px 0 33px 0;
+}
+
+.info_box h3 {
+    margin-bottom: 6px;
+}
+
+.info_box p {
+    margin-bottom: 3px;
 }
 
 .form_wrapp {
