@@ -2,6 +2,11 @@
     overflow: hidden;
 }
 
+.offset-ziro {
+    font-size: 0;
+    line-height: 0;
+}
+
 /*-- Icons --*/
 
 .green-m {
@@ -110,25 +115,6 @@
     top: 50%;    
     left: 0;    
     z-index: 2;
-    -webkit-transition-property: left;
-    -webkit-transition-duration: .3s;
-    -webkit-transition-timing-function: ease;
-
-    -moz-transition-property: left;
-    -moz-transition-duration: .3s;
-    -moz-transition-timing-function: ease;
-
-    -ms-transition-property: left;
-    -ms-transition-duration: .3s;
-    -ms-transition-timing-function: ease;
-
-    -o-transition-property: left;
-    -o-transition-duration: .3s;
-    -o-transition-timing-function: ease;
-
-    transition-property: left;
-    transition-duration: .3s;
-    transition-timing-function: ease;
 }
 
 .slider-1_wrapp .owl-next {
@@ -137,33 +123,6 @@
     top: 50%;  
     right: 0;
     z-index: 2;
-    -webkit-transition-property: right;
-    -webkit-transition-duration: .3s;
-    -webkit-transition-timing-function: ease;
-
-    -moz-transition-property: right;
-    -moz-transition-duration: .3s;
-    -moz-transition-timing-function: ease;
-
-    -ms-transition-property: right;
-    -ms-transition-duration: .3s;
-    -ms-transition-timing-function: ease;
-
-    -o-transition-property: right;
-    -o-transition-duration: .3s;
-    -o-transition-timing-function: ease;
-
-    transition-property: right;
-    transition-duration: .3s;
-    transition-timing-function: ease;
-}
-
-.slider-1_wrapp .owl-prev:hover {
-    left: -2px;
-}
-
-.slider-1_wrapp .owl-next:hover {
-    right: -2px;
 }
 
 .tabs-content {
@@ -605,3 +564,515 @@ p.big-price span.ruble {
 }
 
 /*-- /Tab 1 Object Page --*/
+
+/*-- Banks Page --*/
+
+.two-cols-templ {
+    display: flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.two-cols-templ .two-col-1 {
+    width: calc(100% - 300px);
+    padding-right: 13px;
+}
+
+.two-cols-templ .two-col-2 {
+    width: 300px;
+    padding-left: 13px;
+}
+
+.thumbnails_2 {
+    margin: 0 -9px;
+}
+
+.thumb_2 {
+    display: inline-block;
+    vertical-align: top;
+    width: calc(33.33% - 18px);
+    background: #f1f1f1;
+    margin: 9px;
+    padding: 29px 0 45px 0;
+    text-align: center;
+}
+
+.thumb_2 .img-box {
+    height: 130px;
+    margin: 12px 0;
+    position: relative;
+}
+
+.thumb_2 .img-box img {
+    display: block;
+    width: auto;
+    max-width: 98%;
+    max-height: 98%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.thumb_2 .green-pill_2 {
+
+}
+
+.green-pill_2 {
+    display: inline-block;
+    vertical-align: top;
+    min-width: 140px;
+    border: 1px solid transparent;
+    text-align: center;
+    background: #009440;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    padding: 9px 2% 9px 2%;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 700;
+    color: #ffffff;
+
+    -webkit-transition-property: all;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: all;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: all;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: all;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: all;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.green-pill_2:link,
+.green-pill_2:visited {
+    background: #009440;
+    color: #ffffff;
+}
+
+.green-pill_2:active,
+.green-pill_2.active {
+    background: #23d400;
+    color: #ffffff;
+}
+
+.green-pill_2:hover {
+    background: #23d400;
+    color: #ffffff;
+}
+
+.form_wrapp {
+    background-color: #f1f1f1;
+    border: 2px solid #009440;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    padding: 27px 38px;
+}
+
+.form_wrapp h3 {
+    color: #009440;
+}
+
+.input_wrapp {
+    margin: 10px 0;
+}
+
+.input_wrapp textarea {
+    display: block;
+    width: 100%;
+    height: 83px;
+    padding: 8px 10px;
+    border: 2px solid #787878;
+    background-color: #f1f1f1;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 300;
+    color: #787878;
+}
+
+.input_wrapp textarea:focus {
+    outline: none;
+    background-color: #ffffff;
+}
+
+.input_wrapp input {
+    border: 2px solid #787878;
+    background-color: #f1f1f1;
+    display: block;
+    width: 100%;
+    height: 40px;
+    padding: 5px 10px;
+    border: 2px solid #787878;
+    background-color: #f1f1f1;
+    font-size: 16px;
+    line-height: 32px;
+    font-weight: 300;
+    color: #787878;
+}
+
+.input_wrapp input:focus {
+    outline: none;
+    background-color: #ffffff;
+}
+
+.tree-cols {
+    margin: 0 -15px;
+}
+
+.tree-cols .col {
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 15px;
+    width: 33.33%;
+}
+
+.tree-cols .green-pill_2 {
+    width: 100%;
+}
+
+.mortgages-header {
+    display: table;
+    width: 100%;
+    padding: 24px 70px 30px 0;
+    border-bottom: 1px solid #f3970d;
+}
+
+.mortgages-header .table-row {
+    display: table-row;
+}
+
+.mortgages-header .cell {
+    display: table-cell;
+    vertical-align: top;
+    padding: 5px 1% 5px 0;
+}
+
+.mortgages-header .cell-1 {
+    width: 18%;
+}
+
+.mortgages-header .cell-2 {
+    width: 11%;
+}
+
+.mortgages-header .cell-3 {
+    width: 14%;
+}
+
+.mortgages-header .cell-4 {
+    width: 15%;
+}
+
+.mortgages-header .cell-5 {
+    width: 42%;
+}
+
+.mortgages-header div.h5 {
+    color: #2d3a67;
+    font-size: 18px;
+    margin-bottom: 0;
+}
+
+.bank-header {
+    display: table;
+    width: 100%;
+    padding: 0 70px 0 0;
+    position: relative;
+    background: #ffffff;
+    border-bottom: 1px solid #f3970d;
+}
+
+.bank-header .table-row {
+    display: table-row;
+}
+
+.bank-header .cell {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 10px 1% 10px 0;
+}
+
+.bank-header .cell-1 {
+    width: 18%;
+}
+
+.bank-header .cell-2 {
+    width: 11%;
+}
+
+.bank-header .cell-3 {
+    width: 14%;
+}
+
+.bank-header .cell-4 {
+    width: 15%;
+}
+
+.bank-header .cell-5 {
+    width: 42%;
+}
+
+.bank-header .cell-1 img {
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: 98%;
+}
+
+.sliding-btn {
+    display: block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    outline: none;
+    border: 1px solid transparent;
+    background-color: transparent;
+    background-image: url(../images/arrow-blue.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+.sliding-btn:active,
+.sliding-btn:focus {
+    outline: none;
+}
+
+.sliding-btn.active {   
+    background-image: url(../images/close-blue.png); 
+}
+
+.bank-header .sliding-btn {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    margin: -17px 0 0 0;
+}
+
+.yellow-white-star {
+    display: block;
+    width: 18px;
+    height: 17px;
+    background-image: url(../images/yellow_white_star.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+.military-shape i {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.military-shape div.h3 {
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 14px;
+    color: #ffffff;
+}
+
+.bank-header .military-shape {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.bank-header p {
+    margin-bottom: 0;
+    color: #2d3a67;
+    font-family: "Fira Sans Compressed", sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 300;
+}
+
+.mortgage-block .sliding-block {
+    background: #f1f1f1;
+    border-bottom: 1px solid #f3970d;
+    padding: 20px 38px 39px 38px;
+}
+
+.sliding-bl_inner {
+    padding-right: 32px;
+}
+
+.bank-inner-table {
+    display: table;
+    width: 100%;
+    margin: 0 -2%;
+    padding: 2px 0 23px 0;
+}
+
+.bank-inner-table .table-row {
+    display: table-row;
+}
+
+.bank-inner-table .cell {
+    display: table-cell;
+    vertical-align: top;
+    width: 25%;
+    position: relative;
+    text-align: center;
+    padding: 0 2%;  
+}
+
+.bank-inner-table .cell > div {
+    padding: 13px 0;
+}
+
+.bank-inner-table .cell:after {
+    display: block;
+    content: "";
+    width: 84%;
+    height: 0;
+    position: absolute;
+    bottom: 0;
+    left: 8%;
+    border-bottom: 2px solid #e4e4e4;
+}
+
+.bank-inner-table .table-row:last-child .cell:after {
+    display: none;
+}
+
+.bank-inner-table .cell-1 {
+    width: 25%;
+}
+
+.bank-inner-table .cell-2 {
+    width: 25%;
+}
+
+.bank-inner-table .cell-3 {
+    width: 25%;
+}
+
+.bank-inner-table .cell-4 {
+    width: 25%;
+}
+
+.bank-inner-table p {
+    margin-bottom: 0;
+    color: #000000;
+    font-family: "Fira Sans Compressed", sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 300;
+}
+
+.two-cols-inner {
+    padding: 8px 0;
+}
+
+.two-cols-inner .col {
+    display: inline-block;
+    vertical-align: middle;
+    width: 50%;
+    padding: 10px 0;
+}
+
+.two-cols-inner .col:nth-child(odd) {
+    padding-right: 1%;
+}
+
+.two-cols-inner .col:nth-child(even) {
+    padding-left: 1%;
+}
+
+.mortgage-block .two-cols-inner .col:nth-child(even) {
+    text-align: right;
+}
+
+.two-cols-inner p {
+    margin-bottom: 0;
+}
+
+p.font-10 {
+    font-size: 10px;
+    line-height: 15px;
+}
+
+.thumbnails_3 {
+    margin: 8px -10px 0 -10px;
+}
+
+.thumb_3 {
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px;
+}
+
+.thumbnails_3 .thumb_3 {
+    width: 17.5%;
+}
+
+.thumb_3 .inner {
+    display: block;
+    min-height: 265px;
+    border-bottom: 1px solid #777777;
+}
+
+.thumb_3 .img-box {
+    height: 180px;
+    margin: 0 0 7px 0;
+    background: #ffffff;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid #777777;
+}
+
+.thumb_3 .img-box img {
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.thumb_3 div.h3 {
+    margin-bottom: 1px;
+    color: #000000;
+    font-family: "Fira Sans", sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+}
+
+.thumb_3 p {
+    margin-bottom: 0;
+    color: #777777;
+    font-family: "Fira Sans", sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 300;
+}
+
+
+/*-- /Banks Page --*/
