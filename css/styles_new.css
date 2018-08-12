@@ -338,6 +338,12 @@
     color: #000000;
 }
 
+.description_wrapp h4 .ruble {
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+}
+
 .description_wrapp p {
     margin: 0 0 4px;
 }
