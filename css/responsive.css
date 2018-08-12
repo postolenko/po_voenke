@@ -10,6 +10,18 @@
 
 }
 
+@media only screen and (max-width: 1340px) {
+	
+	/*-- Banks Page --*/
+
+	.thumbnails_3 .thumb_3 {
+	    width: 25%;
+	}
+
+	/*-- /Banks Page --*/
+
+}
+
 @media only screen and (max-width: 1280px) {
 
 	/*-- Tab 1 Object Page --*/
@@ -36,6 +48,52 @@
 	}
 
 	/*-- /Tab 1 Object Page --*/
+
+	/*-- Banks Page --*/
+
+	.two-cols-templ .two-col-1 {
+	    width: calc(100% - 266px);
+	}
+
+	.two-cols-templ .two-col-2 {
+	    width: 266px;
+	}
+
+	/*-- .Banks Page --*/
+
+}
+
+@media only screen and (max-width: 900px) {
+
+	/*-- Banks Page --*/
+
+	.thumbnails_3 .thumb_3 {
+	    width: 33.33%;
+	}
+
+	/*-- /Banks Page --*/
+
+}
+
+@media only screen and (max-width: 1024px) {
+
+	/*-- Banks Page --*/
+
+	.thumb_2 {
+	    width: calc(50% - 18px);
+	}
+
+	.two-cols-templ .two-col-1 {
+	    width: 100%;
+	    float: none;
+	}
+
+	.two-cols-templ .two-col-2 {
+	    width: 100%;
+	    float: none;
+	}
+
+	/*-- /Banks Page --*/
 
 }
 
@@ -66,6 +124,121 @@
 	}
 
 	/*-- /Tab 1 Object Page --*/
+
+	/*-- Banks Page --*/
+
+	.form_wrapp h3 {
+		text-align: center;
+	    font-size: 22px;
+	}
+
+	.form_wrapp {
+	    padding: 27px 20px;
+	}
+
+	.tree-cols .col {
+	    width: 100%;
+	}
+
+	.thumb_2 {
+	    padding: 2px 0 16px 0;
+	}
+
+	.mortgages-header .cell-1 {
+	    width: 38%;
+	}
+
+	.mortgages-header .cell-2 {
+	    width: 19%;
+	}
+
+	.mortgages-header .cell-3 {
+	    width: 19%;
+	}
+
+	.mortgages-header .cell-4 {
+	    width: 24%;
+	}
+
+	.mortgages-header .cell-5 {
+	    display: none;
+	}
+
+	.bank-header .cell-1 {
+	    width: 38%;
+	}
+
+	.bank-header .cell-2 {
+	    width: 19%;
+	}
+
+	.bank-header .cell-3 {
+	    width: 19%;
+	}
+
+	.bank-header .cell-4 {
+	    width: 24%;
+	}
+
+	.bank-header .cell-5 {
+	    display: none;
+	}
+
+	.bank-inner-table .cell-1 {
+	    width: 33.33%;
+	}
+
+	.bank-inner-table .cell-2 {
+	    width: 33.33%;
+	}
+
+	.bank-inner-table .cell-3 {
+	    width: 33.33%;
+	}
+
+	.bank-inner-table .cell-4 {
+		display: none;
+	}
+
+	.bank-inner-table p {
+	    font-size: 14px;
+	    line-height: 14px;
+	}
+
+	.sliding-bl_inner {
+	    padding-right: 0;
+	}
+
+	.mortgages-header {
+	    padding: 24px 40px 30px 0;
+	}
+
+	.bank-header {
+	    padding: 0 40px 0 0;
+	}
+
+	.two-cols-inner .col {
+	    width: 100%;
+	}
+
+	.two-cols-inner .col .btn-secondary {
+		width: 100%;
+		white-space: normal;
+	}
+
+	/*-- /Banks Page --*/
+
+}
+
+@media only screen and (max-width: 700px) {
+
+	/*-- Banks Page --*/
+
+	.thumbnails_3 .thumb_3 {
+	    width: 50%;
+	}
+
+	/*-- /Banks Page --*/
 
 }
 
@@ -119,6 +292,112 @@
 	}
 
 	/*-- /Tab 1 Object Page --*/
+
+	/*-- Banks Page --*/
+
+	.thumbnails_2 {
+	    margin: 14px 0;
+	}
+
+	.thumb_2 {
+	    width: 100%;
+	    margin: 9px 0;
+	    padding: 2px 0 4px 0;
+	}
+
+	.thumb_2 .img-box {
+	    height: 99px;
+	}
+
+	.mortgages-header .cell-1 {
+	    width: 50%;
+	}
+
+	.mortgages-header .cell-2 {
+	    width: 25%;
+	}
+
+	.mortgages-header .cell-3 {
+	    width: 25%;
+	}
+
+	.mortgages-header .cell-4 {
+	    display: none;
+	}
+
+	.bank-header .cell-1 {
+	    width: 50%;
+	}
+
+	.bank-header .cell-2 {
+	    width: 25%;
+	}
+
+	.bank-header .cell-3 {
+	    width: 25%;
+	}
+
+	.bank-header .cell-4 {
+	    display: none;
+	}
+
+	.thumbnails_3 {
+	    margin: 8px 0 0 0;
+	}
+
+	.thumbnails_3 .thumb_3 {
+	    width: 100%;
+	}
+
+	.bank-inner-table .cell-1 {
+	    width: 60%;
+	}
+
+	.bank-inner-table .cell-2 {
+	    width: 40%;
+	}
+
+	.bank-inner-table .cell-3 {
+		display: none;
+	}
+
+	.mortgage-block .sliding-block {
+	    padding: 3px 8px 8px 8px;
+	}
+
+	/*-- /Banks Page --*/
+	
+}
+
+@media only screen and (max-width: 370px) {
+
+	/*-- Banks Page --*/
+
+	.mortgages-header .cell-1 {
+	    width: 70%;
+	}
+
+	.mortgages-header .cell-2 {
+	    width: 30%;
+	}
+
+	.mortgages-header .cell-3 {
+	    display: none;
+	}
+
+	.bank-header .cell-1 {
+	    width: 70%;
+	}
+
+	.bank-header .cell-2 {
+	    width: 30%;
+	}
+
+	.bank-header .cell-3 {
+	    display: none;
+	}
+
+	/*-- /Banks Page --*/
 	
 }
 
