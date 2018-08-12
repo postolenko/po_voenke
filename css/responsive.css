@@ -1,3 +1,19 @@
+@media only screen and (max-width: 1550px) {
+
+	/*-- Tab 1 Object Page --*/
+
+	.tabs-links {
+	    margin: 0 -15px;
+	}
+
+	.tab-link_wrapp {
+	    padding: 8px 15px;
+	}
+
+	/*-- /Tab 1 Object Page --*/
+
+}
+
 @media only screen and (max-width: 1440px) {
 
 	/*-- Tab 1 Object Page --*/
@@ -6,12 +22,25 @@
 		margin: 0;
 	}
 
+	.tabs-links {
+	    margin: 0 -12px;
+	}
+
+	.tab-link_wrapp {
+	    padding: 8px 12px;
+	}
+
+	.tab-link {
+	    font-size: 28px;
+	    line-height: 32px;
+	}
+
 	/*-- /Tab 1 Object Page --*/
 
 }
 
 @media only screen and (max-width: 1340px) {
-	
+
 	/*-- Banks Page --*/
 
 	.thumbnails_3 .thumb_3 {
@@ -59,18 +88,6 @@
 	    width: 266px;
 	}
 
-	/*-- .Banks Page --*/
-
-}
-
-@media only screen and (max-width: 900px) {
-
-	/*-- Banks Page --*/
-
-	.thumbnails_3 .thumb_3 {
-	    width: 33.33%;
-	}
-
 	/*-- /Banks Page --*/
 
 }
@@ -91,6 +108,27 @@
 	.two-cols-templ .two-col-2 {
 	    width: 100%;
 	    float: none;
+	}
+
+	/*-- /Banks Page --*/
+
+}
+
+@media only screen and (max-width: 900px) {
+
+	/*-- Tab 1 Object Page --*/
+
+	.tab-link {
+		font-size: 23px;
+		line-height: 29px;
+	}
+
+	/*-- /Tab 1 Object Page --*/
+
+	/*-- Banks Page --*/
+
+	.thumbnails_3 .thumb_3 {
+	    width: 33.33%;
 	}
 
 	/*-- /Banks Page --*/
@@ -121,6 +159,26 @@
 
 	.table .table-cell:nth-child(2) {
 	    width: 56%;
+	}
+
+	.prices_table .table-cell-1 {
+	    width: 30%;
+	}
+
+	.prices_table .table-cell-2 {
+	    width: 30%;
+	}
+
+	.prices_table .table-cell-3 {
+	    width: 40%;
+	}
+
+	.prices_table .table-cell-4 {
+	    display: none;
+	}
+
+	.plan_slider .img-box {
+	    height: 300px;
 	}
 
 	/*-- /Tab 1 Object Page --*/
@@ -291,6 +349,10 @@
 	    line-height: 23px;
 	}
 
+	.plan_slider .img-box {
+	    height: 235px;
+	}
+
 	/*-- /Tab 1 Object Page --*/
 
 	/*-- Banks Page --*/
@@ -370,6 +432,16 @@
 }
 
 @media only screen and (max-width: 370px) {
+
+	/*-- Tab 1 Object Page --*/
+
+	.table-cell p {
+	    font-size: 12px;
+	    line-height: 15px;
+	    font-weight: 600;
+	}
+
+	/*-- /Tab 1 Object Page --*/
 
 	/*-- Banks Page --*/
 

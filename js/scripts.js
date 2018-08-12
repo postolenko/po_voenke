@@ -59,6 +59,30 @@ $(document).ready(function () {
         }
     });
 
+    $('.owl-carousel.plan_slider').owlCarousel({
+        loop:false,
+        mouseDrag: false,
+        touchDrag: true,
+        dots: true,
+        nav: false,
+        responsiveClass:true,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:1
+
+            },
+            992:{
+                items:1
+            },
+            1200:{
+                items:1
+            }
+        }
+    });
+
 });
 
 
