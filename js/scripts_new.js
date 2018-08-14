@@ -12,18 +12,23 @@ var slidingBtn;
 
 $(window).load(function () {
 
-	
+
 
 });
 
 $(window).resize(function () {
 
+	$(".tab-link_wrapp").css({
+		"width" : "auto"
+	});
 
+	getTabsLinksParams();
 
 });
 
 $(document).ready(function () {
 
+	getTabsLinksParams();
 
 	$(".tabs").each(function() {
 
@@ -171,3 +176,19 @@ $(document).ready(function () {
 	});
 
 });
+
+function getTabsLinksParams() {
+
+	$(".tabs-links").each(function() {
+
+		$(this).find(".tab-link_wrapp").each(function() {
+
+			var linkWidth = $(this).width() + $(this).width()*.05;
+
+			$(this).width(linkWidth);
+
+		});
+
+	});
+
+}

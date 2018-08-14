@@ -209,11 +209,11 @@
 	    line-height: 23px;
 	}
 
-	.table .table-cell:nth-child(1) {
+	.chars .table-cell:nth-child(1) {
 	    width: 44%;
 	}
 
-	.table .table-cell:nth-child(2) {
+	.chars .table-cell:nth-child(2) {
 	    width: 56%;
 	}
 

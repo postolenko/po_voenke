@@ -149,7 +149,6 @@
     cursor: pointer;
     font-size: 31px;
     line-height: 39px;
-    font-weight: 600;
     white-space: nowrap;
     border-bottom: 1px dotted #f14741;
     color: #f14741;
@@ -182,11 +181,13 @@
 
 .tab-link:active,
 .tab-link.active {
+    font-weight: 600;
     border-bottom: 1px dotted transparent;
     color: #000000;
 }
 
 .tab-link:hover {
+    font-weight: 600;
     border-bottom: 1px dotted transparent;
     color: #000000;
 }
@@ -238,7 +239,7 @@
     opacity: 1;
 }
 
-.table {
+.chars {
     display: table;
     width: 100%;
     border-collapse: collapse;
@@ -254,12 +255,12 @@
     vertical-align: top;
 }
 
-.table .table-cell:nth-child(1) {
+.chars .table-cell:nth-child(1) {
     width: 28%;
     padding: 5px 5px 7px 0;
 }
 
-.table .table-cell:nth-child(2) {
+.chars .table-cell:nth-child(2) {
     width: 72%;
     padding: 5px 0 7px 5px;
 }
@@ -280,12 +281,12 @@
     color: #000000;
 }
 
-.table ul li {
+.chars ul li {
     display: inline-block;
     vertical-align: top;
 }
 
-.table ul li:after {
+.chars ul li:after {
     display: inline-block;
     vertical-align: top;
     content: "\2f";
@@ -296,7 +297,7 @@
     color: #000000;
 }
 
-.table ul li:last-child:after {
+.chars ul li:last-child:after {
     display: none;
 }
 
