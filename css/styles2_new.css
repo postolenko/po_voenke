@@ -1521,7 +1521,7 @@ p.font-10 {
 
 .info-box {
     margin: 31px 0;
-    padding: 17px 3.5% 26px 3.5%;
+    padding: 17px 3.5% 30px 3.5%;
     border-width: 2px;
     border-color: rgb(0, 148, 64);
     border-style: solid;
@@ -1556,10 +1556,14 @@ p.font-10 {
 .two-cols-templ_4 .green-pill_2 {
     min-width: 243px;
     padding: 15px 2% 16px 2%;
+    font-size: 20px;
 }
 
 .info-box p {
-    padding: 1px 0;
+    padding: 4px 0;
+    font-size: 14px;
+    line-height: 16px;
+    color: #777777;
 }
 
 .info-box p a {
@@ -1568,7 +1572,6 @@ p.font-10 {
 
 .checkbox {
     position: relative;
-    margin: 2px 0;
 }
 
 .checkbox input {
@@ -1583,6 +1586,7 @@ p.font-10 {
     cursor: pointer;
     position: relative;
     padding: 0 0 0 20px;
+    font-size: 14px;
 }
 
 .checkbox label:before {
@@ -1591,7 +1595,7 @@ p.font-10 {
     width: 10px;
     height: 10px;
     position: absolute;
-    top: 5px;
+    top: 4px;
     left: 0;
     border: 1px solid #009440;
 }
@@ -1602,7 +1606,7 @@ p.font-10 {
     width: 4px;
     height: 4px;
     position: absolute;
-    top: 8px;
+    top: 7px;
     left: 3px;
     background-color: #009440;
 }
