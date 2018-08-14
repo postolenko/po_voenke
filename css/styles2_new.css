@@ -1556,6 +1556,7 @@ p.font-10 {
 .two-cols-templ_4 .green-pill_2 {
     min-width: 243px;
     padding: 15px 2% 16px 2%;
+    font-family: "Fira Sans Condensed SemiBold", sans-serif;
     font-size: 20px;
 }
 
