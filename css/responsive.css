@@ -18,7 +18,7 @@
 
 	/*-- Tab 1 Object Page --*/
 
-	.two-cols-templ.row {
+	.two-cols-templ_1_1.row {
 		margin: 0;
 	}
 
@@ -91,17 +91,17 @@
 
 	/*-- Tab 1 Object Page --*/
 
-	.two-cols-templ.row {
+	.two-cols-templ_1_1.row {
 		margin: 0;
 	}
 
-	.two-cols-templ > .left {
+	.two-cols-templ_1_1 > .left {
 	    width: 100%;
 	    float: none;
 	    padding: 10px 0;
 	}
 
-	.two-cols-templ > .right {
+	.two-cols-templ_1_1 > .right {
 	    width: 100%;
 	    float: none;
 	    padding: 10px 0;
@@ -116,11 +116,11 @@
 
 	/*-- Banks Page --*/
 
-	.two-cols-templ .two-col-1 {
+	.two-cols-templ_1 .two-col-1 {
 	    width: calc(100% - 266px);
 	}
 
-	.two-cols-templ .two-col-2 {
+	.two-cols-templ_1 .two-col-2 {
 	    width: 266px;
 	}
 
@@ -156,14 +156,18 @@
 	    width: calc(50% - 18px);
 	}
 
-	.two-cols-templ .two-col-1 {
+	.two-cols-templ_1 .two-col-1 {
 	    width: 100%;
 	    float: none;
+	    margin: 10px 0;
+	    padding-right: 0;
 	}
 
-	.two-cols-templ .two-col-2 {
+	.two-cols-templ_1 .two-col-2 {
 	    width: 100%;
 	    float: none;
+	    margin: 10px 0;
+	    padding-left: 0;
 	}
 
 	/*-- /Banks Page --*/
@@ -192,6 +196,10 @@
 }
 
 @media only screen and (max-width: 768px) {
+
+	.tab-novisible {
+		display: none !important;
+	}
 
 	/*-- Tab 1 Object Page --*/
 

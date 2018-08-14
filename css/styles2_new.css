@@ -37,12 +37,12 @@
 
 /*-- Tab 1 Object Page --*/
 
-.two-cols-templ .left {
+.two-cols-templ_1_1 .left {
     width: 67%;
     padding: 0 10px 0 0;
 }
 
-.two-cols-templ .right {
+.two-cols-templ_1_1 .right {
     width: 33%;
     padding: 0 0 0 10px;
 }
@@ -690,7 +690,7 @@ p.big-price span.ruble {
 
 /*-- Banks Page --*/
 
-.two-cols-templ {
+.two-cols-templ_1 {
     display: flex;
     display: -webkit-box;
     display: -moz-box;
@@ -701,12 +701,12 @@ p.big-price span.ruble {
     margin: 20px 0;
 }
 
-.two-cols-templ .two-col-1 {
+.two-cols-templ_1 .two-col-1 {
     width: calc(100% - 300px);
     padding-right: 13px;
 }
 
-.two-cols-templ .two-col-2 {
+.two-cols-templ_1 .two-col-2 {
     width: 300px;
     padding-left: 13px;
 }
@@ -1206,6 +1206,73 @@ p.font-10 {
     font-weight: 300;
 }
 
+.price_calc {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.price_calc .panel-header {
+    padding: 25px 20px 20px 20px;
+}
+
+.price_calc .panel-title {
+    color: #15994c;
+}
+
+.price_calc .panel-body {
+    padding: 0;
+}
+
+.price_calc .panel-body .inner {
+    padding: 5px 20px 20px 20px;
+}
+
+.price_calc .form-group {
+    margin-bottom: 14px;
+}
+
+.price_calc .dropdown-toggle {
+    border-width: 1px;
+    padding: 0 11px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    color: #009440;
+}
+
+.price_calc .dropdown-custom .dropdown-toggle:after {
+    color: #009440;
+}
+
+.mb-0 {
+    margin-bottom: 0;
+}
+
+.form-group.green * {
+    color: #009440;
+}
+
+.price_calc .panel-body .inner.green-block {
+    padding-top: 12px;
+    background-color: #009440;
+    color: #ffffff !important;
+}
+
+.green-block p,
+.green-block label {
+    color: #ffffff;
+}
+
+.white .dropdown-custom .dropdown-toggle:after {
+    color: #ffffff;
+}
+
+.white .dropdown-toggle {
+    border-color: #ffffff;
+    color: #ffffff;
+}
+
 /*-- /Banks Page --*/
 
 /*-- Zakonodatelstvo --*/
@@ -1426,6 +1493,7 @@ p.font-10 {
 }
 
 .table_2 {
+    display: table;
     width: 100%;
 }
 
