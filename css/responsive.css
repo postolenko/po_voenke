@@ -536,6 +536,26 @@
 	}
 
 	/*-- /Banks Page --*/
+
+	/*-- Footer --*/
+
+	.seo-text_2 li a {
+	    font-size: 16px;
+	    line-height: 18px;
+	}
+
+	.footer .inner-col h3 {
+		margin: 12px 0 3px 0;
+	    font-size: 16px;
+	    line-height: 24px;
+	}
+
+	.seo-text li a {
+	    font-size: 16px;
+	    line-height: 18px;
+	}
+
+	/*-- /Footer --*/
 	
 }
 
