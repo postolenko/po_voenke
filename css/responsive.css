@@ -193,6 +193,15 @@
 
 	/*-- /Banks Page --*/
 
+	/*-- Footer --*/
+
+	.footer .inner-col {
+	    width: 49%;
+	    padding: 10px 20px 10px 0;
+	}
+
+	/*-- /Footer --*/
+
 }
 
 @media only screen and (max-width: 768px) {
@@ -362,6 +371,29 @@
 
 	/*-- /Terms --*/
 
+	/*-- Footer --*/
+
+	.footer .left {
+	    width: 100%;
+	    float: none;
+	    padding: 10px 0;
+	}
+
+	.footer .right {
+	    width: 100%;
+	    float: none;
+	    padding: 20px 0;
+	    text-align: center;
+	}
+
+	.footer .inner-col {
+	    width: 49%;
+	    text-align: left;
+	    padding: 10px 20px 10px 0;
+	}
+
+	/*-- /Footer --*/
+
 }
 
 @media only screen and (max-width: 700px) {
@@ -505,6 +537,19 @@
 
 	/*-- /Banks Page --*/
 	
+}
+
+@media only screen and (max-width: 450px) {
+
+	/*-- Footer --*/
+
+	.footer .inner-col {
+	    width: 100%;
+	    padding: 10px 0;
+	}
+
+	/*-- /Footer --*/
+
 }
 
 @media only screen and (max-width: 370px) {

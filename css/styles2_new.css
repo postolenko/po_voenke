@@ -1710,7 +1710,7 @@ p.font-10 {
 
 .footer .left {
     width: 63%;
-    padding: 20px 2% 20px 0;
+    padding: 10px 2% 10px 0;
     /*outline: 1px solid red;*/
 }
 
@@ -1724,7 +1724,7 @@ p.font-10 {
 .footer .inner-col {
     display: inline-block;
     vertical-align: top;
-    margin: 0 40px 0 0;
+    padding: 10px 40px 10px 0;
 }
 
 .footer .inner-col h3 {
@@ -1736,7 +1736,7 @@ p.font-10 {
 }
 
 .seo-text_2 {
-
+    
 }
 
 .seo-text_2 li {
