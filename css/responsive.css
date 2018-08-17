@@ -85,6 +85,22 @@
 
 	/*-- /Terms --*/
 
+	/*-- Certificate --*/
+
+	.two-cols-templ_5 .left {
+	    width: 100%;
+	    float: none;
+	    padding: 20px 0;
+	}
+
+	.two-cols-templ_5 .right {
+	    width: 100%;
+	    float: none;
+	    padding: 20px 0;
+	}
+
+	/*-- /Certificate --*/
+
 }
 
 @media only screen and (max-width: 1280px) {
@@ -536,6 +552,33 @@
 	}
 
 	/*-- /Banks Page --*/
+
+	/*-- Certificate --*/
+
+	.info-box_2 {
+	    margin: 5px 0;
+	    padding: 31px 3% 30px 3%;
+	}
+
+	.two-cols_3 {
+		display: block;
+	}
+
+	.two-cols_3 .col-1 {
+		display: block;
+	    width: 100%;
+	    max-width: 100%;
+	    padding: 5px 0;
+	}
+
+	.two-cols_3 .col-2 {
+		display: block;
+	    width: 100%;
+	    max-width: 100%;
+	    padding: 5px 0;
+	}
+
+	/*-- /Certificate --*/
 
 	/*-- Footer --*/
 

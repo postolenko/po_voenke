@@ -3,3 +3,4 @@
 # http://postolenko.github.io/po_voenke/zakonodatelstvo.html
 # http://postolenko.github.io/po_voenke/terms.html
 # http://postolenko.github.io/po_voenke/footer.html
+# http://postolenko.github.io/po_voenke/certificate.html
