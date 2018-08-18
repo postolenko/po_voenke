@@ -4,3 +4,4 @@
 # http://postolenko.github.io/po_voenke/terms.html
 # http://postolenko.github.io/po_voenke/footer.html
 # http://postolenko.github.io/po_voenke/certificate.html
+# http://postolenko.github.io/po_voenke/nis.html

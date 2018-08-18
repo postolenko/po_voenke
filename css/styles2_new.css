@@ -1446,7 +1446,7 @@ p.font-10 {
 /*-- Terms --*/
     
 .two-cols-templ_2 {
-
+    width: 100%;
 }
 
 .two-cols-templ_2 .left {
@@ -1735,10 +1735,6 @@ p.font-10 {
     border-bottom: 1px solid transparent;
 }
 
-.text_wrapp {
-
-}
-
 .text_wrapp p {
    margin-bottom: 0;
    padding: 1px 0;
@@ -1879,16 +1875,109 @@ p.font-10 {
     left: 0;
 }
 
-.text_wrapp_2 {
-
-}
-
 .text_wrapp_2 h4 {
     margin-bottom: 6px;
 }
 
-
 /*-- /Certificate  --*/
+
+/*-- NIS --*/
+
+.info-box_3 {
+    padding: 24px 4% 27px 70px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    background-color: rgb(240, 240, 240);
+    background-image: url(../images/info_icon.png);
+    background-position: 20px center;
+    background-repeat: no-repeat;
+}
+
+.info-box_3 h4 {
+    margin-bottom: 0;
+    font-family: "Fira Sans Condensed SemiBoldItalic", sans-serif;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 600;
+    color: #2d3a67;
+}
+
+.info-box_3 p {
+    font-family: "Fira Sans Condensed LightItalic", sans-serif;
+}
+
+.titles {
+    margin: 22px 0 24px 0;
+}
+
+.titles .inner {
+    padding: 12px 0;
+}
+
+.inline-blocks > div {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 24px 0 0;
+}
+
+.inline-blocks ul {
+    margin: 0 -12px;
+}
+
+.inline-blocks ul li {
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 12px;
+}
+
+.inline-blocks ul li a {
+    border-bottom: 1px dotted #f14741;
+    font-family: "Fira Sans Condensed Light", sans-serif;
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 300;
+    color: #2d3a67;
+}
+
+.inline-blocks ul li a:link,
+.inline-blocks ul li a:visited {
+    border-bottom: 1px dotted #f14741;
+}
+
+.inline-blocks ul li a:hover{
+    border-bottom: 1px dotted transparent;
+}
+
+.titles h4 {
+    margin: 0 !important;
+}
+
+.titles h4 a {
+    color: #2d3a67;
+    font-size: 24px;
+    border-bottom: 1px dotted #f14741;
+}
+
+.titles h4 a:link,
+.titles h4 a:visited {
+    border-bottom: 1px dotted #f14741;
+}
+
+.titles h4 a:hover{
+    border-bottom: 1px dotted transparent;
+}
+
+.sb {
+    font-family: "Fira Sans Condensed SemiBold", sans-serif;
+}
+
+.thumb-5_2 {
+    margin-top: 0;
+}
+
+/*-- /NIS --*/
+
 
 /*-- Footer --*/
 
