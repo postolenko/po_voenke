@@ -403,6 +403,18 @@
 
 	/*-- /Vizout Credit --*/
 
+	/*-- Video --*/
+
+	.video_2 {
+	    height: 470px;
+	}
+
+	.video_2 iframe {
+	    height: 470px;
+	}
+
+	/*-- /Video --*/
+
 	/*-- Footer --*/
 
 	.footer .left {
@@ -437,6 +449,22 @@
 	}
 
 	/*-- /Banks Page --*/
+
+}
+
+@media only screen and (max-width: 600px) {
+
+	/*-- Video --*/
+
+	.video_2 {
+	    height: 360px;
+	}
+
+	.video_2 iframe {
+	    height: 360px;
+	}
+
+	/*-- /Video --*/
 
 }
 
@@ -624,6 +652,19 @@
 	}
 
 	/*-- /Vizout Credit --*/
+
+	/*-- Video --*/
+
+	.video_2 {
+	    height: 280px;
+	}
+
+	.video_2 iframe {
+	    height: 280px;
+	}
+
+	/*-- /Video --*/
+
 
 	/*-- Footer --*/
 
