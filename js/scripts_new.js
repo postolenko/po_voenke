@@ -175,6 +175,27 @@ $(document).ready(function () {
 
 	});
 
+	// -------------------
+
+	var listNum;
+	var numTempl;
+
+	$(".number_list").each(function() {
+
+		listNum = 0;
+
+		$(this).children("li").each(function() {
+
+			listNum++;
+
+			numTempl = "<span class='num'>"+ listNum +". </span>";
+
+			$(this).prepend(numTempl);
+
+		});
+
+	});
+
 });
 
 function getTabsLinksParams() {

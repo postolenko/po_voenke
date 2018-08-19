@@ -5,3 +5,4 @@
 # http://postolenko.github.io/po_voenke/footer.html
 # http://postolenko.github.io/po_voenke/certificate.html
 # http://postolenko.github.io/po_voenke/nis.html
+# http://postolenko.github.io/po_voenke/vizout_credit.html

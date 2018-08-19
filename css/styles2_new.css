@@ -1978,6 +1978,260 @@ p.font-10 {
 
 /*-- /NIS --*/
 
+/*-- Vizout Credit --*/
+
+.titles_2 {
+    margin: 0 0 12px 0;
+}
+
+.titles_2 .inner {
+    margin-top: 0;
+    padding: 18px 0;
+}
+
+.titles_2 .inner:nth-child(1) {
+    padding-top: 0;
+}
+
+.titles_2 h4,
+.titles_2 h4 a  {
+    font-family: "Fira Sans Condensed SemiBold", sans-serif;
+}
+
+.text_wrapp a {
+    border-bottom: 1px solid #f14741;
+}
+
+.text_wrapp a:hover {
+    border-bottom: 1px solid transparent;
+}
+
+.text_wrapp_2 p {
+    padding: 2px 0;
+    line-height: 18px;
+}
+
+.text_wrapp_2 p a {
+    line-height: 16px;
+}
+
+.info-box_4 {
+    margin: 19px 0;
+    padding: 32px 4% 19px 4%;
+    border-width: 2px;
+    border-color: rgb(45, 58, 103);
+    border-style: solid;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    background-color: rgb(255, 255, 255);
+}
+
+.info-box_4 h4 {
+    margin-bottom: 8px;
+}
+
+.variant-item {
+    display: table;
+    width: 100%;
+    padding: 20px 0 15px 0;
+    border-bottom: 1px solid #2d3a67;
+}
+
+.info-box_4 .variant-item:last-child {
+    border-bottom: none;
+}
+
+.variant-item .cell-1 {
+    display: table-cell;
+    vertical-align: top;
+    width: 100px;
+}
+
+.variant-item .cell-2 {
+    display: table-cell;
+    vertical-align: top;
+    width: auto;
+    padding: 0 10px;
+}
+
+.variant-item h4 {
+    margin: 0 0 3px 0;
+    font-family: "Fira Sans Condensed SemiBoldItalic", sans-serif;
+    font-size: 20px;
+    line-height: 25px;
+}
+
+.variant-item p {
+    font-family: "Fira Sans Condensed LightItalic", sans-serif;
+}
+
+.icon-1 {
+    display: inline-block;
+    vertical-align: top;
+    width: 85px;
+    height: 86px;
+    background-image: url(../images/sprite.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.icon-2 {
+    display: inline-block;
+    vertical-align: top;
+    width: 85px;
+    height: 86px;
+    background-image: url(../images/sprite.png);
+    background-repeat: no-repeat;
+    background-position: 0 -130px;
+}
+
+.icon-3 {
+    display: inline-block;
+    vertical-align: top;
+    width: 85px;
+    height: 86px;
+    background-image: url(../images/sprite.png);
+    background-repeat: no-repeat;
+    background-position: 0 -263px;
+}
+
+.article_3 {
+    margin: 33px 0 24px 0;
+}
+
+.article_3 h4 {
+    margin-top: 27px;
+    margin-bottom: 7px;
+}
+
+.article_3 h6 {
+    margin-bottom: 4px;
+    color: #000000;
+}
+
+.article_3 ul li {
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.article_3 ul li ul {
+    padding-top: 5px;
+}
+
+.article_3 ul li ul li {
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.article_3 ul li:last-child {
+    padding-bottom: 0;
+}
+
+.article_3 ul a {
+    border-bottom: 1px solid #f14741;
+}
+
+a.tel-link {
+    font-family: "Fira Sans Condensed SemiBold", sans-serif;
+    color: #000000;
+    border-bottom: none !important;
+}
+
+.article_3 ul a:hover {
+    border-bottom: 1px solid transparent;
+}
+
+.number_list li {
+    padding-left: 19px;
+    position: relative;
+}
+
+.num {
+    font-family: "Fira Sans Condensed SemiBold", sans-serif;
+    font-size: 16px;
+    line-height: 21px;
+    color: #2d3a67;
+}
+
+.number_list li .num {
+    position: absolute;
+    top: 4px;
+    left: 0;
+}
+
+.letter-mark_list li {
+    padding-left: 19px;
+    position: relative;
+}
+
+.letter-mark_list li .num {
+    position: absolute;
+    top: 3px;
+    left: 0;
+}
+
+.line_mark li {
+    padding-left: 17px;
+    position: relative;
+}
+
+.line_mark li:before {
+    content: "";
+    width: 2px;
+    height: 9px;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    background-color: #2d3a67;
+}
+
+.adreses {
+    margin: 29px 0 17px 0;
+}
+
+.adreses + .info-box {
+    margin: 17px 0;
+}
+
+.adreses h4 {
+    margin-bottom: 0;
+}
+
+.two-cols_4 {
+    margin: 4px 0;
+}
+
+.two-cols_4 > .left {
+    float: left !important;
+    width: 50% !important;
+    padding: 0 20px 0 0 !important;
+}
+
+.two-cols_4 > .right {
+    float: right !important;
+    width: 50% !important;
+    padding: 0 0 0 20px !important;
+}
+
+.thumb_7 {
+    margin: 14px 0;
+}
+
+.thumb_7 h4 {
+    margin-bottom: 3px;
+    font-size: 18px;
+    line-height: 22px;
+    color: #2d3a67;
+}
+
+.thumb_7 p {
+    margin-bottom: 0;
+    padding: 2px 0;
+    font: 16px "Fira Sans Condensed Light", sans-serif;
+}
+
+/*-- /Vizout Credit  --*/
 
 /*-- Footer --*/
 
