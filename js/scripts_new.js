@@ -10,6 +10,9 @@ var dropdownBtn;
 var slidingBlock;
 var slidingBtn;
 
+var listNum;
+var numTempl;
+
 $(window).load(function () {
 
 
@@ -176,9 +179,6 @@ $(document).ready(function () {
 	});
 
 	// -------------------
-
-	var listNum;
-	var numTempl;
 
 	$(".number_list").each(function() {
 
