@@ -415,6 +415,18 @@
 
 	/*-- /Video --*/
 
+	/*-- Bank --*/
+
+	.thumb-8 .cell-1 {
+	    width: 74px;
+	}
+
+	.chars_2 .table-cell {
+		width: 20% !important;
+	}
+
+	/*-- /Bank --*/
+
 	/*-- Footer --*/
 
 	.footer .left {
@@ -665,7 +677,6 @@
 
 	/*-- /Video --*/
 
-
 	/*-- Footer --*/
 
 	.seo-text_2 li a {
@@ -689,6 +700,19 @@
 }
 
 @media only screen and (max-width: 450px) {
+
+	/*-- Bank --*/
+
+	.thumb-8 h5 {
+	    font-size: 21px;
+	}
+
+	.table-cell h3 {
+	    font-size: 15px;
+	    line-height: 18px;
+	}
+
+	/*-- /Bank --*/
 
 	/*-- Footer --*/
 
@@ -740,6 +764,15 @@
 	}
 
 	/*-- /Banks Page --*/
+
+	/*-- Bank --*/
+
+	.table-cell h3 {
+		font-size: 11.5px;
+		line-height: 14px;
+	}
+
+	/*-- /Bank --*/
 	
 }
 
