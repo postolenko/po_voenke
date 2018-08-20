@@ -7,3 +7,4 @@
 # http://postolenko.github.io/po_voenke/nis.html
 # http://postolenko.github.io/po_voenke/vizout_credit.html
 # http://postolenko.github.io/po_voenke/video.html
+# http://postolenko.github.io/po_voenke/bank.html
