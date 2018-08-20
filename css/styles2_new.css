@@ -2369,10 +2369,6 @@ a.tel-link {
 
 /*-- Bank --*/
 
-.page-title_wrapp {
-
-}
-
 .page-title_wrapp h1 {
     display: inline-block;
     vertical-align: top;
@@ -2599,10 +2595,6 @@ a.tel-link {
     margin: 7px 0;
 }
 
-.objects_wrapp {
-
-}
-
 .objects_wrapp h3 {
     margin-bottom: 11px;
 }
@@ -2639,7 +2631,6 @@ a.tel-link {
     width: 31.33%;
     margin: 3px 1%;
 }
-
 
 /*-- /Bank --*/
 
