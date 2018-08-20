@@ -13,12 +13,6 @@ var slidingBtn;
 var listNum;
 var numTempl;
 
-$(window).load(function () {
-
-
-
-});
-
 $(window).resize(function () {
 
 	$(".tab-link_wrapp").css({
