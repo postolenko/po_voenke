@@ -2585,8 +2585,10 @@ a.tel-link {
 }
 
 .number_list li {
-    padding-top: 4px;
-    padding-bottom: 4px;
+/*    padding-top: 4px;
+    padding-bottom: 4px;*/
+    padding-top: 2px;
+    padding-bottom: 6px;
     padding-left: 19px;
     position: relative;
 }
