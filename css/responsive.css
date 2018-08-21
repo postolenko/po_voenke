@@ -37,6 +37,14 @@
 
 	/*-- /Tab 1 Object Page --*/
 
+	/*-- Standarts --*/
+
+	.contacts_2 {
+	    width: 33.33%;
+	}
+
+	/*-- /Standarts --*/
+
 }
 
 @media only screen and (max-width: 1340px) {
@@ -142,6 +150,14 @@
 
 	/*-- /Banks Page --*/
 
+	/*-- Standarts --*/
+
+	.contacts_2 {
+	    width: 50%;
+	}
+
+	/*-- /Standarts --*/
+
 }
 
 @media only screen and (max-width: 1124px) {
@@ -161,6 +177,14 @@
 	}
 
 	/*-- /Terms --*/
+
+	/*-- Standarts --*/
+
+	.contacts_2 {
+	    width: 33.33%;
+	}
+
+	/*-- /Standarts --*/
 
 }
 
@@ -427,6 +451,14 @@
 
 	/*-- /Bank --*/
 
+	/*-- Standarts --*/
+
+	.contacts_2 {
+	    width: 50%;
+	}
+
+	/*-- /Standarts --*/
+
 	/*-- Footer --*/
 
 	.footer .left {
@@ -477,6 +509,19 @@
 	}
 
 	/*-- /Video --*/
+
+	/*-- Standarts --*/
+
+	.contacts_2_wrapp {
+		margin: 15px 0;
+	}
+
+	.contacts_2 {
+	    width: 100%;
+	    padding: 0;
+	}
+
+	/*-- /Standarts --*/
 
 }
 
