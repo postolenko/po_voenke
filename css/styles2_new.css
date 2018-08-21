@@ -2634,6 +2634,50 @@ a.tel-link {
 
 /*-- /Bank --*/
 
+/*-- Dom RF --*/
+
+.blue-items {
+    margin: 0 0 16px 0;
+}
+
+.blue-item {
+    padding: 13px 0;
+    border-bottom: 1px solid #2d3a67;
+}
+
+.blue-items .blue-item:last-child {
+    border-bottom: none;
+}
+
+.blue-item h3 {
+    margin-bottom: 2px;
+    font-size: 20px;
+    line-height: 24px;
+    color: #2d3a67;
+}
+
+.blue-item p {
+    margin-bottom: 0;
+}
+
+.thumbnails_2_2_wrapp {
+    margin: 29px 0 0 0;
+}
+
+.thumbnails_2_2_wrapp h3 {
+    margin-bottom: 0;
+}
+
+.thumbnails_2_2 {
+    margin: 2px -9px 5px -9px;
+}
+
+.thumbnails_2_2 .thumb_2 {
+    width: calc(50% - 18px);
+}
+
+/*-- /Dom RF --*/
+
 /*-- Footer --*/
 
 .footer_2 {
