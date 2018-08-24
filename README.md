@@ -10,3 +10,4 @@
 # http://postolenko.github.io/po_voenke/bank.html
 # http://postolenko.github.io/po_voenke/domrf.html
 # http://postolenko.github.io/po_voenke/standarts.html
+# http://postolenko.github.io/po_voenke/building-detail_2.html

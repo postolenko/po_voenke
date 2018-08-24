@@ -83,6 +83,30 @@ $(document).ready(function () {
         }
     });
 
+    $('.owl-carousel.objects-slider').owlCarousel({
+        loop:false,
+        mouseDrag: false,
+        touchDrag: true,
+        dots: false,
+        nav: true,
+        responsiveClass:true,
+        responsive:{
+            0:{
+                items:4
+            },
+            600:{
+                items:4
+
+            },
+            992:{
+                items:4
+            },
+            1200:{
+                items:4
+            }
+        }
+    });
+
 });
 
 
