@@ -92,14 +92,13 @@ $(document).ready(function () {
         responsiveClass:true,
         responsive:{
             0:{
-                items:4
+                items:1
             },
-            600:{
-                items:4
-
+            580:{
+                items:2
             },
-            992:{
-                items:4
+            800:{
+                items:3
             },
             1200:{
                 items:4
