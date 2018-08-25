@@ -13,6 +13,12 @@ var slidingBtn;
 var listNum;
 var numTempl;
 
+$(window).load(function () {
+
+	getTabsLinksParams();
+
+});
+
 $(window).resize(function () {
 
 	$(".tab-link_wrapp").css({
@@ -24,8 +30,6 @@ $(window).resize(function () {
 });
 
 $(document).ready(function () {
-
-	getTabsLinksParams();
 
 	$(".tabs").each(function() {
 

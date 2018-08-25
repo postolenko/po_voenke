@@ -483,6 +483,58 @@
 
 	/*-- /Tab 2  2 --*/
 
+	/*-- Button Form Gk --*/
+
+	.thumb-9 {
+	    width: 100%;
+	}
+
+	.two-cols_info {
+		display: block;
+	}
+
+	.two-cols_info .cell-1,
+	.two-cols_info .cell-2 {
+	    display: block;
+	    width: 100%;
+	    padding: 5px 0;
+	}
+
+	/*-- /Button Form Gk --*/
+
+	/*-- Additional Discount --*/
+
+	.discount_wrapp {
+		display: block;
+	    margin: 10px 0 2px 0;
+	}
+
+	.discount_wrapp > .cell-1 {
+		display: block;
+	    width: 100%;
+	    margin: 10px 0;
+	}
+
+	.discount_wrapp > .cell-2 {
+		display: block;
+	    width: 100%;
+	    margin: 10px 0;
+	}
+
+	.discount_wrapp > .cell-1 .percent {
+		margin: 0 auto;
+	}
+
+	.discount_wrapp .two-cols_info .cell-2 {
+		text-align: left;
+	}
+
+	.discount_wrapp .two-cols_info {
+		padding-bottom: 10px;
+	}
+
+	/*-- /Additional Discount --*/
+
 	/*-- Footer --*/
 
 	.footer .left {
