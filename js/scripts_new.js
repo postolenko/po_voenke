@@ -194,6 +194,43 @@ $(document).ready(function () {
 
 	});
 
+	// -------------------
+
+	$(".choose_wrapp").each(function() {
+
+		if( !$(this).hasClass("active")) {
+
+			$(this).find(".choose_variants").css({
+				"display" : "none"
+			});
+
+		}
+
+	});
+
+	$(".choose-input_wrapp").click(function() {
+
+		parentBlock = $(this).closest(".choose_wrapp");
+
+		slidingBlock = parentBlock.find(".choose_variants");
+
+		if(slidingBlock.is(":hidden")) {
+
+			slidingBlock.slideDown(300);
+			parentBlock.addClass("active");
+
+		} else {
+
+			slidingBlock.slideUp(300);
+
+			setTimeout(function() {
+				parentBlock.removeClass("active");				
+			}, 400);			
+
+		}
+
+	});
+
 });
 
 function getTabsLinksParams() {

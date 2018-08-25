@@ -13,3 +13,4 @@
 # http://postolenko.github.io/po_voenke/building-detail_2.html
 # http://postolenko.github.io/po_voenke/button_form_gk.html
 # http://postolenko.github.io/po_voenke/additional_discount.html
+# http://postolenko.github.io/po_voenke/popup_buildings.html
