@@ -3046,9 +3046,6 @@ a.tel-link {
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     border-radius: 4px;
-    -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, .2);
-    -moz-box-shadow: 0 0 10px 0 rgba(0, 0, 0, .2);
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .2);
 }
 
 .choose_wrapp.active {
@@ -3116,6 +3113,7 @@ a.tel-link {
     position: relative;
     padding: 0 0 0 24px;
     font-size: 14px;
+    color: #000000;
 }
 
 .checkbox_2 label span {
