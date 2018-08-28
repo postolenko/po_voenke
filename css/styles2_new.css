@@ -2746,6 +2746,15 @@ a.tel-link {
 
 /*-- Tab 2  2 --*/
 
+.p-prev {
+    margin: 13px 0;
+}
+
+.p-prev .red {
+    font-family: "Fira Sans Condensed SemiBold", sans-serif;
+    color: #f24841;
+}
+
 .thumb-single p {
     font-size: 16px;
     line-height: 18px;
