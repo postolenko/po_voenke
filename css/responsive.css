@@ -186,6 +186,18 @@
 
 	/*-- /Standarts --*/
 
+	/*-- Categori NIS --*/
+
+	.chars_4_wrapp .left {
+	    width: 50% !important;
+	}
+
+	.chars_4_wrapp .right {
+	    width: 50% !important;
+	}
+
+	/*-- /Categori NIS --*/
+
 }
 
 @media only screen and (max-width: 1024px) {
@@ -599,6 +611,40 @@
 	}
 
 	/*-- /Standarts --*/
+
+	/*-- Categori NIS --*/
+
+	.chars_3 .cell-1 {
+	    padding: 7px 10px 7px 0;
+	}
+
+	.chars_3 .cell-2 {
+	    padding: 7px 0 7px 10px;
+	}
+
+	.chars_3 p {  
+	    font-size: 12px;
+	    line-height: 18px;
+	}
+
+	.chars_4_wrapp .right {
+	    padding-left: 10px !important;
+	}
+
+	.chars_4 .cell {
+	    padding: 7px 10px 7px 0;
+	}
+
+	.chars_4_wrapp p {
+	    font-size: 12px;
+	    line-height: 18px;
+	}
+
+	.chars_4_wrapp .grey_box {
+		display: none;
+	}
+
+	/*-- /Categori NIS --*/
 	
 
 }

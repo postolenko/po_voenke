@@ -16,6 +16,7 @@ var numTempl;
 $(window).load(function () {
 
 	getTabsLinksParams();
+	getTHumbsHeight();
 
 });
 
@@ -26,6 +27,11 @@ $(window).resize(function () {
 	});
 
 	getTabsLinksParams();
+
+	$(".set_height .thumb .inner").css({
+		"height" : "auto"
+	});
+	getTHumbsHeight();
 
 });
 
@@ -246,5 +252,29 @@ function getTabsLinksParams() {
 		});
 
 	});
+
+}
+
+function getTHumbsHeight() {
+
+    $(".set_height").each(function() {
+
+        thumbsHeightArr = [];
+
+        thumb = $(this).find(".thumb");
+
+        thumb.each(function() {
+
+            thumbHeight = $(this).find(".inner").height();
+
+            thumbsHeightArr.push(thumbHeight);
+
+        });
+
+        maxThumbHeight = Math.max.apply(null, thumbsHeightArr);
+
+        thumb.find(".inner").height(maxThumbHeight);
+
+    });
 
 }
