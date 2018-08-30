@@ -1872,7 +1872,7 @@ p.font-10 {
 
 .list_2 li:before {
     content: "";
-    width: 1px;
+    width: 2px;
     height: calc(100% - 8px);
     background: #2d3a67;
     position: absolute;
@@ -3333,8 +3333,87 @@ a.tel-link {
     color: #000000;
 }
 
-
 /*-- /Categori NIS --*/
+
+/*-- Property Tax Deduction --*/
+
+.info-box_4_2 {
+    margin: 31px 0;
+    padding-top: 16px;
+}
+
+.blue-item_2 {
+    padding: 12px 0 13px 0;
+    border-bottom: 1px solid #2d3a67;
+}
+
+.info-box_4 .blue-item_2:last-child {
+    border-bottom: none;
+}
+
+.blue-item_2 h3 {
+    margin-bottom: 3px;
+}
+
+.blue-item_2 h5 {
+    margin-bottom: 6px;
+}
+
+.blue-item_2 p {
+    margin-bottom: 0;
+    font-family: "Fira Sans Condensed LightItalic", sans-serif;
+}
+
+.blue-box {
+    margin: 39px 0 35px 0;
+    padding: 22px 4.5% 24px 4.5%;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    background-color: rgb(45, 58, 103);
+}
+
+.blue-box .inner {
+    position: relative;
+    padding-left: 20px;
+}
+
+.blue-box .inner:before {
+    content: "";
+    width: 1px;
+    height: calc(100% - 12px);
+    background-color: #edb544;
+    position: absolute;
+    top: 6px;
+    left: 0;
+}
+
+.blue-box p {
+    margin: 0;
+    color: #ffffff;
+}
+
+.artice_5 {
+
+}
+
+.artice_5 h6 {
+    margin-bottom: 5px;
+}
+
+.artice_5 p {
+    margin-bottom: 5px;
+}
+
+.artice_5 .list_2 {
+    margin: 4px 0;
+}
+
+.artice_5 .list_2 li {
+    margin: 3px 0;
+}
+
+/*-- /Property Tax Deduction --*/
 
 /*-- Footer --*/
 
