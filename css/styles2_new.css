@@ -3448,8 +3448,23 @@ a.tel-link {
     margin: 0 0 8px 0;
 }
 
-
 /*-- /Secondaru Housing --*/
+
+/*-- Rosvoenipoteka --*/
+
+.article_6 {
+    margin: 26px 0;
+}
+
+.article_6 h4 {
+    margin-bottom: 10px;
+}
+
+.article_6 p {
+    margin-bottom: 8px;
+}
+
+/*-- /Rosvoenipoteka --*/
 
 /*-- Footer --*/
 
