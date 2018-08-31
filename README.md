@@ -17,3 +17,4 @@
 # http://postolenko.github.io/po_voenke/categori_nis.html
 # http://postolenko.github.io/po_voenke/property_tax_deduction.html
 # http://postolenko.github.io/po_voenke/secondary_housing.html
+# http://postolenko.github.io/po_voenke/secondary_housing_2.html
