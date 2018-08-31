@@ -20,3 +20,4 @@
 # http://postolenko.github.io/po_voenke/secondary_housing_2.html
 # http://postolenko.github.io/po_voenke/rosvoenipoteka.html
 # http://postolenko.github.io/po_voenke/intelligence.html
+# http://postolenko.github.io/po_voenke/secondary_housing_3.html

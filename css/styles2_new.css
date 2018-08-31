@@ -3466,6 +3466,43 @@ a.tel-link {
 
 /*-- /Rosvoenipoteka --*/
 
+/*-- Secondaru Housing 3 --*/
+
+.text_wrapp_2 {
+    margin-bottom: 32px;
+}
+
+.info-box_4_4 {
+    padding: 19px 4% 21px 4%;
+}
+
+.blue-item_3 {
+    padding: 15px 0 10px 0;
+    border-bottom: 1px solid #2d3a67;
+}
+
+.blue-item_3:last-child {
+    border-bottom: none;
+}
+
+.blue-item_3 h5 {
+    margin-bottom: 0;
+}
+
+.article_7 {
+    margin: 35px 0;
+}
+
+.article_7 h4 {
+    margin-bottom: 7px;
+}
+
+.article_7 ul {
+
+}
+
+/*-- /Secondaru Housing 3 --*/
+
 /*-- Footer --*/
 
 .footer_2 {
