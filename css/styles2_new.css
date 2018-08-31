@@ -3493,6 +3493,10 @@ a.tel-link {
     margin: 35px 0;
 }
 
+.article_7:nth-child(1) {
+    margin-top: 0;
+}
+
 .article_7 h4 {
     margin-bottom: 7px;
 }
