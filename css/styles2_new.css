@@ -3393,10 +3393,6 @@ a.tel-link {
     color: #ffffff;
 }
 
-.artice_5 {
-
-}
-
 .artice_5 h6 {
     margin-bottom: 5px;
 }
@@ -3414,6 +3410,45 @@ a.tel-link {
 }
 
 /*-- /Property Tax Deduction --*/
+
+/*-- Secondaru Housing --*/
+
+.step-item {
+    display: table;
+    width: 100%;
+    margin: 6px 0;
+}
+
+.step-item .cell-1 {
+    display: table-cell;
+    vertical-align: top;
+    width: 52px;
+}
+
+.step-item .cell-2 {
+    display: table-cell;
+    vertical-align: top;
+    width: auto;
+}
+
+.step-item .cell-2 h6 {
+    margin: 0 0 4px 0;
+    color: #000000;
+}
+
+.step-item .cell-2 p {
+    margin: 0 0 4px 0;
+}
+
+.conclusion {
+    margin: 16px 0 33px 0;
+}
+
+.conclusion h4 {
+    margin: 0 0 8px 0;
+}
+
+/*-- /Secondaru Housing --*/
 
 /*-- Footer --*/
 
