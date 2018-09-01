@@ -3752,3 +3752,12 @@ a.tel-link {
 }
 
 /*-- Footer --*/
+
+
+.photogallery-slider .owl-next {
+    background-image: none !important;
+}
+
+.photogallery-slider .owl-prev {
+    background-image: none !important;
+}
