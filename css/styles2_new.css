@@ -211,11 +211,13 @@
 }
 
 .tabs-content .tab {
+    overflow: hidden;
+    height: 0;
     opacity: 0;
     position: absolute;
     top: 0;
-    left: -999999px;
-    padding: 15px 0;
+    left: 0;
+    padding: 0;
     -webkit-transition-property: opacity;
     -webkit-transition-duration: .3s;
     -webkit-transition-timing-function: ease;
@@ -239,8 +241,9 @@
 
 .tabs-content .radio-tab:checked + .tab {
     position: relative;
-    left: 0;
+    padding: 15px 0;
     opacity: 1;
+    height: auto;
 }
 
 .chars {
