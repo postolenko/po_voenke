@@ -1599,7 +1599,7 @@ p.font-10 {
     font-size: 14px;
 }
 
-.checkbox label:before {
+.checkbox a:before {
     display: block;
     content: "";
     width: 10px;
@@ -1610,7 +1610,7 @@ p.font-10 {
     border: 1px solid #009440;
 }
 
-.checkbox label:after {
+.checkbox a:after {
     display: none;
     content: "";
     width: 4px;
@@ -1621,7 +1621,7 @@ p.font-10 {
     background-color: #009440;
 }
 
-.checkbox input:checked + label:after {
+.checkbox input:checked + a:after {
     display: block;
 }
 
