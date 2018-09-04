@@ -23,3 +23,4 @@
 # http://postolenko.github.io/po_voenke/secondary_housing_3.html
 # http://postolenko.github.io/po_voenke/approval.html
 # http://postolenko.github.io/po_voenke/actions_upon_dismissal.html
+# http://postolenko.github.io/po_voenke/withdrawal_encumbrances.html

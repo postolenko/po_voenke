@@ -3437,6 +3437,10 @@ a.tel-link {
     width: auto;
 }
 
+.step-item .cell-1 h6 {
+    margin: 0 0 4px 0;
+}
+
 .step-item .cell-2 h6 {
     margin: 0 0 4px 0;
     color: #000000;
@@ -3649,11 +3653,67 @@ a.tel-link {
     margin: 0 0 9px 0;
 }
 
-.article_8 ul {
+/*-- /Actions Upon Dismissal --*/
 
+/*-- Withdrawal Encumbrances --*/
+
+.text_wrapp_4 p {
+    padding: 5px 0;
 }
 
-/*-- /Actions Upon Dismissal --*/
+.article_9 {
+    margin: 37px 0;
+}
+
+.article_9:last-child {
+    margin: 37px 0 0 0;
+}
+
+.article_9 h4 {
+    margin: 0 0 9px 0;
+}
+
+.article_9 p {
+    margin: 0 0 9px 0;
+}
+
+.step-item_2 {
+    display: table;
+    width: 100%;
+    margin: 6px 0;
+}
+
+.step-item_2 .cell-1 {
+    display: table-cell;
+    vertical-align: top;
+    width: 52px;
+}
+
+.step-item_2 .cell-2 {
+    display: table-cell;
+    vertical-align: top;
+    width: auto;
+}
+
+.step-item_2 .cell-1 h6 {
+    margin: 0 0 4px 0;
+    line-height: 21px;
+}
+
+.step-item_2 .cell-2 h6 {
+    margin: 0 0 4px 0;
+    color: #000000;
+}
+
+.step-item_2 .cell-2 p {
+    margin: 0 0 4px 0;
+}
+
+.blue-box_2 {
+    margin-top: 13px;
+}
+
+/*-- /Withdrawal Encumbrances --*/
 
 /*-- Footer --*/
 
