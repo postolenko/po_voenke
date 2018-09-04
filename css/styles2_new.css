@@ -3623,6 +3623,38 @@ a.tel-link {
 
 /*-- /Approval --*/
 
+/*-- Actions Upon Dismissal --*/
+
+.lists_wrapp_2 {    
+    margin-top: 39px;
+}
+
+.number_list li h6 {
+    margin: 1px 0 0 0;
+}
+
+.article_8 {
+    margin: 22px 0 33px 0;
+}
+
+.article_8 h4 {
+    margin: 0 0 10px 0;
+}
+
+.article_8 h6 {
+    margin: 0 0 9px 0;
+}
+
+.article_8 p {
+    margin: 0 0 9px 0;
+}
+
+.article_8 ul {
+
+}
+
+/*-- /Actions Upon Dismissal --*/
+
 /*-- Footer --*/
 
 .footer_2 {
