@@ -3656,6 +3656,10 @@ a.tel-link {
     padding: 10px 40px 10px 0;
 }
 
+.footer .inner-col_1 {
+    min-width: 120px;
+}
+
 .footer .inner-col h3 {
     margin: 3px 0 1px 0;
     font-family: "Fira Sans Condensed SemiBold", sans-serif;
@@ -3882,14 +3886,15 @@ a.tel-link {
 .footer-article {
     display: table;
     margin: 21px 0 0 0;
+    padding: 0;
     width: 100%;
 }
 
 .footer-article .cell:nth-child(1) {
     display: table-cell;
     vertical-align: top;
-    width: 120px;
-    padding: 10px 2% 10px 0;
+    width: 113px;
+    padding: 10px 10px 10px 0;
 }
 
 .footer-article .cell:nth-child(2) {
@@ -3897,7 +3902,7 @@ a.tel-link {
     vertical-align: top;
     width: auto;
     text-align: left;
-    padding: 10px 0 10px 2%;
+    padding: 10px 0 10px 10px;
 }
 
 .icon_7 {
