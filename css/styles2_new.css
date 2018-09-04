@@ -392,9 +392,13 @@
     font-style: italic;
 }
 
-.plan_slider .owl-dot {
+.plan_slider .owl-dots {
     position: relative;
-    top: 47px;
+    top: auto;
+    bottom: 5px;
+    left: 0;
+    transform: none;
+    text-align: center;
 }
 
 .plan_slider .owl-dots .owl-dot span {
@@ -3631,6 +3635,10 @@ a.tel-link {
     margin: 0;
 }
 
+.footer .row-1 {
+    padding-bottom: 12px;
+}
+
 .footer .left {
     width: 63%;
     padding: 10px 2% 10px 0;
@@ -3867,7 +3875,69 @@ a.tel-link {
     color: #ffffff;
 }
 
-/*-- Footer --*/
+.bottom-row {
+    border-top: 1px solid #ffffff;
+}
+
+.footer-article {
+    display: table;
+    margin: 21px 0 0 0;
+    width: 100%;
+}
+
+.footer-article .cell:nth-child(1) {
+    display: table-cell;
+    vertical-align: top;
+    width: 120px;
+    padding: 10px 2% 10px 0;
+}
+
+.footer-article .cell:nth-child(2) {
+    display: table-cell;
+    vertical-align: top;
+    width: auto;
+    text-align: left;
+    padding: 10px 0 10px 2%;
+}
+
+.icon_7 {
+    display: inline-block;
+    vertical-align: top;
+    width: 32px;
+    height: 35px;
+    background-image: url(../images/icon_7.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.adult {
+    width: 40px;
+    height: 40px;
+    margin: 7px 0;
+    text-align: center;
+    border: 2px solid #ffffff;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.adult p {
+    font-size: 18px;
+    line-height: 36px !important;
+    color: #ffffff;
+}
+
+.footer-article p {
+    margin: 0 0 8px 0;
+    line-height: 28px;
+}
+
+.footer-article p i {
+    margin: -4px 0 0 0;
+}
+
+/*-- /Footer --*/
 
 .photogallery-slider .owl-dots {
     display: block !important;
@@ -3875,8 +3945,28 @@ a.tel-link {
 
 .photogallery-slider .owl-next {
     background-image: none !important;
+    background-color: transparent !important;
 }
 
 .photogallery-slider .owl-prev {
     background-image: none !important;
+    background-color: transparent !important;
+}    
+
+.photogallery-slider .owl-dots .owl-dot span {
+    background-color: #e6e6e6;
+    border: 3px solid #e6e6e6;
+}
+
+.photogallery-slider .owl-dots .owl-dot.active span {
+    background-color: #f14741;
+}
+
+.slider_2 .owl-dots .owl-dot span {
+    background-color: #e6e6e6;
+    border: 3px solid #e6e6e6;
+}
+
+.slider_2 .owl-dots .owl-dot.active span {
+    background-color: #f14741;
 }

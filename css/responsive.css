@@ -45,6 +45,14 @@
 
 	/*-- /Standarts --*/
 
+	.photogallery-slider .owl-next {
+	    margin-right: 0 !important;
+	}
+
+	.photogallery-slider .owl-prev {
+	    margin-left: 0 !important;
+	}
+
 }
 
 @media only screen and (max-width: 1340px) {
@@ -157,6 +165,14 @@
 	}
 
 	/*-- /Standarts --*/
+
+	.photogallery-slider .owl-next {
+	    right: 0 !important;
+	}
+
+	.photogallery-slider .owl-prev {
+	    left: 0 !important;
+	}
 
 }
 
@@ -582,6 +598,10 @@
 	    padding: 10px 20px 10px 0;
 	}
 
+	.footer-article .cell:nth-child(1) {
+	    width: 60px;
+	}
+
 	/*-- /Footer --*/
 
 }
@@ -594,8 +614,27 @@
 	    width: 50%;
 	}
 
-
 	/*-- /Banks Page --*/
+
+	/*-- Footer --*/
+
+	.footer-article {
+		display: block;
+	}
+
+	.footer-article .cell:nth-child(1) {
+		display: block;
+		padding: 5px 0;
+	    width: 100%;
+	}
+
+	.footer-article .cell:nth-child(2) {
+		display: block;
+		padding: 5px 0;
+	    width: 100%;
+	}
+
+	/*-- /Footer --*/
 
 }
 
