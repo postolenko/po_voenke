@@ -3730,6 +3730,14 @@ a.tel-link {
 
 /*-- Refusal Issue --*/
 
+.article_7_wrapp .article_7 {
+    margin: 39px 0;
+}
+
+.article_7_wrapp .article_7:nth-child(1) {
+    margin-top: 34px;
+}
+
 .article_7_wrapp .article_7:last-child {
     margin-bottom: 13px;
 }
