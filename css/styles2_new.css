@@ -3511,6 +3511,10 @@ a.tel-link {
     margin-bottom: 7px;
 }
 
+.article_7 p {
+    margin-bottom: 9px;
+}
+
 /*-- /Secondaru Housing 3 --*/
 
 /*-- Approval --*/
@@ -3723,6 +3727,14 @@ a.tel-link {
 }
 
 /*-- /Combining Military Mortgages --*/
+
+/*-- Refusal Issue --*/
+
+.article_7_wrapp .article_7:last-child {
+    margin-bottom: 13px;
+}
+
+/*-- /Refusal Issue --*/
 
 /*-- Footer --*/
 
