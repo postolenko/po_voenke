@@ -3756,8 +3756,25 @@ a.tel-link {
     margin-bottom: 9px;
 }
 
-
 /*-- /Military Mortgage Law --*/
+
+/*-- Civil and Military Mortgages --*/
+
+.blue-box p {
+    margin: 0;
+    font-size: 20px;
+}
+
+.blue-box p.sm {
+    font-family: 'Fira Sans Condensed SemiBold';
+    font-weight: 600;
+}
+
+.article_10 .blue-box {
+    margin-bottom: 16px;
+}
+
+/*-- /Civil and Military Mortgages --*/
 
 /*-- Footer --*/
 
