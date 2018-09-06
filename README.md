@@ -26,4 +26,4 @@
 # http://postolenko.github.io/po_voenke/withdrawal_encumbrances.html
 # http://postolenko.github.io/po_voenke/combining_military_mortgages.html
 # http://postolenko.github.io/po_voenke/refusal_issue.html
-# http://postolenko.github.io/po_voenke/military_mortgage _law.html
+# http://postolenko.github.io/po_voenke/military_mortgage_law.html
