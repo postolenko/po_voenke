@@ -28,3 +28,4 @@
 # http://postolenko.github.io/po_voenke/refusal_issue.html
 # http://postolenko.github.io/po_voenke/military_mortgage_law.html
 # http://postolenko.github.io/po_voenke/civil_military_mortgages.html
+# http://postolenko.github.io/po_voenke/apartment_purchase.html
