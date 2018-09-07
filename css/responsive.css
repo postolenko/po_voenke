@@ -278,6 +278,10 @@
 		display: none !important;
 	}
 
+	.tab-visible {
+		display: block !important;
+	}
+
 	/*-- Tab 1 Object Page --*/
 
 	.slider-1_wrapp {
@@ -577,6 +581,51 @@
 
 	/*-- /Approval --*/
 
+	/*-- Apartment Purchase --*/
+
+	.scheme-title {
+		display: none;
+	}
+
+	.scheme > .scheme-col:nth-child(odd) {
+		width: 100%;
+	    float: none;
+	    padding: 5px 0;
+	}
+
+	.scheme > .scheme-col:nth-child(even) {
+		width: 100%;
+	    float: none;
+	    padding: 5px 0;
+	}
+
+	.two-cols-templ_4_2 {
+	    margin-bottom: 5px;
+	}
+
+	.two-cols-templ_4_2 .right {
+		text-align: left;
+	}
+
+	.scheme-box {
+		min-height: auto;
+	}
+
+	.call-two-cols {
+		display: block;
+	}
+
+	.call-two-cols .cell-1 {
+		display: none;
+	}
+
+	.call-two-cols .cell-2 {
+		display: block;
+		padding: 0;
+	}
+
+	/*-- /Apartment Purchase --*/
+
 	/*-- Footer --*/
 
 	.footer .left {
@@ -698,6 +747,45 @@
 	}
 
 	/*-- /Categori NIS --*/
+
+	/*-- Apartment Purchase --*/
+
+	.schemes-inner .scheme-box {
+		min-height: 92px;
+	}
+
+	.scheme-box.scheme-box_title {
+		min-height: auto;
+	   	padding-left: 12px;
+	    padding-right: 12px;
+	}
+
+	.schemes-inner_title {
+	    padding-left: 12px;
+	    padding-right: 12px;
+	}
+
+	.scheme-box.scheme-box_title_2 {
+		min-height: auto;
+	    padding-left: 12px;
+	    padding-right: 12px;
+	}
+
+	.scheme-box {
+	    padding-left: 12px;
+	    padding-right: 12px;
+	}
+
+	.scheme ul li {
+		margin: 6px 0;
+	    font-size: 14px;
+	}
+
+	.scheme_templ h6 {
+	    font-size: 14px;
+	}
+
+	/*-- /Apartment Purchase --*/
 	
 
 }
@@ -906,6 +994,14 @@
 	}
 
 	/*-- /Dom RF --*/
+
+	/*-- Apartment Purchase --*/
+
+	.green-pill_3 {
+	    min-width: 100%;
+	}
+
+	/*-- /Apartment Purchase --*/
 
 	/*-- Footer --*/
 

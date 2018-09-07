@@ -15,6 +15,10 @@
     text-align: center;
 }
 
+.tab-visible {
+    display: none !important;
+}
+
 /*-- Icons --*/
 
 .green-m {
@@ -3725,7 +3729,7 @@ a.tel-link {
 
 .blue-box_3 {
     margin: 8px 0 17px 0;
-    padding: 31px 4.5% 33px 4.5%;
+    padding: 30px 4.5% 33px 4.5%;
 }
 
 /*-- /Combining Military Mortgages --*/
@@ -3775,6 +3779,294 @@ a.tel-link {
 }
 
 /*-- /Civil and Military Mortgages --*/
+
+/*-- Apartment Purchase --*/
+
+.article_7_wrapp_2 {
+    margin: 0;
+}
+
+.article_7_wrapp_2 .article_7  {
+    margin: 0 0 12px 0;
+}
+
+.article_7 h6 {
+    margin-bottom: 10px;
+}
+
+.scheme_templ {
+    margin: 27px 0 14px 0;
+}
+
+.scheme_templ h6 {
+    margin-bottom: 12px;
+}
+
+.scheme-title {
+    position: relative;
+    padding: 15px 20px;
+    border-width: 1px;
+    border-color: rgb(0, 0, 0);
+    border-style: solid;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.scheme-title:after {
+    content: "";
+    width: 1px;
+    height: 20px;
+    background-color: #2d3a67;
+    position: absolute;
+    top: 100%;
+    left: 20px;
+}
+
+.scheme-title h6 {
+    margin-bottom: 0;
+    color: #000000;
+}
+
+.scheme-col {
+    width: 50%;
+}
+
+.scheme .scheme-col:nth-child(odd) {
+    float: left;
+    padding: 0 10px 0 0;
+}
+
+.scheme .scheme-col:nth-child(even) {
+    float: right;
+    padding: 0 0 0 10px;
+}
+
+.scheme .scheme-col .scheme-box:last-child:after {
+    display: none;
+}
+
+.scheme-box {
+    position: relative;
+    min-height: 114px;
+    margin: 20px 0;
+    padding: 3px 20px;
+    border-width: 1px;
+    border-color: #2d3a67;
+    border-style: solid;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.scheme-box:after {
+    content: "";
+    width: 1px;
+    height: 20px;
+    background-color: #2d3a67;
+    position: absolute;
+    top: 100%;
+    left: 20px;
+}
+
+.scheme ul li {
+    margin: 10px 0;
+    color: #000;
+    font-size: 16px;
+}
+
+.schemes-inner_title {
+    padding: 15px 20px;
+    position: relative;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    background-color: rgb(45, 58, 103);
+}
+
+.schemes-inner_title:after {
+    content: "";
+    width: 1px;
+    height: 20px;
+    background-color: #2d3a67;
+    position: absolute;
+    top: 100%;
+    left: 20px;
+}
+
+.schemes-inner_title h6 {
+    margin-bottom: 0;
+    color: #ffffff;
+}
+
+.schemes-inner .scheme-box {
+    min-height: 126px;
+}
+
+.scheme-box h6 {
+    margin-bottom: 0;
+    color: #2d3a67;
+}
+
+.scheme-box.scheme-box_title {
+    min-height: 89px;
+    padding: 15px 20px;
+}
+
+.scheme-box.scheme-box_title_2 {
+    min-height: auto;
+    padding: 15px 20px;
+}
+
+.scheme-col.green .scheme-box {
+    border-color: #009440;
+}
+
+.scheme-col.green .schemes-inner_title {
+    background-color: #009440;
+}
+
+.scheme-col.green .scheme-box h6 {
+    color: #009440;
+}
+
+.scheme-col.green .list_2 li:before {
+    background: #009440;
+}
+
+.two-cols-templ_4_2 {
+    margin-bottom: 0;
+}
+
+.two-cols-templ_4_2 .left {
+    width: 75%;
+    padding-top: 0;
+    padding-bottom: 2px;
+}
+
+.two-cols-templ_4_2 .right {
+    width: 25%;
+    padding: 19px 0 2px 1%;
+}
+
+.two-cols-templ_4_2 .green-pill_2 {
+    min-width: 170px;
+}
+
+.call-two-cols {
+    display: table;
+    width: 100%;
+}
+
+.call-two-cols .cell-1 {
+    display: table-cell;
+    vertical-align: top;
+    width: 125px;
+    padding: 10px 10px 10px 0;
+}
+
+.call-two-cols .cell-2 {
+    display: table-cell;
+    vertical-align: top;
+    width: auto;
+    padding: 15px 0 10px 10px;
+}
+
+.call_2 {
+    display: inline-block;
+    vertical-align: top;
+    width: 92px;
+    height: 92px;
+    background-image: url(../images/call_icon_2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.call-two-cols h5 {
+    margin-bottom: 3px;
+    color: #000000;
+}
+
+.call-two-cols h5 a {
+    color: #009440;
+}
+
+.call-two-cols p {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.green-pill_3 {
+    display: inline-block;
+    vertical-align: top;
+    min-width: 325px;
+    padding: 15px 2% 16px 2%;
+    border: 1px solid transparent;
+    text-align: center;
+    background: #009440;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 700;
+    color: #ffffff;
+
+    -webkit-transition-property: all;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: all;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: all;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: all;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: all;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.green-pill_3:link,
+.green-pill_3:visited {
+    background: #009440;
+    color: #ffffff;
+}
+
+.green-pill_3:active,
+.green-pill_3.active {
+    background: #23d400;
+    color: #ffffff;
+}
+
+.green-pill_3:hover {
+    background: #23d400;
+    color: #ffffff;
+}
+
+.info-box_wrapp {
+    margin: 32px 0 30px 0;
+}
+
+.info-box_wrapp > h5 {
+    margin-bottom: 13px;
+}
+
+.info-box_7 {
+    margin: 15px 0;
+}
+
+/*-- /Apartment Purchase --*/
 
 /*-- Footer --*/
 
