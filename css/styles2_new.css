@@ -3752,6 +3752,10 @@ a.tel-link {
 
 /*-- Military Mortgage Law --*/
 
+.article_10 h4 {
+    margin-bottom: 9px;
+}
+
 .article_10 h6 {
     margin-bottom: 9px;
 }
@@ -4067,6 +4071,174 @@ a.tel-link {
 }
 
 /*-- /Apartment Purchase --*/
+
+/*-- Refinancing Military Mortgages --*/
+
+.chars_5 {
+    display: table;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.chars_5 .table-row {
+    display: table-row;
+    vertical-align: top;
+}
+
+.chars_5 .cell {
+    display: table-cell;
+    vertical-align: top;
+    padding: 6px 10px 4px 10px;
+    border: 1px solid #e1e1e1;
+}
+
+.chars_5 .table-row:nth-child(1) .cell {
+    padding-top: 21px;
+    padding-bottom: 4px;
+    border-bottom: 1px solid transparent;
+}
+
+.chars_5 .table-row .cell:nth-child(1) {
+    padding-left: 0;
+}
+
+.chars_5 .table-row .cell:last-child {
+    padding-right: 0;
+}
+
+.chars_5 h3 {
+    margin-bottom: 0;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+}
+
+.chars_5 p {
+    margin-bottom: 0;
+}
+
+.chars_5 .cell:nth-child(1) {
+    width: 11%;
+}
+
+.chars_5 .cell:nth-child(2) {
+    width: 9%;
+}
+
+.chars_5 .cell:nth-child(3) {
+    width: 19%;
+}
+
+.chars_5 .cell:nth-child(4) {
+    width: 7%;
+}
+
+.chars_5 .cell:nth-child(5) {
+    width: 8%;
+}
+
+.chars_5 .cell:nth-child(6) {
+    width: 8%;
+}
+
+.chars_5 .cell:nth-child(7) {
+    width: 9%;
+}
+
+.chars_5 .cell:nth-child(8) {
+    width: 14%;
+}
+
+.chars_5 .cell:nth-child(9) {
+    width: 15%;
+}
+
+.chars_6 {
+    display: table;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.chars_6 .table-row {
+    display: table-row;
+    vertical-align: top;
+}
+
+.chars_6 .cell {
+    display: table-cell;
+    vertical-align: top;
+    padding: 6px 10px 4px 10px;
+    border: 1px solid #e1e1e1;
+}
+
+.chars_6 .table-row:nth-child(1) .cell {
+    padding-top: 21px;
+    padding-bottom: 4px;
+    border-bottom: 1px solid transparent;
+}
+
+.chars_6 .table-row .cell:nth-child(1) {
+    padding-left: 0;
+}
+
+.chars_6 .table-row .cell:last-child {
+    padding-right: 0;
+}
+
+.chars_6 h3 {
+    margin-bottom: 0;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+}
+
+.chars_6 p {
+    margin-bottom: 0;
+}
+
+.chars_6 .table-row .cell:nth-child(1) {
+    width: 12%;
+}
+
+.chars_6 .table-row .cell:nth-child(2) {
+    width: 13%;
+}
+
+.chars_6 .table-row .cell:nth-child(3) {
+    width: 52%;
+}
+
+.chars_6 .table-row .cell:nth-child(4) {
+    width: 23%;
+}
+
+/*-- /Refinancing Military Mortgages --*/
+
+/*-- Military Mortgage Law --*/
+
+.article_11 .blue-box {
+    margin: 13px 0 33px 0;
+}
+
+.article_11 h4 {
+    margin-bottom: 9px;
+}
+
+.article_11 h6 {
+    margin-bottom: 9px;
+}
+
+.article_11 p {
+    margin-bottom: 9px;
+}
+
+/*-- /Military Mortgage Law --*/
+
+/*-- New Buildings Krasnodar --*/
+
+
+
+/*-- /New Buildings Krasnodar --*/
 
 /*-- Footer --*/
 
