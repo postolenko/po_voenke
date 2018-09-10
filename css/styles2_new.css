@@ -43,6 +43,28 @@
 
 /*-- /Icons --*/
 
+/*-- Menu --*/
+
+.nav-item {
+    position: relative;
+}
+
+.nav-item.slash:after {
+    content: "";
+    width: 1px;
+    height: calc(100% - 16px);
+    position: absolute;
+    top: 8px;
+    left: -39px;
+    background: rgba(255, 255, 255, .8);
+}
+
+.navbar-nav .slash:nth-child(1):after {
+    display: none;
+}
+
+/*-- /Menu --*/
+
 /*-- Tab 1 Object Page --*/
 
 .two-cols-templ_1_1 .left {
@@ -3757,6 +3779,7 @@ a.tel-link {
 }
 
 .article_10 h6 {
+    margin-top: 5px;
     margin-bottom: 9px;
 }
 
@@ -4076,6 +4099,7 @@ a.tel-link {
 
 .chars_5 {
     display: table;
+    margin: 23px 0 24px 0;
     width: 100%;
     border-collapse: collapse;
 }
@@ -4153,6 +4177,50 @@ a.tel-link {
     width: 15%;
 }
 
+.article_12 p {
+    margin-bottom: 3px;
+}
+
+.chars_6_title {
+    display: table;
+    width: 100%;
+    border-top: 1px solid #e1e1e1;
+    border-left: 1px solid #e1e1e1;
+    border-right: 1px solid #e1e1e1;
+}
+
+.chars_6_title .cell {
+    display: table-cell;
+    vertical-align: top;
+    border-right: 1px solid #e1e1e1;
+    padding: 12px 10px 8px 10px;
+}
+
+.chars_6_title .cell:nth-child(1) {
+    width: 14%;
+}
+
+.chars_6_title .cell:nth-child(2) {
+    width: 12%;
+}
+
+.chars_6_title .cell:nth-child(3) {
+    width: 46%;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.chars_6_title .cell:nth-child(4) {
+    width: 28%;
+    border-right: none;
+}
+
+.chars_6_title h3 {
+    margin-bottom: 0;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+}
+
 .chars_6 {
     display: table;
     width: 100%;
@@ -4162,6 +4230,7 @@ a.tel-link {
 .chars_6 .table-row {
     display: table-row;
     vertical-align: top;
+    border-bottom: none;
 }
 
 .chars_6 .cell {
@@ -4172,17 +4241,24 @@ a.tel-link {
 }
 
 .chars_6 .table-row:nth-child(1) .cell {
-    padding-top: 21px;
+    padding-top: 8px;
     padding-bottom: 4px;
+    border-top: 1px solid transparent;
     border-bottom: 1px solid transparent;
 }
 
+.cell-title {
+    width: 100%;
+    padding-top: 21px;
+    padding-bottom: 4px;
+}
+
 .chars_6 .table-row .cell:nth-child(1) {
-    padding-left: 0;
+    padding-left: 2px;
 }
 
 .chars_6 .table-row .cell:last-child {
-    padding-right: 0;
+    padding-right: 2px;
 }
 
 .chars_6 h3 {
@@ -4197,24 +4273,44 @@ a.tel-link {
 }
 
 .chars_6 .table-row .cell:nth-child(1) {
-    width: 12%;
+    width: 14%;
 }
 
 .chars_6 .table-row .cell:nth-child(2) {
-    width: 13%;
+    width: 12%;
 }
 
 .chars_6 .table-row .cell:nth-child(3) {
-    width: 52%;
+    width: 14%;
 }
 
 .chars_6 .table-row .cell:nth-child(4) {
-    width: 23%;
+    width: 15%;
+}
+
+.chars_6 .table-row .cell:nth-child(5) {
+    width: 17%;
+}
+
+.chars_6 .table-row .cell:nth-child(6) {
+    width: 28%;
+}
+
+.list_3 li {
+    padding: 4px 0 4px 20px;
+}
+
+.article_10 ul {
+    margin: 0 0 9px 0;
+}
+
+.chars_6_wrapp {
+    margin: 26px 0;
 }
 
 /*-- /Refinancing Military Mortgages --*/
 
-/*-- Military Mortgage Law --*/
+/*-- New Buildings Krasnodar --*/
 
 .article_11 .blue-box {
     margin: 13px 0 33px 0;
@@ -4231,12 +4327,6 @@ a.tel-link {
 .article_11 p {
     margin-bottom: 9px;
 }
-
-/*-- /Military Mortgage Law --*/
-
-/*-- New Buildings Krasnodar --*/
-
-
 
 /*-- /New Buildings Krasnodar --*/
 

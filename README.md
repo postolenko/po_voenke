@@ -30,3 +30,4 @@
 # http://postolenko.github.io/po_voenke/civil_military_mortgages.html
 # http://postolenko.github.io/po_voenke/apartment_purchase.html
 # http://postolenko.github.io/po_voenke/new_buildings_krasnodar.html
+# http://postolenko.github.io/po_voenke/refinancing_military_mortgages.html

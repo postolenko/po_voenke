@@ -237,6 +237,16 @@ $(document).ready(function () {
 
 	});
 
+	$(".nav-item").each(function() {
+
+		if(!$(this).hasClass("mobile")) {
+
+			$(this).addClass("slash");
+
+		}
+
+	});
+
 });
 
 function getTabsLinksParams() {

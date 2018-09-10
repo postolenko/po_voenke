@@ -206,6 +206,30 @@
 
 	/*-- /Apartment Purchase --*/
 
+	/*-- Refinancing Military Mortgages --*/
+
+	.chars_5 h3 {
+	    font-size: 14px;
+	}
+
+	.chars_5 p {
+	    font-size: 14px;
+	}
+
+	.chars_6_title h3 {
+	    font-size: 13.5px;
+	}
+
+	.chars_6 h3 {
+	    font-size: 13.5px;
+	}
+
+	.chars_6 p {
+	    font-size: 13.5px;
+	}
+
+	/*-- /Refinancing Military Mortgages --*/
+
 }
 
 @media only screen and (max-width: 1124px) {
@@ -658,6 +682,46 @@
 
 	/*-- /Apartment Purchase --*/
 
+	/*-- Refinancing Military Mortgages --*/
+
+	.chars_5 .table-row .cell:nth-child(1) {
+	    display: none;
+	}
+
+	.chars_5 .cell:nth-child(3) {
+	    display: none;
+	}
+
+	.chars_5 .cell:nth-child(4) {
+	    display: none;
+	}
+
+	.chars_5 .cell:nth-child(2) {
+	    width: 16%;
+	}
+
+	.chars_5 .cell:nth-child(5) {
+	    width: 15%;
+	}
+
+	.chars_5 .cell:nth-child(6) {
+	    width: 15%;
+	}
+
+	.chars_5 .cell:nth-child(7) {
+	    width: 16%;
+	}
+
+	.chars_5 .cell:nth-child(8) {
+	    width: 21%;
+	}
+
+	.chars_5 .cell:nth-child(9) {
+	    width: 17%;
+	}
+
+	/*-- /Refinancing Military Mortgages --*/
+
 	/*-- Footer --*/
 
 	.footer .left {
@@ -716,6 +780,22 @@
 	}
 
 	/*-- /Footer --*/
+
+}
+
+@media only screen and (max-width: 650px) {
+
+	/*-- Refinancing Military Mortgages --*/
+
+	.chars_6_wrapp {
+	    display: none;
+	}
+
+	.chars_5 {
+		display: none;
+	}
+
+	/*-- /Refinancing Military Mortgages --*/
 
 }
 
@@ -804,6 +884,14 @@
 }
 
 @media only screen and (max-width: 480px) {
+
+	/*-- Refinancing Military Mortgages --*/
+
+	.h1_2 {
+		font-size: 32px;
+	}
+
+	/*-- /Refinancing Military Mortgages --*/
 
 	/*-- Tab 1 Object Page --*/
 
