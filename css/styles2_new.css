@@ -56,14 +56,19 @@
 
 .nav-link-pickup {
     font-family: 'Fira Sans Condensed SemiBold';
+    font-size: 17.5px;
     font-weight: 600;
     color: #2d3a67 !important;
-    padding: 9px 20px 7px 20px;
+    padding: 8px 20px 6px 20px;
 }
 
 .nav-link-pickup .icon-burger {
     position: relative;
     top: -1px;
+}
+
+.nav-link-pickup > * + * {
+    margin-left: 19px;
 }
 
 .nav-link-pickup:hover {
