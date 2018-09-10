@@ -43,28 +43,6 @@
 
 /*-- /Icons --*/
 
-/*-- Menu --*/
-
-.nav-item {
-    position: relative;
-}
-
-.nav-item.slash:after {
-    content: "";
-    width: 1px;
-    height: calc(100% - 16px);
-    position: absolute;
-    top: 8px;
-    left: -39px;
-    background: rgba(255, 255, 255, .8);
-}
-
-.navbar-nav .slash:nth-child(1):after {
-    display: none;
-}
-
-/*-- /Menu --*/
-
 /*-- Tab 1 Object Page --*/
 
 .two-cols-templ_1_1 .left {
