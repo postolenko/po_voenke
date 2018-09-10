@@ -4363,6 +4363,35 @@ a.tel-link {
 
 /*-- /New Buildings Krasnodar --*/
 
+/*-- Cabinet --*/
+
+.text_wrapp_5 {
+    margin-bottom: 14px;
+}
+
+.text_wrapp_5 h6 {
+    margin-bottom: 5px;
+}
+
+.text_wrapp_5 p {
+    margin-bottom: 5px;
+}
+
+.cabinet-item {
+    margin-bottom: 20px;
+}
+
+.cabinet-item_title {
+    margin-bottom: 5px;
+}
+
+.cabinet-item_title .blue {
+    font-family: "Fira Sans Condensed SemiBold", sans-serif;
+    color: #2d3a67;
+}
+
+/*-- /Cabinet --*/
+
 /*-- Footer --*/
 
 .footer_2 {
