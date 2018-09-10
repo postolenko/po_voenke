@@ -3345,6 +3345,15 @@ a.tel-link {
     color: #000000;
 }
 
+.star:after {
+    content: "\2605";
+    font-size: 10px;
+    color: #d24a43;
+    position: relative;
+    top: -5px;
+    left: -2px;
+}
+
 /*-- /Categori NIS --*/
 
 /*-- Property Tax Deduction --*/
