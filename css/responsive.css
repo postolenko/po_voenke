@@ -230,6 +230,39 @@
 
 	/*-- /Refinancing Military Mortgages --*/
 
+	/*-- Additional Discount --*/
+
+	.discount_wrapp {
+		display: block;
+	    margin: 10px 0 2px 0;
+	}
+
+	.discount_wrapp > .cell-1 {
+		display: block;
+	    width: 100%;
+	    margin: 10px 0;
+	}
+
+	.discount_wrapp > .cell-2 {
+		display: block;
+	    width: 100%;
+	    margin: 10px 0;
+	}
+
+	.discount_wrapp > .cell-1 .percent {
+		margin: 0 auto;
+	}
+
+	.discount_wrapp .two-cols_info .cell-2 {
+		text-align: left;
+	}
+
+	.discount_wrapp .two-cols_info {
+		padding-bottom: 10px;
+	}
+
+	/*-- /Additional Discount --*/
+
 }
 
 @media only screen and (max-width: 1124px) {
@@ -295,6 +328,17 @@
 	}
 
 	/*-- /Banks Page --*/
+
+	/*-- Additional Discount --*/
+
+	.discount_wrapp .two-cols_info .cell-1,
+	.discount_wrapp .two-cols_info .cell-2 {
+	    display: block;
+	    width: 100%;
+	    padding: 5px 0;
+	}
+
+	/*-- /Additional Discount --*/
 
 }
 
@@ -589,39 +633,6 @@
 	}
 
 	/*-- /Button Form Gk --*/
-
-	/*-- Additional Discount --*/
-
-	.discount_wrapp {
-		display: block;
-	    margin: 10px 0 2px 0;
-	}
-
-	.discount_wrapp > .cell-1 {
-		display: block;
-	    width: 100%;
-	    margin: 10px 0;
-	}
-
-	.discount_wrapp > .cell-2 {
-		display: block;
-	    width: 100%;
-	    margin: 10px 0;
-	}
-
-	.discount_wrapp > .cell-1 .percent {
-		margin: 0 auto;
-	}
-
-	.discount_wrapp .two-cols_info .cell-2 {
-		text-align: left;
-	}
-
-	.discount_wrapp .two-cols_info {
-		padding-bottom: 10px;
-	}
-
-	/*-- /Additional Discount --*/
 
 	/*-- Approval --*/
 
