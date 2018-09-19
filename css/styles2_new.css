@@ -3817,7 +3817,7 @@ h4 .star:after {
 }
 
 .article_10 h6 {
-    margin-top: 5px;
+    margin-top: 7px;
     margin-bottom: 9px;
 }
 
@@ -3840,7 +3840,7 @@ h4 .star:after {
 }
 
 .article_10 .blue-box {
-    margin-bottom: 16px;
+    margin-bottom: 14px;
 }
 
 /*-- /Civil and Military Mortgages --*/
@@ -4135,9 +4135,13 @@ h4 .star:after {
 
 /*-- Refinancing Military Mortgages --*/
 
+.article_10_2 p {
+    margin-bottom: 3px;
+}
+
 .chars_5 {
     display: table;
-    margin: 15px 0 7px 0;
+    margin: 7px 0;
     width: 100%;
     border-collapse: collapse;
 }
@@ -4145,19 +4149,25 @@ h4 .star:after {
 .chars_5 .table-row {
     display: table-row;
     vertical-align: top;
+    border: none;
 }
 
 .chars_5 .cell {
     display: table-cell;
     vertical-align: top;
-    padding: 6px 10px 4px 10px;
+    padding: 4px 10px;
     border: 1px solid #e1e1e1;
 }
 
 .chars_5 .table-row:nth-child(1) .cell {
-    padding-top: 21px;
+    padding-top: 4px;
     padding-bottom: 4px;
+    border-top: 1px solid transparent;
     border-bottom: 1px solid transparent;
+}
+
+.chars_5 .table-row:nth-child(2) .cell {
+    border-top: 1px solid transparent;
 }
 
 .chars_5 .table-row .cell:nth-child(1) {
@@ -4216,12 +4226,12 @@ h4 .star:after {
 }
 
 .article_12 h6 {
-    margin-bottom: 5px;
+    margin: 12px 0 5px 0;
     color: #000000;
 }
 
 .article_12 ul li {
-    padding: 2px 0;
+    padding: 3px 0
 }
 
 .blue {
