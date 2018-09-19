@@ -1655,7 +1655,7 @@ p.font-10 {
     line-height: 23px;
 }
 
-.checkbox a:before {
+.checkbox span:before {
     display: block;
     content: "";
     width: 10px;
@@ -1666,7 +1666,7 @@ p.font-10 {
     border: 1px solid #009440;
 }
 
-.checkbox a:after {
+.checkbox span:after {
     display: none;
     content: "";
     width: 4px;
@@ -1677,7 +1677,7 @@ p.font-10 {
     background-color: #009440;
 }
 
-.checkbox input:checked + a:after {
+.checkbox input:checked + span:after {
     display: block;
 }
 
@@ -3400,6 +3400,11 @@ a.tel-link {
     left: -2px;
 }
 
+h4 .star:after {
+    font-size: 13px;
+    top: -9px;
+}
+
 /*-- /Categori NIS --*/
 
 /*-- Property Tax Deduction --*/
@@ -4132,7 +4137,7 @@ a.tel-link {
 
 .chars_5 {
     display: table;
-    margin: 23px 0 24px 0;
+    margin: 15px 0 7px 0;
     width: 100%;
     border-collapse: collapse;
 }
@@ -4210,123 +4215,17 @@ a.tel-link {
     width: 15%;
 }
 
-.article_12 p {
-    margin-bottom: 3px;
-}
-
-.chars_6_title {
-    display: table;
-    width: 100%;
-    border-top: 1px solid #e1e1e1;
-    border-left: 1px solid #e1e1e1;
-    border-right: 1px solid #e1e1e1;
-}
-
-.chars_6_title .cell {
-    display: table-cell;
-    vertical-align: top;
-    border-right: 1px solid #e1e1e1;
-    padding: 12px 10px 8px 10px;
-}
-
-.chars_6_title .cell:nth-child(1) {
-    width: 14%;
-}
-
-.chars_6_title .cell:nth-child(2) {
-    width: 12%;
-}
-
-.chars_6_title .cell:nth-child(3) {
-    width: 46%;
-    border-bottom: 1px solid #e1e1e1;
-}
-
-.chars_6_title .cell:nth-child(4) {
-    width: 28%;
-    border-right: none;
-}
-
-.chars_6_title h3 {
-    margin-bottom: 0;
-    font-size: 16px;
-    line-height: 20px;
+.article_12 h6 {
+    margin-bottom: 5px;
     color: #000000;
 }
 
-.chars_6 {
-    display: table;
-    width: 100%;
-    border-collapse: collapse;
+.article_12 ul li {
+    padding: 2px 0;
 }
 
-.chars_6 .table-row {
-    display: table-row;
-    vertical-align: top;
-    border-bottom: none;
-}
-
-.chars_6 .cell {
-    display: table-cell;
-    vertical-align: top;
-    padding: 6px 10px 4px 10px;
-    border: 1px solid #e1e1e1;
-}
-
-.chars_6 .table-row:nth-child(1) .cell {
-    padding-top: 8px;
-    padding-bottom: 4px;
-    border-top: 1px solid transparent;
-    border-bottom: 1px solid transparent;
-}
-
-.cell-title {
-    width: 100%;
-    padding-top: 21px;
-    padding-bottom: 4px;
-}
-
-.chars_6 .table-row .cell:nth-child(1) {
-    padding-left: 2px;
-}
-
-.chars_6 .table-row .cell:last-child {
-    padding-right: 2px;
-}
-
-.chars_6 h3 {
-    margin-bottom: 0;
-    font-size: 16px;
-    line-height: 20px;
-    color: #000000;
-}
-
-.chars_6 p {
-    margin-bottom: 0;
-}
-
-.chars_6 .table-row .cell:nth-child(1) {
-    width: 14%;
-}
-
-.chars_6 .table-row .cell:nth-child(2) {
-    width: 12%;
-}
-
-.chars_6 .table-row .cell:nth-child(3) {
-    width: 14%;
-}
-
-.chars_6 .table-row .cell:nth-child(4) {
-    width: 15%;
-}
-
-.chars_6 .table-row .cell:nth-child(5) {
-    width: 17%;
-}
-
-.chars_6 .table-row .cell:nth-child(6) {
-    width: 28%;
+.blue {
+    color: #2d3a67;
 }
 
 .list_3 li {
@@ -4339,6 +4238,75 @@ a.tel-link {
 
 .chars_6_wrapp {
     margin: 26px 0;
+}
+
+.formula_wrapp {
+    margin: 14px 0;
+    padding: 30px 2%;
+    border-width: 2px;
+    border-color: rgb(45, 58, 103);
+    border-style: solid;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.formula {
+    display: inline-table;
+    vertical-align: top;
+    max-width: 619px;
+}
+
+.formula .col:nth-child(1) {
+    display: table-cell;
+    vertical-align: middle;
+    width: 151px;
+    padding: 0;
+}
+
+.formula .col:nth-child(2) {
+    display: table-cell;
+    vertical-align: middle;
+    width: auto;
+    padding: 0;
+}
+
+.formula p {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    line-height: 20px;
+    color: #2d3a67;
+}
+
+.formula .col:nth-child(1) p {
+    font-family: "Fira Sans Condensed", sans-serif;
+    font-weight: 500;
+}
+
+.formula .col:nth-child(2) .slash_row {
+    padding: 4px 0;
+}
+
+.formula .col:nth-child(2) .slash_row:nth-child(1) {
+    border-bottom: 1px solid #f04942;
+}
+
+.formula .col:nth-child(1) p .red {
+    color: #f04942;
+    margin: 0 0 0 5px;
+}
+
+.multipple:after {
+    content: "\d7";
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 500;
+    color: #f04942;
+    font-style: normal;
+    position: relative;
+    top: 1px;
 }
 
 /*-- /Refinancing Military Mortgages --*/
