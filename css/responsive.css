@@ -902,6 +902,20 @@
 		font-size: 32px;
 	}
 
+	.formula_wrapp {
+	    padding: 2px 2%;
+	}
+
+	.formula .col:nth-child(1) {
+	    width: 87px;
+	}
+
+	.formula p {
+	    font-size: 13px;
+	    line-height: 15px;
+	    font-weight: 600;
+	}
+
 	/*-- /Refinancing Military Mortgages --*/
 
 	/*-- Tab 1 Object Page --*/
