@@ -340,6 +340,19 @@
 
 	/*-- /Additional Discount --*/
 
+	/*-- Search --*/
+
+	.navbar-content {
+	    float: none;
+	    width: 100%;
+	}
+
+	.search-form_wrapp {
+	    display: none;
+	}
+
+	/*-- /Search --*/
+
 }
 
 @media only screen and (max-width: 900px) {
@@ -1256,7 +1269,6 @@
 	/*-- /Search --*/
 	
 }
-
 
 @media (max-width: 768px) {
 

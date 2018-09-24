@@ -4376,12 +4376,60 @@ h4 .star:after {
 
 /*-- Search --*/
 
-.search-result_wrapp {
-
+.navbar-content {
+    float: left;
+    width: calc(100% - 230px);
 }
 
-.search_form {
-    margin: 0 0 12px 0;
+.search-form_wrapp {
+    float: right;
+    max-width: 230px;
+}
+
+.search-form {
+    height: 34px;
+    margin: 13px 0 0 12px;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid rgb(235, 179, 68);
+    background: rgba(255, 255, 255, .2);
+    -webkit-border-radius: 19px;
+    -moz-border-radius: 19px;
+    border-radius: 19px;
+}
+
+.search-form input {
+    display: block;
+    width: 100%;
+    height: 34px;
+    outline: 1px solid transparent;
+    padding: 0 53px 0 23px;
+    background: transparent;
+    border: 1px solid transparent;
+    font-size: 16px;
+    line-height: 33px;
+    color: #ebb344;
+}
+
+.search-form input::placeholder {
+    color: #ebb344;
+}
+
+.search_btn {
+    display: block;
+    width: 45px;
+    height: 34px;
+    border: 1px solid transparent;
+    background-color: transparent;
+    background-image: url(../images/search_icon.png);
+    background-position: left 4px;
+    background-repeat: no-repeat;
+}
+
+.search-form .search_btn {
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
 .search-result_header {
@@ -4420,10 +4468,6 @@ h4 .star:after {
 
 .dropdown-custom_2 {
     width: 263px;
-}
-
-.dropdown-custom_2 {
-
 }
 
 .dropdown-custom_2 .dropdown-toggle {
