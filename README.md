@@ -33,3 +33,4 @@
 # http://postolenko.github.io/po_voenke/refinancing_military_mortgages.html
 # http://postolenko.github.io/po_voenke/cabinet.html
 # http://postolenko.github.io/po_voenke/search_result.html
+# http://postolenko.github.io/po_voenke/plashka.html

@@ -1000,36 +1000,17 @@
 	    height: 99px;
 	}
 
-	.mortgages-header .cell-1 {
-	    width: 50%;
+	.mortgages-header {
+	    padding: 21px 40px 14px 0;
 	}
 
-	.mortgages-header .cell-2 {
-	    width: 25%;
+	.mortgages-header div.h5 {
+	    font-size: 15px;
 	}
 
-	.mortgages-header .cell-3 {
-	    width: 25%;
-	}
-
-	.mortgages-header .cell-4 {
-	    display: none;
-	}
-
-	.bank-header .cell-1 {
-	    width: 50%;
-	}
-
-	.bank-header .cell-2 {
-	    width: 25%;
-	}
-
-	.bank-header .cell-3 {
-	    width: 25%;
-	}
-
-	.bank-header .cell-4 {
-	    display: none;
+	.bank-header p {
+	    font-size: 15px;
+	    line-height: 20px;
 	}
 
 	.thumbnails_3 {
@@ -1204,28 +1185,47 @@
 
 	/*-- Banks Page --*/
 
-	.mortgages-header .cell-1 {
-	    width: 70%;
-	}
-
-	.mortgages-header .cell-2 {
-	    width: 30%;
-	}
-
-	.mortgages-header .cell-3 {
-	    display: none;
-	}
-
 	.bank-header .cell-1 {
-	    width: 70%;
+	    width: 30%;
+	    padding-right: 5px;
 	}
 
 	.bank-header .cell-2 {
-	    width: 30%;
+		width: 17%;
 	}
 
 	.bank-header .cell-3 {
-	    display: none;
+		width: 20%;
+	}
+
+	.bank-header .cell-4 {
+		width: 23%;
+	}
+
+	.mortgages-header .cell-1 {
+	    width: 30%;
+	    padding-right: 5px;
+	}
+
+	.mortgages-header .cell-2 {
+	    width: 17%;
+	}
+
+	.mortgages-header .cell-3 {
+	    width: 20%;
+	}
+
+	.mortgages-header .cell-4 {
+	    width: 23%;
+	}
+
+
+	.bank-header p {
+	    font-size: 12px;
+	}
+
+	.mortgages-header div.h5 {
+	    font-size: 13px;
 	}
 
 	/*-- /Banks Page --*/

@@ -4618,14 +4618,6 @@ h4 .star:after {
     padding: 10px 0 0 0;
 }
 
-.search-result-item_footer p {
-
-}
-
-.search-result-item_footer .inline-bloks {
-
-}
-
 .search-result-item_footer .inline-bloks > div {
     display: inline-block;
     vertical-align: top;
@@ -4635,10 +4627,6 @@ h4 .star:after {
     padding: 1px 0 0 0;
     font-size: 14px;
     line-height: 18px;
-}
-
-.tags_list {
-
 }
 
 .tags_list li {
@@ -4661,14 +4649,95 @@ h4 .star:after {
 .tags_list li a {
     border-bottom: 1px solid rgba(243, 109, 104, .4);
     font-size: 14px;
-    /*line-height: 18px;*/
 }
 
 .tags_list li a:hover {
     border-bottom: 1px solid rgba(243, 109, 104, 0);
 }
 
-/*-- Search --*/
+/*-- /Search --*/
+
+/*-- Filtr Pill --*/
+
+.filter_pill {
+    width: 100%;
+    cursor: pointer;
+    background-color: rgb(239, 239, 239);
+    -webkit-box-shadow: 0 10px 20px 0 rgba(0, 1, 5, .2);
+    -moz-box-shadow: 0 10px 20px 0 rgba(0, 1, 5, .2);
+    box-shadow: 0 10px 20px 0 rgba(0, 1, 5, .2);
+    text-align: center;
+    padding: 13px 0 4px 0;
+    position: relative;
+    z-index: 2;
+}
+
+.filter_pill.active {
+    padding: 6px 0 11px 0;
+}
+
+.filter_pill .open_box {
+    display: none;
+}
+
+.filter_pill .close_box {
+    display: block;
+}
+
+.filter_pill.active .open_box {
+    display: block;
+}
+
+.filter_pill.active .close_box {
+    display: none;
+}
+
+.arrow_grey-up {
+    display: inline-block;
+    vertical-align: top;
+    width: 20px;
+    height: 13px;
+    background-image: url(../images/arrow_grey_up.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.arrow_green-dowwn {
+    display: inline-block;
+    vertical-align: top;
+    width: 20px;
+    height: 13px;
+    background-image: url(../images/arrow_green_down.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.filter_pill .arrow_grey-up {
+    position: relative;
+    top: 6px;
+}
+
+.filter_pill p {
+    margin: 4px 0;
+    font-family: 'Fira Sans Condensed SemiBold';
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 500;
+    color: #757575;
+}
+
+.filter_pill .p-close {
+    color: #757575;
+}
+
+.filter_pill .p-open {
+    color: #000000;
+}
+
+
+/*-- /Filtr Pill --*/
 
 /*-- Footer --*/
 
