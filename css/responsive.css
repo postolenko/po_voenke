@@ -1225,6 +1225,35 @@
 	}
 
 	/*-- /Bank --*/
+
+	/*-- Search --*/
+
+	.search-result_header {
+	    margin: 0;
+	}
+
+	.search-result_header .search-col {
+		display: block;
+	    margin: 10px 0;
+	}
+
+	.search-result_header .input_wrapp_blue {
+	    width: 100%;
+	}
+
+	.search-result_header .dropdown-custom_2 {
+	    width: 100% !important;
+	}
+
+	.search-result_header .date_input_wrapp {
+	    width: 125px;
+	}
+
+	.search-result_header .blue-pill {
+	    min-width: 100%;
+	}
+
+	/*-- /Search --*/
 	
 }
 
