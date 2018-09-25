@@ -4139,11 +4139,19 @@ h4 .star:after {
     margin-bottom: 3px;
 }
 
+.chars_5_wrapp {
+    overflow-y: auto;
+}
+
 .chars_5 {
     display: table;
     margin: 7px 0;
     width: 100%;
     border-collapse: collapse;
+}
+
+.chars_5_wrapp .chars_5 {
+    min-width: 600px;
 }
 
 .chars_5 .table-row {
