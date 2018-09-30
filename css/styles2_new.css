@@ -4611,10 +4611,26 @@ h4 .star:after {
     padding: 10px 0;
 }
 
-.search-result-item h6 {
+.search-result-item .h6 {
     display: inline-block;
     margin-bottom: 4px;
     border-bottom: 1px solid #9297a9;
+    color: #2d3a67;
+    font-size: 16px;
+}
+
+.search-result-item .h6:link,
+.search-result-item .h6:visited {
+    border-bottom: 1px solid #9297a9;
+}
+
+.search-result-item .h6:active,
+.search-result-item .h6.active {
+    border-bottom: 1px solid transparent;
+}
+
+.search-result-item .h6:hover {
+    border-bottom: 1px solid transparent;
 }
 
 .search-result-item p {
