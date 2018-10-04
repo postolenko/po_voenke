@@ -208,7 +208,7 @@
 
 	/*-- Refinancing Military Mortgages --*/
 
-	.chars_5 h3 {
+	.chars_5 .h3 {
 	    font-size: 14px;
 	}
 
@@ -1150,6 +1150,11 @@
 	}
 
 	.table-cell h3 {
+	    font-size: 15px;
+	    line-height: 18px;
+	}
+
+	.table-cell .h3 {
 	    font-size: 15px;
 	    line-height: 18px;
 	}

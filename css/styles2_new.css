@@ -389,6 +389,15 @@
     width: auto;
 }
 
+.table-cell .h3 {
+    margin-bottom: 0;
+    font-family: "Fira Sans Condensed", sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 600;
+    color: #000000;
+}
+
 .description_wrapp {
     padding: 5px 0;
 }
@@ -4186,7 +4195,7 @@ h4 .star:after {
     padding-right: 0;
 }
 
-.chars_5 h3 {
+.chars_5 .h3 {
     margin-bottom: 0;
     font-size: 16px;
     line-height: 20px;
@@ -4411,7 +4420,7 @@ h4 .star:after {
     width: 100%;
     height: 34px;
     outline: 1px solid transparent;
-    padding: 0 53px 0 23px;
+    padding: 0 53px 2px 23px;
     background: transparent;
     border: 1px solid transparent;
     font-size: 16px;
