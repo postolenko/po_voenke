@@ -12,6 +12,18 @@
 
 	/*-- /Tab 1 Object Page --*/
 
+	/*-- Section 1 - Card 2 --*/
+
+	.tabs_2 .tabs-links-inner {
+	    margin: 0;
+	}
+
+	.tabs_2 .tab-link_wrapp {
+	    padding: 0 15px;
+	}
+
+	/*-- /Section 1 - Card 2 --*/
+
 }
 
 @media only screen and (max-width: 1440px) {
@@ -44,6 +56,27 @@
 	}
 
 	/*-- /Standarts --*/
+
+	/*-- Section 1 - Card 2 --*/
+
+	.two-cols-templ_1_2 > .left,
+	.two-cols-templ_1_2 > .right {
+		width: 100%;
+		float: none;
+		padding: 10px 0;
+	}
+
+	.two-cols-templ_1_2 .right-sidebar {
+	    max-width: 900px;
+	    margin: 0 auto;
+	}
+
+	.chars_6_wrapp {
+	    max-width: 900px;
+	    margin: 40px 0 0 0;
+	}
+
+	/*-- /Section 1 - Card 2 --*/
 
 	.photogallery-slider .owl-next {
 	    margin-right: 0 !important;
@@ -785,6 +818,45 @@
 
 	/*-- /Banks Page --*/
 
+	/*-- Section 1 - Card 2 --*/
+
+	.orange-box > .left {
+	    width: 100%;
+	    float: none;
+	    border-right: none;
+	    padding: 0;
+	}
+
+	.orange-box > .right {
+	    width: 100%;
+	    float: none;
+	    border-right: none;
+	    padding: 0;
+	}
+
+	.tabs_2 .tab-link {
+	    font-size: 18px;
+	}
+
+	.two-cols_6 {
+		display: block;
+	}
+
+	.two-cols_6 > .two-col:nth-child(1) {
+		display: block;
+	    width: 100%;
+	    padding: 0 0 10px 0;
+	    border-right: none;
+	}
+
+	.two-cols_6 > .two-col:nth-child(2) {
+		display: block;
+	    width: 100%;
+	    padding: 10px 0;
+	}
+
+	/*-- /Section 1 - Card 2 --*/
+
 	/*-- Footer --*/
 
 	.footer-article {
@@ -1118,6 +1190,24 @@
 	}
 
 	/*-- /Apartment Purchase --*/
+
+	/*-- Section 1 - Card 2 --*/
+
+	.two-cols_7 {
+		display: block;
+	}
+
+	.two-cols_7 > .two-col {
+		display: block;
+	    width: 100%;
+	    padding: 10px 0;
+	}
+
+	.two-cols_7 img {
+		margin: 0 auto;
+	}
+
+	/*-- /Section 1 - Card 2 --*/
 
 	/*-- Footer --*/
 
