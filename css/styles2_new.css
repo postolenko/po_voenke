@@ -4956,14 +4956,14 @@ p.p-orange {
 }
 
 .orange-box .left {
-    width: 34%;
+    width: 37%;
     border-right: 1px solid #e3e3e3;
-    padding: 0 15px;
+    padding: 0 20px;
 }
 
 .orange-box .right {
-    width: 66%;
-    padding: 0 15px;
+    width: 63%;
+    padding: 0 20px;
 }
 
 .orange-box h5 {
@@ -4973,6 +4973,19 @@ p.p-orange {
 
 .orange-box p {
     margin-bottom: 10px;
+    font-size: 19px;
+}
+
+.orange-box .p-wrapp {
+    padding-left: 12%;
+}
+
+.p-wrapp p {
+    margin-bottom: 0;
+}
+
+.orange-box .dropdown_block p {
+    font-size: 16px;
 }
 
 .dropdown_wrapp_2 {
@@ -5212,16 +5225,17 @@ p.p-orange {
 .tabs_2 .tab-link {
     display: inline-block;
     vertical-align: top;
+    padding: 0 10px;
     cursor: pointer;
     font-size: 20px;
-    line-height: 39px;
+    line-height: 52px;
     white-space: nowrap;
     border-bottom: transparent;
     color: #000000;
     position: relative;
 }
 
-.tabs_2 .tab-link:after {
+.tabs_2 .tab-link.active:after {
     content: "";
     width: 100%;
     height: 3px;
@@ -5233,7 +5247,7 @@ p.p-orange {
 
 .tabs_2 .tab-link:active,
 .tabs_2 .tab-link.active {
-    font-weight: 600;
+    font-weight: normal;
     color: #ed924e;;
 }
 

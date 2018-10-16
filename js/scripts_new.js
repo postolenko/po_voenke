@@ -99,13 +99,17 @@ $(document).ready(function () {
 
 		dropdownBlock = $(this).find(".dropdown_block");
 
-		if( dropdownBlock.is(":visible") ) {
+		if( dropdownBlock.is(":visible") && !$(this).hasClass("active") ) {
 
 			dropdownBlock.css({
 				"display" : "none"
 			});
 
 			$(this).find(".dropdown_title .plus").addClass("init");
+
+		} else {
+
+			$(this).find(".dropdown_title .plus").addClass("active");
 
 		}
 
