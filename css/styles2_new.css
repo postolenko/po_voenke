@@ -8,7 +8,7 @@
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
-    padding: 7px 2%;
+    padding: 7px 15px;
     font-size: 18px;
     line-height: 22px;
     font-weight: normal;
@@ -4764,8 +4764,108 @@ h4 .star:after {
 
 /*-- Section 1 - Card 2 --*/
 
+.header-2 {
+    display: table;
+    width: 100%;
+    margin: 20px 0 0 0;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.header-2 .header-col:nth-child(1) {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.header-2 .header-col:nth-child(2) {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: right;
+}
+
+.header-2 .header-col:nth-child(2) .inner {
+    text-align: center;
+}
+
+.header-2 .page-title {
+    margin-bottom: 10px;
+}
+
+.header-2 .page-title p {
+    font-size: 20px;
+}
+
+.header-2 .page-title h5 {
+    margin-bottom: 0;
+}
+
+h5.blue {
+    color: #2d78b3;
+}
+
+h5.pink {
+    color: #824d96;
+}
+
+.metro {
+    display: inline-block;
+    vertical-align: top;
+    width: 18px;
+    height: 20px;
+    background-image: url(../images/icon-metro.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.metro_2 {
+    display: inline-block;
+    vertical-align: top;
+    width: 18px;
+    height: 20px;
+    background-image: url(../images/icon-metro2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+h5.blue .metro_2 {
+    margin-right: 10px;
+}
+
+h5.pink .metro {
+    margin-right: 10px;
+}
+
+.rating_2 > div {
+    display: block;
+    padding: 2px 0;
+}
+
+.share-friends_2 {
+    margin-top: 10px;
+}
+
+.share-friends_2 > div {
+    display: block;
+    padding: 2px 0;
+}
+
+.share-friends_2 .share-border {
+    margin: 0 auto;
+}
+
+.inline-blocks_2 div {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 2px 20px 2px 0;
+}
+
+.inline-blocks_2 p {
+    margin: 0;
+}
+
 .two-cols-templ_1_2 {
-    margin: 20px 0;
+    margin: 0 0 20px 0;
 }
 
 .two-cols-templ_1_2 .left {
