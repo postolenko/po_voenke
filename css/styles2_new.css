@@ -4770,12 +4770,12 @@ h4 .star:after {
 
 .two-cols-templ_1_2 .left {
     width: 49%;
-    padding-right: 15px;
+    padding: 0 15px 0 0;
 }
 
 .two-cols-templ_1_2 .right {
     width: 51%;
-    padding-left: 15px;
+    padding: 0 0 0 15px;
 }
 
 .slider-1_wrapp_2 {
@@ -5081,6 +5081,14 @@ p.p-orange {
     margin-top: 30px 0;
 }
 
+.tabs-links {
+    background-color: #f2f3f5
+}
+
+.tabs-links-inner {
+    margin: 0 -24px;
+}
+
 .tab-link {
     font-size: 21px;
     line-height: 26px;
@@ -5089,6 +5097,38 @@ p.p-orange {
 .prices_table_wrapp,
 .chars_wrapp {
     max-width: 900px;
+}
+
+.tab-link_wrapp {
+    padding: 0 24px;
+}
+
+.tabs_2 .tab-link {
+    display: inline-block;
+    vertical-align: top;
+    cursor: pointer;
+    font-size: 20px;
+    line-height: 39px;
+    white-space: nowrap;
+    border-bottom: transparent;
+    color: #000000;
+    position: relative;
+}
+
+.tabs_2 .tab-link:after {
+    content: "";
+    width: 100%;
+    height: 3px;
+    background: #ed924e;
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+}
+
+.tabs_2 .tab-link:active,
+.tabs_2 .tab-link.active {
+    font-weight: 600;
+    color: #ed924e;;
 }
 
 /*-- /Section 1 - Card 2 --*/
