@@ -4783,6 +4783,8 @@ h4 .star:after {
 }
 
 .header-2 .header-col:nth-child(2) .inner {
+    display: inline-block;
+    vertical-align: top;
     text-align: center;
 }
 

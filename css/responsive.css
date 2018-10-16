@@ -822,11 +822,16 @@
 
 	.header-2 {
 		display: block;
+		padding: 0 0 20px 0;
 	}
 
 	.header-2 .header-col {
 	    display: block !important;
 	    margin: 10px 0;
+	}
+
+	.header-2 .header-col:nth-child(2) {
+	    text-align: left;
 	}
 
 	.orange-box > .left {
@@ -1201,6 +1206,10 @@
 	/*-- /Apartment Purchase --*/
 
 	/*-- Section 1 - Card 2 --*/
+
+	.header-2 .header-col:nth-child(2) {
+	    text-align: center;
+	}
 
 	.two-cols_7 {
 		display: block;
