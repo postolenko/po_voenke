@@ -4770,10 +4770,12 @@ h4 .star:after {
 
 .two-cols-templ_1_2 .left {
     width: 47%;
+    padding-right: 15px;
 }
 
 .two-cols-templ_1_2 .right {
     width: 53%;
+    padding-left: 15px;
 }
 
 .slider-1_wrapp_2 {
