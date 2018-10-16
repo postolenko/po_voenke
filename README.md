@@ -34,3 +34,4 @@
 # http://postolenko.github.io/po_voenke/cabinet.html
 # http://postolenko.github.io/po_voenke/search_result.html
 # http://postolenko.github.io/po_voenke/plashka.html
+# http://postolenko.github.io/po_voenke/card_2.html
