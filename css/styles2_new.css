@@ -5166,6 +5166,10 @@ p.p-orange {
     z-index: 2;
 }
 
+.chars_6 p {
+    color: #555555;
+}
+
 .chars_6 .cell:nth-child(1) p,
 .chars_6 .cell:nth-child(1) ul {
     padding: 0 10px 0 0;
