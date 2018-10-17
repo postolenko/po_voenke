@@ -5233,9 +5233,10 @@ p.p-orange {
     cursor: pointer;
     font-size: 20px;
     line-height: 52px;
-    white-space: nowrap;
-    border-bottom: transparent;
+    font-weight: 300;
     color: #000000;
+    white-space: nowrap;
+    border-bottom: transparent;    
     position: relative;
 }
 
