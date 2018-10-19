@@ -211,6 +211,10 @@
     background-image: url(../images/burger_blue.png);
 }
 
+.nav-link-pickup:hover span {
+    color: #2d3a67;
+}
+
 /*-- Tab 1 Object Page --*/
 
 .two-cols-templ_1_1 .left {
