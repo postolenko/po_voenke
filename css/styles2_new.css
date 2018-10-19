@@ -163,34 +163,24 @@
     background-size: auto;
 }
 
-.icon-burger {
-    display: inline-block;
-    vertical-align: top;
-    width: 32px;
-    height: 36px;
-    background-image: url(../images/burger.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-}
-
 /*-- /Icons --*/
 
 .nav-link-pickup {
     display: inline-block;
     vertical-align: top;
+    min-width: 227px;
     position: relative;
     font-family: 'Fira Sans Condensed SemiBold';
     font-size: 17.5px;
     font-weight: 600;
     color: #2d3a67 !important;
-    padding: 8px 20px 6px 55px;
+    padding: 5px 20px 2px 52px;
 }
 
 .nav-link-pickup .icon-burger {
     position: absolute;
-    top: 12px;
-    left: 20px;
+    top: 7px;
+    left: 21px;
 }
 
 .nav-link-pickup > * + * {
