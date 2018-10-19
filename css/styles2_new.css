@@ -169,12 +169,18 @@
     display: inline-block;
     vertical-align: top;
     min-width: 227px;
+    height: 31px;
     position: relative;
     font-family: 'Fira Sans Condensed SemiBold';
     font-size: 17.5px;
+    line-height: 20px;
     font-weight: 600;
-    color: #2d3a67 !important;
-    padding: 5px 20px 2px 52px;
+    color: #2d3a67;
+    padding: 7px 20px 2px 52px;
+}
+
+.nav-link-pickup span {
+    line-height: 20px;
 }
 
 .nav-link-pickup .icon-burger {
