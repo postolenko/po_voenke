@@ -4809,36 +4809,6 @@ h5.pink {
     color: #824d96;
 }
 
-/*.metro {
-    display: inline-block;
-    vertical-align: top;
-    width: 18px;
-    height: 20px;
-    background-image: url(../images/icon-metro.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-}
-
-.metro_2 {
-    display: inline-block;
-    vertical-align: top;
-    width: 18px;
-    height: 20px;
-    background-image: url(../images/icon-metro2.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-}
-
-h5.blue .metro_2 {
-    margin-right: 10px;
-}
-
-h5.pink .metro {
-    margin-right: 10px;
-}
-*/
 .rating_2 > div {
     display: block;
     padding: 2px 0;
