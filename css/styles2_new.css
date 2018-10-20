@@ -181,6 +181,7 @@
 
 .nav-link-pickup span {
     line-height: 20px;
+    color: #2d3a67 !important;
 }
 
 .nav-link-pickup .icon-burger {
@@ -4808,7 +4809,7 @@ h5.pink {
     color: #824d96;
 }
 
-.metro {
+/*.metro {
     display: inline-block;
     vertical-align: top;
     width: 18px;
@@ -4837,7 +4838,7 @@ h5.blue .metro_2 {
 h5.pink .metro {
     margin-right: 10px;
 }
-
+*/
 .rating_2 > div {
     display: block;
     padding: 2px 0;
