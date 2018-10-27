@@ -57,27 +57,6 @@
 
 	/*-- /Standarts --*/
 
-	/*-- Section 1 - Card 2 --*/
-
-	.two-cols-templ_1_2 > .left,
-	.two-cols-templ_1_2 > .right {
-		width: 100%;
-		float: none;
-		padding: 10px 0;
-	}
-
-	.two-cols-templ_1_2 .right-sidebar {
-	    max-width: 900px;
-	    margin: 0 auto;
-	}
-
-	.chars_6_wrapp {
-	    max-width: 900px;
-	    margin: 40px 0 0 0;
-	}
-
-	/*-- /Section 1 - Card 2 --*/
-
 	.photogallery-slider .owl-next {
 	    margin-right: 0 !important;
 	}
@@ -295,6 +274,27 @@
 	}
 
 	/*-- /Additional Discount --*/
+
+	/*-- Section 1 - Card 2 --*/
+
+	.two-cols-templ_1_2 > .left,
+	.two-cols-templ_1_2 > .right {
+		width: 100%;
+		float: none;
+		padding: 10px 0;
+	}
+
+	.two-cols-templ_1_2 .right-sidebar {
+	    max-width: 900px;
+	    margin: 0 auto;
+	}
+
+	.chars_6_wrapp {
+	    max-width: 900px;
+	    margin: 40px 0 0 0;
+	}
+
+	/*-- /Section 1 - Card 2 --*/
 
 }
 
