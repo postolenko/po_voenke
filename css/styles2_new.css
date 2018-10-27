@@ -4863,7 +4863,7 @@ h5.pink {
 
 .two-cols_6 > .two-col:nth-child(1) {
     display: table-cell;
-    vertical-align: top;
+    vertical-align: middle;
     width: 55%;
     padding: 0 10px;
     border-right: 1px  solid #e3e3e3;
@@ -4871,7 +4871,7 @@ h5.pink {
 
 .two-cols_6 > .two-col:nth-child(2) {
     display: table-cell;
-    vertical-align: top;
+    vertical-align: middle;
     width: 45%;
     padding: 0 10px;
 }
@@ -4898,6 +4898,7 @@ h5.pink {
     display: block;
     width: auto;
     max-width: 98%;
+    margin: 0 auto;
 }
 
 .two-cols_7 p {
