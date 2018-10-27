@@ -129,6 +129,20 @@
 
 	/*-- /Certificate --*/
 
+	/*-- Section 1 - Card 2 --*/
+
+	.two-cols_7 {
+		display: block;
+	}
+
+	.two-cols_7 > .two-col {
+		display: block;
+	    width: 100%;
+	    padding: 10px 0;
+	}
+	
+	/*-- /Section 1 - Card 2 --*/
+
 }
 
 @media only screen and (max-width: 1270px) {
@@ -287,16 +301,6 @@
 	.two-cols-templ_1_2 .right-sidebar {
 	    max-width: 900px;
 	    margin: 0 auto;
-	}
-
-	.two-cols_7 {
-		display: block;
-	}
-
-	.two-cols_7 > .two-col {
-		display: block;
-	    width: 100%;
-	    padding: 10px 0;
 	}
 
 	.chars_6_wrapp {
