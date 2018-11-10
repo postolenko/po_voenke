@@ -5317,6 +5317,116 @@ p.p-orange {
 
 /*-- /Filtr Pill --*/
 
+/*-- Links --*/
+
+.icon_01 {
+    display: inline-block;
+    vertical-align: top;
+    width: 39px;
+    height: 39px;
+    background-image: url(../images/sprite_3.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.icon_02 {
+    display: inline-block;
+    vertical-align: top;
+    width: 41px;
+    height: 40px;
+    background-image: url(../images/sprite_3.png);
+    background-repeat: no-repeat;
+    background-position: 1px -65px;
+}
+
+.icon_03 {
+    display: inline-block;
+    vertical-align: top;
+    width: 40px;
+    height: 40px;
+    background-image: url(../images/sprite_3.png);
+    background-repeat: no-repeat;
+    background-position: 1px -130px;
+}
+
+.icon_04 {
+    display: inline-block;
+    vertical-align: top;
+    width: 39px;
+    height: 39px;
+    background-image: url(../images/sprite_3.png);
+    background-repeat: no-repeat;
+    background-position: 0 -195px;
+}
+
+.icon_05 {
+    display: inline-block;
+    vertical-align: top;
+    width: 40px;
+    height: 38px;
+    background-image: url(../images/sprite_3.png);
+    background-repeat: no-repeat;
+    background-position: 0 -261px;
+}
+
+.arowred_right {
+    display: inline-block;
+    vertical-align: top;
+    width: 13px;
+    height: 23px;
+    background-image: url(../images/arowred_right.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.links_wrapp {
+    max-width: 768px;
+    margin: 0 auto;
+}
+
+.link_wrapp {
+    display: table;
+    width: 100%;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.links_wrapp .link_wrapp:last-child {
+    border-bottom: none;
+}
+
+.link-col {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 13px 5px;
+}
+
+.link_wrapp .link-col:nth-child(1) {
+    width: 63px;
+    text-align: center;
+}
+
+.link_wrapp .link-col:nth-child(2) {
+    width: auto;
+}
+
+.link_wrapp .link-col:nth-child(3) {
+    width: 30px;
+    padding-top: 16px;
+    text-align: center;
+}
+
+.link_wrapp p {
+    margin-bottom: 0;
+    padding-top: 3px;
+    font-family: 'Fira Sans Condensed SemiBold';
+    font-size: 14.5px;
+    line-height: 18px;
+    font-weight: 600;
+    color: #000000;
+}
+
+/*-- /Links --*/
+
 /*-- Footer --*/
 
 .footer_2 {
@@ -5677,3 +5787,4 @@ p.p-orange {
 .slider_2 .owl-dots .owl-dot.active span {
     background-color: #f14741;
 }
+
