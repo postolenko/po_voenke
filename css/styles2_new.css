@@ -3593,15 +3593,11 @@ h4 .star:after {
 }
 
 .step-item .cell-1 h6 {
-    font-size: 18px;
-    line-height: 23px;
-    margin: 0 0 4px 0;
+    margin: 1px 0 4px 0;
 }
 
 .step-item .cell-2 h6 {
-    margin: 0 0 4px 0;
-    font-size: 18px;
-    line-height: 23px;
+    margin: 1px 0 4px 0;
     color: #000000;
 }
 
@@ -3849,7 +3845,7 @@ h4 .star:after {
 .step-item_2 .cell-1 {
     display: table-cell;
     vertical-align: top;
-    width: 52px;
+    width: 56px;
 }
 
 .step-item_2 .cell-2 {
@@ -3864,7 +3860,7 @@ h4 .star:after {
 }
 
 .step-item_2 .cell-2 h6 {
-    margin: 0 0 4px 0;
+    margin: 1px 0 4px 0;
     color: #000000;
 }
 

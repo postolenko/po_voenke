@@ -807,8 +807,23 @@
 
 	/*-- Withdrawal Encumbrances --*/
 
-	.step-item_2 .cell-1 {
-	    padding-top: 2px;
+	.step-item .cell-1 h6 {
+		font-size: 18px;
+		line-height: 21px;
+	}
+
+	.step-item .cell-2 h6 {
+	    font-size: 18px;
+	}
+
+	.step-item_2 .cell-1 h6 {
+		margin-top: 2px;
+		font-size: 18px;
+		line-height: 21px;
+	}
+
+	.step-item_2 .cell-2 h6 {
+	    font-size: 18px;
 	}
 
 	/*-- /Withdrawal Encumbrances --*/
