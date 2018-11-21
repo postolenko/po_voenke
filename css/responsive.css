@@ -503,6 +503,14 @@
 	    width: 100%;
 	}
 
+	.form_wrapp .input_wrapp_2 {
+	    margin: 9px 0;
+	}
+
+	.tree-cols .green-pill_2 {
+	    margin: 0;
+	}
+
 	.thumb_2 {
 	    padding: 2px 0 16px 0;
 	}
@@ -706,6 +714,10 @@
 	    padding: 0 0 10px 0 !important;
 	}
 
+	.number_list li .num {
+	    top: 6px;
+	}
+
 	/*-- /Approval --*/
 
 	/*-- Apartment Purchase --*/
@@ -792,6 +804,18 @@
 	}
 
 	/*-- /Refinancing Military Mortgages --*/
+
+	/*-- Withdrawal Encumbrances --*/
+
+	.step-item .cell-1 {
+	    padding-top: 3px;
+	}
+
+	.step-item_2 .cell-1 {
+	    padding-top: 2px;
+	}
+
+	/*-- /Withdrawal Encumbrances --*/
 
 	/*-- Footer --*/
 

@@ -1074,8 +1074,16 @@ p.big-price span.ruble {
     width: 33.33%;
 }
 
+.tree-cols .col .input_wrapp_2 {
+    margin: 13px 0;
+}
+
 .tree-cols .green-pill_2 {
     width: 100%;
+    margin: 0;
+    padding: 16px 2%;
+    font-size: 18px;
+    font-weight: bold;
 }
 
 .mortgages-header {
