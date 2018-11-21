@@ -3584,6 +3584,7 @@ h4 .star:after {
     display: table-cell;
     vertical-align: top;
     width: 52px;
+    padding-top: 1px;
 }
 
 .step-item .cell-2 {
