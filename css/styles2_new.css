@@ -4440,6 +4440,55 @@ h4 .star:after {
     margin-bottom: 9px;
 }
 
+.links_list {
+    margin: 13px 0;
+}
+
+.links_list li {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.links_list li a {
+    padding: 2px 8px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    background-color: rgb(225, 225, 225);
+    font-family: "Fira Sans Condensed Light";
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+}
+
+.breadcrumbs_2 {
+    margin: 13px 0;
+}
+
+.breadcrumbs_2 li {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.breadcrumbs_2 li:after {
+    content: "\2f";
+    font-size: 14px;
+    line-height: 16px;
+    margin: 0 0 0 2px;
+}
+
+.breadcrumbs_2 li:last-child:after {
+    display: none;
+}
+
+.breadcrumbs_2 li a {
+    font-family: "Fira Sans Condensed Light";
+    font-size: 14px;
+    line-height: 16px;
+    color: rgb(117, 117, 117);
+}
+
+
 /*-- /New Buildings Krasnodar --*/
 
 /*-- Cabinet --*/
