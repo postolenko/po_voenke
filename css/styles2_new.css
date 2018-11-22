@@ -3570,6 +3570,24 @@ h4 .star:after {
     margin: 3px 0;
 }
 
+.ruble_2 {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    font-family: "Fira Sans Condensed LightItalic", sans-serif;
+}
+
+.ruble_2:before {
+    content: "";
+    width: 80%;
+    height: 1px;
+    background-color: #212529;
+    position: absolute;
+    top: 57%;
+    left: -10%;
+    left: 0;
+}
+
 /*-- /Property Tax Deduction --*/
 
 /*-- Secondaru Housing --*/
