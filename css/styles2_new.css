@@ -3574,7 +3574,6 @@ h4 .star:after {
     display: inline-block;
     vertical-align: top;
     position: relative;
-    /*font-family: "Fira Sans Condensed LightItalic", sans-serif;*/
 }
 
 .ruble_2:before {
@@ -3582,6 +3581,23 @@ h4 .star:after {
     width: 80%;
     height: 1px;
     background-color: #212529;
+    position: absolute;
+    top: 57%;
+    left: -10%;
+    left: 0;
+}
+
+.ruble_3 {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+}
+
+.ruble_3:before {
+    content: "";
+    width: 80%;
+    height: 1px;
+    background-color: #ffffff;
     position: absolute;
     top: 57%;
     left: -10%;
