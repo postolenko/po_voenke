@@ -36,3 +36,4 @@
 # http://postolenko.github.io/po_voenke/plashka.html
 # http://postolenko.github.io/po_voenke/card_2.html
 # http://postolenko.github.io/po_voenke/links.html
+# http://postolenko.github.io/po_voenke/banks_table.html

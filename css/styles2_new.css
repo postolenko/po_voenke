@@ -5527,7 +5527,7 @@ p.p-orange {
 .link_wrapp p {
     margin-bottom: 0;
     padding-top: 3px;
-    font-family: 'Fira Sans Condensed SemiBold';
+    font-family: 'Fira Sans Condensed SemiBold', sans-serif;
     font-size: 14.5px;
     line-height: 18px;
     font-weight: 600;
@@ -5535,6 +5535,59 @@ p.p-orange {
 }
 
 /*-- /Links --*/
+
+/*-- Banks Table --*/
+
+.banks_table {
+    display: table;
+    border-collapse: collapse;
+}
+
+.banks_table .table-row {
+    display: table-row;
+    border-bottom: 1px solid #e2e2e2;
+}
+
+.banks_table .table-cell {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 12px 20px;
+}
+
+.banks_table .table-cell:nth-child(1) {
+    width: 303px;
+}
+
+.banks_table .table-cell:nth-child(2) {
+    width: 134px;
+}
+
+.banks_table .table-cell:nth-child(3) {
+    width: 179px;
+}
+
+.banks_table .table-cell:nth-child(4) {
+    width: 189px;
+}
+
+.banks_table .table-cell:nth-child(5) {
+    width: auto;
+}
+
+.banks_table .table-header .table-cell {
+    display: table-cell;
+    vertical-align: top;
+    padding: 35px 20px;
+}
+
+.banks_table h3 {
+    font-family: 'Fira Sans Condensed SemiBold', sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+    color: #009440;    
+}
+
+/*-- /Banks Table --*/
 
 /*-- Footer --*/
 
