@@ -3574,7 +3574,7 @@ h4 .star:after {
     display: inline-block;
     vertical-align: top;
     position: relative;
-    font-family: "Fira Sans Condensed LightItalic", sans-serif;
+    /*font-family: "Fira Sans Condensed LightItalic", sans-serif;*/
 }
 
 .ruble_2:before {
@@ -4479,6 +4479,10 @@ h4 .star:after {
     color: #000000;
 }
 
+.links_list li a.active {
+    background-color: transparent;
+}
+
 .breadcrumbs_2 {
     margin: 13px 0;
 }
@@ -4505,7 +4509,6 @@ h4 .star:after {
     line-height: 16px;
     color: rgb(117, 117, 117);
 }
-
 
 /*-- /New Buildings Krasnodar --*/
 
