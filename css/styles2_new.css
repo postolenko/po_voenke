@@ -5540,6 +5540,7 @@ p.p-orange {
 
 .banks_table {
     display: table;
+    width: 100%;
     border-collapse: collapse;
 }
 
