@@ -5581,6 +5581,10 @@ p.p-orange {
     padding: 34px 20px;
 }
 
+.banks_table .table-header .table-cell:nth-child(1) {
+    padding-left: 38px;
+}
+
 .banks_table h3 {
     font-family: 'Fira Sans Condensed SemiBold', sans-serif;
     font-size: 18px;
