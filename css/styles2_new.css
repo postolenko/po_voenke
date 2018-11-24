@@ -5556,6 +5556,7 @@ p.p-orange {
 
 .banks_table .table-cell:nth-child(1) {
     width: 303px;
+    padding-left: 38px;
 }
 
 .banks_table .table-cell:nth-child(2) {
