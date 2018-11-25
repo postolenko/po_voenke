@@ -4541,20 +4541,6 @@ h4 .star:after {
     color: rgb(117, 117, 117);
 }
 
-.breadcrumbs_2 li:last-child a {
-    font-size: 16px;
-    color: #000000;
-    pointer-events: none;
-    cursor: default; 
-}
-
-.breadcrumbs_2 li a.disabled {
-    font-size: 16px;
-    color: #000000;
-    pointer-events: none;
-    cursor: default; 
-}
-
 /*-- /New Buildings Krasnodar --*/
 
 /*-- Cabinet --*/
