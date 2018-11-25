@@ -350,6 +350,31 @@
 
 	/*-- /Categori NIS --*/
 
+	/*-- Banks Table --*/
+
+	.banks_table .table-header .table-cell {
+	    padding: 20px 10px;
+	}
+
+	.banks_table .table-cell {
+	    padding: 12px 10px;
+	}
+
+	.banks_table .table-header .table-cell:nth-child(1) {
+	    padding-left: 20px;
+	}
+
+	.banks_table .table-cell:nth-child(1) {
+	    padding-left: 20px;
+	}
+
+	.banks_table h3 {
+	    font-size: 16px;
+	    line-height: 19px;
+	}
+
+	/*-- /Banks Table --*/
+
 }
 
 @media only screen and (max-width: 1024px) {
@@ -828,6 +853,30 @@
 
 	/*-- /Withdrawal Encumbrances --*/
 
+	/*-- Banks Table --*/
+
+	.banks_table .table-cell:nth-child(1) {
+	    width: 40%;
+	}
+
+	.banks_table .table-cell:nth-child(2) {
+	    width: 17%;
+	}
+
+	.banks_table .table-cell:nth-child(3) {
+	    width: 22%;
+	}
+
+	.banks_table .table-cell:nth-child(4) {
+	    width: 21%;
+	}
+
+	.banks_table .table-cell:nth-child(5) {
+	    display: none;
+	}
+
+	/*-- /Banks Table --*/
+
 	/*-- Footer --*/
 
 	.footer .left {
@@ -1303,6 +1352,36 @@
 	}
 
 	/*-- /Bank --*/
+
+	/*-- Banks Table --*/
+
+	.banks_table .table-header .table-cell:nth-child(1) {
+	    padding-left: 10px;
+	}
+
+	.banks_table .table-cell:nth-child(1) {
+	    width: 33%;
+	    padding-left: 10px;
+	}
+
+	.banks_table .table-cell:nth-child(2) {
+	    width: 21%;
+	}
+
+	.banks_table .table-cell:nth-child(3) {
+	    width: 22%;
+	}
+
+	.banks_table .table-cell:nth-child(4) {
+	    width: 24%;
+	}
+
+	.banks_table .table-cell h3 {
+	    font-size: 13px;
+	    line-height: 16px;
+	}
+
+	/*-- /Banks Table --*/
 
 	/*-- Footer --*/
 
