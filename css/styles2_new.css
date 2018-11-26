@@ -3619,6 +3619,22 @@ h4 .star:after {
     left: 0;
 }
 
+.ruble_5 {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+}
+
+.ruble_5:before {
+    content: "";
+    width: 72%;
+    height: 1px;
+    background-color: #edb544;
+    position: absolute;
+    top: 61%;
+    left: 3%;
+}
+
 /*-- /Property Tax Deduction --*/
 
 /*-- Secondaru Housing --*/
