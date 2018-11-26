@@ -5593,6 +5593,11 @@ p.p-orange {
     color: #009440;    
 }
 
+.banks_table .table-cell p {
+    font-size: 18px;
+    line-height: 22px; 
+}
+
 .banks_table .table-cell:nth-child(1) img {
     display: block;
     width: auto;

@@ -875,6 +875,11 @@
 	    display: none;
 	}
 
+	.banks_table .table-cell p {
+	    font-size: 15px;
+	    line-height: 19px; 
+	}
+
 	/*-- /Banks Table --*/
 
 	/*-- Footer --*/
@@ -1365,7 +1370,7 @@
 	}
 
 	.banks_table .table-cell:nth-child(2) {
-	    width: 21%;
+	    width: 23%;
 	}
 
 	.banks_table .table-cell:nth-child(3) {
@@ -1373,12 +1378,17 @@
 	}
 
 	.banks_table .table-cell:nth-child(4) {
-	    width: 24%;
+	    width: 22%;
 	}
 
 	.banks_table .table-cell h3 {
 	    font-size: 13px;
 	    line-height: 16px;
+	}
+
+	.banks_table .table-cell p {
+	    font-size: 14px;
+	    line-height: 17px; 
 	}
 
 	/*-- /Banks Table --*/
