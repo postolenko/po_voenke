@@ -4531,6 +4531,14 @@ h4 .star:after {
     background-color: transparent;
 }
 
+.links_list li.active span {
+    background-color: transparent;
+    font-family: "Fira Sans Condensed Light";
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+}
+
 .breadcrumbs_2 {
     margin: 13px 0;
 }
