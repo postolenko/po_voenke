@@ -4541,6 +4541,13 @@ h4 .star:after {
     color: rgb(117, 117, 117);
 }
 
+.breadcrumbs_2 li.active span {
+    font-family: "Fira Sans Condensed Light";
+    font-size: 14px;
+    line-height: 18px;
+    color: rgb(117, 117, 117);
+}
+
 /*-- /New Buildings Krasnodar --*/
 
 /*-- Cabinet --*/
@@ -5587,7 +5594,7 @@ p.p-orange {
     padding-left: 38px;
 }
 
-.banks_table h3 {
+.banks_table .h3 {
     font-family: 'Fira Sans Condensed SemiBold', sans-serif;
     font-size: 18px;
     line-height: 22px;
