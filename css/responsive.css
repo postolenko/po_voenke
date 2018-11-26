@@ -357,7 +357,7 @@
 	}
 
 	.banks_table .table-cell {
-	    padding: 12px 10px;
+	    padding: 10px;
 	}
 
 	.banks_table .table-header .table-cell:nth-child(1) {
@@ -1315,6 +1315,10 @@
 	}
 
 	/*-- /Section 1 - Card 2 --*/
+
+	.banks_table .table-cell {
+	    height: 70px;
+	}
 
 	/*-- Footer --*/
 

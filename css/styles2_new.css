@@ -5552,6 +5552,7 @@ p.p-orange {
 .banks_table .table-cell {
     display: table-cell;
     vertical-align: middle;
+    height: 80px;
     padding: 12px 20px;
 }
 
