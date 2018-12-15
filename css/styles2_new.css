@@ -5639,6 +5639,227 @@ p.p-orange {
 
 /*-- /Banks Table --*/
 
+/*-- Filter --*/
+
+.filter_wrapp .inner_wrapp {
+    margin: 0 -7px;
+}
+
+.filter_input {
+    display: inline-table;
+    vertical-align: top;
+    margin: 10px 7px;
+}
+
+.filter_input p {
+    margin-bottom: 0;
+}
+
+.filter_input .filtercol-1 {
+    display: table-cell;
+    vertical-align: top;
+    width: auto;
+    padding-top: 9px;
+    padding-right: 10px;
+}
+
+.filter_input .filtercol-2 {
+    display: table-cell;
+    vertical-align: top;
+}
+
+.filter_wrapp .filter_col {
+    display: inline-block;
+    vertical-align: top;
+    margin: 10px 10px;
+}
+
+.filter_input .dropdown {
+    width: 235px;
+}
+
+.dropdown-custom_3 {
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    background-color: rgb(255, 255, 255);
+    -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, .2);
+    -moz-box-shadow: 0 0 10px 0 rgba(0, 0, 0, .2);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .2);
+}
+
+.dropdown-custom_3 .dropdown-toggle {
+    width: 100%;
+    height: 39px;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    font-family: "Fira Sans Condensed Light", sans-serif;
+    font-size: 16px;
+    padding: 1px 10px 0 10px;
+    text-align: left;
+    position: relative;
+}
+
+.dropdown-custom_3 .dropdown-toggle:after {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    color: #009640;
+    border-left-width: 0.25em;
+    border-right-width: 0.25em;
+    border-top-width: 0.5em;
+    -webkit-transform: translate(0, -50%);
+    -moz-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+}
+
+.dropdown-custom_3 .dropdown-menu {
+    border-bottom: 4px solid #009640;
+}
+
+.dropdown-custom_3 .dropdown-menu {
+    margin-top: 3px;
+}
+
+.filter_ch {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.filtercol-2 .filter_ch {
+    margin-top: -1px;
+}
+
+.filter_ch label {
+    cursor: pointer;
+    position: relative;
+    margin: 2px 2px;
+    min-width: 40px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 23px;
+    color: #000000;
+}
+
+.filter_ch input {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.filter_ch span {
+    display: block;
+    border-width: 1px;
+    border-color: rgb(198, 198, 198);
+    border-style: solid;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    padding: 6px 9px 8px 9px;
+}
+
+.filter_ch input:checked + span {
+    border-color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+    -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, .2);
+    -moz-box-shadow: 0 0 10px 0 rgba(0, 0, 0, .2);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .2);
+    color: #009440;
+}
+
+.range_inputs {
+    display: inline-table;
+    vertical-align: top;
+}
+
+.range_col {
+    display: inline-table;
+    vertical-align: top;
+    padding: 0 10px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .2);
+}
+
+.range_inputs .range_col:nth-child(1) {
+    margin-right: 4px;
+}
+
+.range_inputs .range_col:nth-child(2) {
+    margin-left: 4px;
+}
+
+.range_col .inner_col {
+    display: table-cell;
+    vertical-align: top;
+}
+
+.range_col .inner_col:nth-child(1) {
+    width: 25px;
+    padding-top: 11px;
+}
+
+.range_col .inner_col:nth-child(2) {
+    width: auto;
+}
+
+.range_col .inner_col:nth-child(3) {
+    width: 20px;
+    padding-top: 11px;
+}
+
+.range_col p {
+    margin-bottom: 0;
+    font-size: 16px;
+    line-height: 18px;
+    color: #767676;
+}
+
+.range_col input {
+    display: block;
+    width: 90px;
+    height: 39px;
+    border: none;
+    font-size: 16px;
+    line-height: 39px;
+    color: #000000;
+}
+
+.range_col .ruble_2:before {
+    width: 65%;
+    height: 1px;
+    background-color: #767676;
+    top: 60%;
+    left: 1px;
+}
+
+.range_col input:focus {
+    outline: none;
+}
+
+.range_inputs_2 .range_col input {
+    width: 38px;
+}
+
+.range_inputs_3 .range_col input {
+    width: 38px;
+}
+
+.green-pill_2_2 {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 14px;
+}
+
+/*-- /Filter --*/
+
 /*-- Footer --*/
 
 .footer_2 {

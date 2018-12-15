@@ -1320,6 +1320,41 @@
 	    height: 70px;
 	}
 
+	/*-- Filter --*/
+
+	.filter_wrapp .inner_wrapp {
+	    margin: 0;
+	}
+
+	.filter_input {
+	    display: block;
+	    margin: 10px 0;
+	}
+
+	.filter_wrapp .filter_col {
+	    display: block;
+	    margin: 10px 0;
+	}
+
+	.filter_input .filtercol-1 {
+	    display: block;
+	}
+
+	.filter_input .filtercol-2 {
+	    display: block;
+	    padding-top: 5px;
+	}
+
+	.filtercol-2 .filter_ch {
+	    margin-top: 0;
+	}
+
+	.filter_col .green-pill_2_2 {
+		margin: 20px 0;
+	}
+
+	/*-- /Filter --*/
+
 	/*-- Footer --*/
 
 	.seo-text_2 li a {
@@ -1504,6 +1539,24 @@
 	}
 
 	/*-- /Search --*/
+
+	/*-- Filter --*/
+
+	.range_inputs_1 {
+		display: block;
+	}
+
+	.range_inputs_1 .range_col:nth-child(1) {
+		display: inline-block;
+	    margin: 5px 0;
+	}
+
+	.range_inputs_1 .range_col:nth-child(2) {
+		display: inline-block;
+	    margin: 5px 0;
+	}
+
+	/*-- /Filter --*/
 	
 }
 
