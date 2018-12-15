@@ -5836,6 +5836,8 @@ p.p-orange {
 .range_col input::-webkit-outer-spin-button,
 .range_col input::-webkit-inner-spin-button {
     -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
     margin: 0;
 }
 
