@@ -5813,6 +5813,7 @@ p.p-orange {
 .range_col .inner_col:nth-child(3) {
     width: 20px;
     padding-top: 11px;
+    padding-left: 10px;
 }
 
 .range_col p {
@@ -5830,6 +5831,12 @@ p.p-orange {
     font-size: 16px;
     line-height: 39px;
     color: #000000;
+}
+
+.range_col input::-webkit-outer-spin-button,
+.range_col input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
 
 .range_col .ruble_2:before {
