@@ -882,6 +882,47 @@
 
 	/*-- /Banks Table --*/
 
+	/*-- Filter --*/
+
+	.dropdown-custom_3 .dropdown-toggle {
+		padding-top: 3px;
+	    font-size: 18px;
+	    line-height: 20px;
+	}
+
+	.filter_ch span {
+/*	    display: block;
+	    height: 40px;
+	    border-width: 1px;
+	    border-color: rgb(198, 198, 198);
+	    border-style: solid;
+	    -webkit-border-radius: 4px;
+	    -moz-border-radius: 4px;
+	    border-radius: 4px;
+	    padding: 0 9px;*/
+	    font-size: 18px;
+/*	    line-height: 36px;
+	    color: #000000;*/
+	}
+
+	.range_col input {
+/*	    display: block;
+	    width: 90px;
+	    height: 39px;
+	    border: none;*/
+	    font-size: 18px;
+	    line-height: 39px;
+	    padding-top: 5px;
+	    /*color: #000000;*/
+	}
+
+	.range_col p {
+	    font-size: 18px;
+	    line-height: 20px;
+	}
+
+	/*-- /Filter --*/
+
 	/*-- Footer --*/
 
 	.footer .left {
