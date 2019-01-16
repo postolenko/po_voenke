@@ -5630,8 +5630,9 @@ p.p-orange {
 .banks_table .table-cell p {
 /*    font-size: 18px;
     line-height: 18px;*/
-    font-size: 22px;
-    line-height: 22px;
+    /*font-size: 22px;*/
+    font-size: 18pt;
+    line-height: 18pt;
 }
 
 .banks_table .table-cell:nth-child(1) img {
