@@ -1469,6 +1469,28 @@
 
 }
 
+@media only screen and (max-width: 400px) {
+
+	/*-- Nav Bar --*/
+
+	.nav-link-pickup {
+	    min-width: 162px;
+	    font-size: 13px;
+	    padding: 6px 7px 2px 36px;
+	}
+
+	.nav-link-pickup .icon-burger {
+	    left: 9px;
+	}
+
+	.nav-link-pickup > * + * {
+	    margin-left: 13px;
+	}
+
+	/*-- /Nav Bar --*/
+
+}
+
 @media only screen and (max-width: 370px) {
 
 	/*-- Tab 1 Object Page --*/
@@ -1583,6 +1605,14 @@
 	}
 
 	/*-- /Filter --*/
+
+	/*-- Nav Bar --*/
+
+	.resp_btns button {
+	    margin: 0 0 0 7px;
+	}
+	
+	/*-- /Nav Bar --*/
 	
 }
 

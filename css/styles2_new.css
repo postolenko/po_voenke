@@ -216,6 +216,18 @@
     color: #2d3a67;
 }
 
+.resp_btns {
+    text-align: right;
+}
+
+.resp_btns button {
+    height: 32px;
+    width: 47px;
+    display: block;
+    float: right;
+    margin: 0 0 0 15px;
+}
+
 /*-- Tab 1 Object Page --*/
 
 .two-cols-templ_1_1 .left {
