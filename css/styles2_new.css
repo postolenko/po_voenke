@@ -238,6 +238,13 @@
     max-height: 100%;
 }
 
+.search_btn_resp {
+    display: none;
+    height: 32px;
+    width: 47px;
+    text-align: center;   
+}
+
 /*-- Tab 1 Object Page --*/
 
 .two-cols-templ_1_1 .left {
